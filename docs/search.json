@@ -4,7 +4,42 @@
     "href": "index.html",
     "title": "Gonzalo Torres | Inequality research",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "I am a PhD candidate in Sociology at Pontificia Universidad Católica de Chile.\nMy research focuses on household wealth, economic security, and educational trajectories, with an emphasis on how asset–debt configurations shape unequal futures."
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Gonzalo Torres | Inequality research",
+    "section": "",
+    "text": "I am a PhD candidate in Sociology at Pontificia Universidad Católica de Chile.\nMy research focuses on household wealth, economic security, and educational trajectories, with an emphasis on how asset–debt configurations shape unequal futures."
+  },
+  {
+    "objectID": "index.html#research-agenda",
+    "href": "index.html#research-agenda",
+    "title": "Gonzalo Torres | Inequality research",
+    "section": "Research agenda",
+    "text": "Research agenda\n\nWealth as configuration (assets + liabilities, liquidity, collateralizability)\n\nEconomic security as a temporal capacity (shock absorption and planning)\n\nEducational trajectories under unequal financial infrastructures"
+  },
+  {
+    "objectID": "index.html#current-projects",
+    "href": "index.html#current-projects",
+    "title": "Gonzalo Torres | Inequality research",
+    "section": "Current projects",
+    "text": "Current projects\n\nHousehold Wealth Configurations and the Unequal Security of Family Futures in Chile\n\nWealth reconstruction using survey data and machine learning\n\nEconomic hardship and age profiles (EBS 2023)"
+  },
+  {
+    "objectID": "index.html#data-code",
+    "href": "index.html#data-code",
+    "title": "Gonzalo Torres | Inequality research",
+    "section": "Data & Code",
+    "text": "Data & Code\nSelected projects and reproducible pipelines are available on GitHub."
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Gonzalo Torres | Inequality research",
+    "section": "Contact",
+    "text": "Contact\n\nEmail: gonzalo.torres11@gmail.com\n\nGitHub: https://github.com/gonzalotr11"
   },
   {
     "objectID": "about.html",

@@ -2,6 +2,28 @@
 title: "Gonzalo Torres | Inequality research"
 ---
 
-This is a Quarto website.
+## About
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I am a PhD candidate in Sociology at Pontificia Universidad Católica de Chile.  
+My research focuses on **household wealth, economic security, and educational trajectories**, with an emphasis on how asset–debt configurations shape unequal futures.
+
+## Research agenda
+
+- Wealth as configuration (assets + liabilities, liquidity, collateralizability)  
+- Economic security as a temporal capacity (shock absorption and planning)  
+- Educational trajectories under unequal financial infrastructures
+
+## Current projects
+
+- *Household Wealth Configurations and the Unequal Security of Family Futures in Chile*  
+- Wealth reconstruction using survey data and machine learning  
+- Economic hardship and age profiles (EBS 2023)
+
+## Data & Code
+
+Selected projects and reproducible pipelines are available on GitHub.
+
+## Contact
+
+- Email: gonzalo.torres11@gmail.com  
+- GitHub: https://github.com/gonzalotr11
