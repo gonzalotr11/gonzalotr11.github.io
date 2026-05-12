@@ -1,9 +1,12 @@
 /* css styles */
 
-
 .quarto-title-block {
   display: none;
 }
+
+/* =========================
+   Top banner
+========================= */
 
 .top-banner {
   width: 100%;
@@ -13,6 +16,10 @@
   background-position: center;
   margin-bottom: 3rem;
 }
+
+/* =========================
+   Main profile layout
+========================= */
 
 .profile-layout {
   display: grid;
@@ -54,7 +61,35 @@
   margin-top: 0;
 }
 
+/* =========================
+   Distinctive profile cards
+========================= */
+
+.distinctive-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.distinctive-card {
+  padding: 1.2rem;
+  border-left: 5px solid #00a6a6;
+  background: #f8fbfc;
+  border-radius: 14px;
+}
+
+.distinctive-card h4 {
+  margin-top: 0;
+  color: #243b53;
+}
+
+/* =========================
+   Responsive
+========================= */
+
 @media (max-width: 850px) {
+
   .profile-layout {
     grid-template-columns: 1fr;
   }
@@ -63,4 +98,9 @@
     border-left: none;
     padding-left: 0;
   }
+
+  .distinctive-grid {
+    grid-template-columns: 1fr;
+  }
+
 }

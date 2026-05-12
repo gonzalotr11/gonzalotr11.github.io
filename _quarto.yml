@@ -10,6 +10,8 @@ website:
         text: EN
       - href: index-es.qmd
         text: ES
+      - href: beyond-research.qmd
+        text: Beyond research
       - about.qmd
 
 format:
