@@ -1,0 +1,45 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.top-banner}
+:::
+
+::: {.profile-layout}
+
+::: {.profile-left}
+![](images/profile.jpg){.profile-img}
+
+# Gonzalo Torres Rosales
+
+Candidato a Doctor en Sociología  
+Pontificia Universidad Católica de Chile  
+
+[GitHub](https://github.com/gonzalotr11){.btn .btn-outline-primary}
+[LinkedIn](https://www.linkedin.com/in/gonzalo-torres-rosales-38a21068){.btn .btn-outline-primary}
+[Email](mailto:gonzalo.torres11@gmail.com){.btn .btn-outline-primary}
+:::
+
+::: {.profile-right}
+## Sociología de la riqueza, desigualdad y trayectorias educativas
+
+Soy candidato a doctor en Sociología en la Pontificia Universidad Católica de Chile. Mi investigación examina cómo la riqueza de los hogares, la deuda y la seguridad económica configuran trayectorias educativas desiguales en Chile.
+
+Mi trabajo estudia la riqueza no solo como un stock de recursos, sino como una configuración de activos, pasivos, liquidez, colateral y seguridad intertemporal.
+
+### Agenda de investigación
+
+- Configuraciones de riqueza: activos y deudas como formas estructuradas de ventaja y vulnerabilidad.
+- Seguridad económica: cómo los hogares gestionan incertidumbre, shocks y decisiones orientadas al futuro.
+- Desigualdad educativa: cómo la riqueza y la seguridad moldean trayectorias escolares y universitarias.
+
+### Proyectos actuales
+
+- *Configuraciones patrimoniales y la desigual seguridad de los futuros familiares en Chile*
+- Reconstrucción de riqueza mediante encuestas y machine learning
+- Hardship económico subjetivo en Chile utilizando EBS 2023
+:::
+
+:::

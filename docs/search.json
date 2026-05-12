@@ -1,45 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Gonzalo Torres Rosales",
-    "section": "",
-    "text": "I am a PhD candidate in Sociology at Pontificia Universidad Católica de Chile. My research examines how household wealth, debt, and economic security shape unequal educational futures in Chile.\nResearch GitHub"
-  },
-  {
     "objectID": "index.html#sociology-of-wealth-inequality-educational-trajectories",
     "href": "index.html#sociology-of-wealth-inequality-educational-trajectories",
     "title": "Gonzalo Torres Rosales",
-    "section": "",
-    "text": "I am a PhD candidate in Sociology at Pontificia Universidad Católica de Chile. My research examines how household wealth, debt, and economic security shape unequal educational futures in Chile.\nResearch GitHub"
-  },
-  {
-    "objectID": "index.html#research-agenda",
-    "href": "index.html#research-agenda",
-    "title": "Gonzalo Torres Rosales",
-    "section": "Research agenda",
-    "text": "Research agenda\nMy work studies wealth not only as a stock of resources, but as a configuration of assets, liabilities, liquidity, collateral, and intertemporal security. I am especially interested in how these configurations shape family capacities to absorb shocks, plan for the future, and sustain educational trajectories.\n\n\nWealth configurations\nAssets and debts as structured forms of advantage and vulnerability.\n\n\nEconomic security\nHow households manage uncertainty, shocks, and future-oriented decisions.\n\n\nEducational inequality\nHow wealth and security shape school and higher education trajectories."
-  },
-  {
-    "objectID": "index.html#current-projects",
-    "href": "index.html#current-projects",
-    "title": "Gonzalo Torres Rosales",
-    "section": "Current projects",
-    "text": "Current projects\n\nHousehold Wealth Configurations and the Unequal Security of Family Futures in Chile\nDoctoral research project focused on measuring wealth configurations and examining their consequences for economic security and educational trajectories.\n\n\nWealth reconstruction using survey data and machine learning\nMethodological work on estimating patrimonial conditions across surveys and administrative data.\n\n\nSubjective economic hardship in Chile\nAnalysis of economic insecurity, age profiles, income position, housing tenure, and debt burden using EBS 2023."
-  },
-  {
-    "objectID": "index.html#data-code",
-    "href": "index.html#data-code",
-    "title": "Gonzalo Torres Rosales",
-    "section": "Data & Code",
-    "text": "Data & Code\nSelected reproducible pipelines and methodological materials are available on GitHub.\n\nGitHub profile"
-  },
-  {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "Gonzalo Torres Rosales",
-    "section": "Contact",
-    "text": "Contact\n\nEmail: gonzalo.torres11@gmail.com\n\nGitHub: gonzalotr11"
+    "section": "Sociology of Wealth, Inequality & Educational Trajectories",
+    "text": "Sociology of Wealth, Inequality & Educational Trajectories\nI am a PhD candidate in Sociology at Pontificia Universidad Católica de Chile. My research examines how household wealth, debt, and economic security shape unequal educational futures in Chile.\nMy work studies wealth not only as a stock of resources, but as a configuration of assets, liabilities, liquidity, collateral, and intertemporal security. I am especially interested in how these configurations shape family capacities to absorb shocks, plan for the future, and sustain educational trajectories.\n\nResearch agenda\n\nWealth configurations: assets and debts as structured forms of advantage and vulnerability.\nEconomic security: how households manage uncertainty, shocks, and future-oriented decisions.\nEducational inequality: how wealth and security shape school and higher education trajectories.\n\n\n\nCurrent projects\n\nHousehold Wealth Configurations and the Unequal Security of Family Futures in Chile\nWealth reconstruction using survey data and machine learning\nSubjective economic hardship in Chile using EBS 2023"
   },
   {
     "objectID": "about.html",
@@ -47,5 +12,12 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "index-es.html#sociología-de-la-riqueza-desigualdad-y-trayectorias-educativas",
+    "href": "index-es.html#sociología-de-la-riqueza-desigualdad-y-trayectorias-educativas",
+    "title": "Gonzalo Torres Rosales",
+    "section": "Sociología de la riqueza, desigualdad y trayectorias educativas",
+    "text": "Sociología de la riqueza, desigualdad y trayectorias educativas\nSoy candidato a doctor en Sociología en la Pontificia Universidad Católica de Chile. Mi investigación examina cómo la riqueza de los hogares, la deuda y la seguridad económica configuran trayectorias educativas desiguales en Chile.\nMi trabajo estudia la riqueza no solo como un stock de recursos, sino como una configuración de activos, pasivos, liquidez, colateral y seguridad intertemporal.\n\nAgenda de investigación\n\nConfiguraciones de riqueza: activos y deudas como formas estructuradas de ventaja y vulnerabilidad.\nSeguridad económica: cómo los hogares gestionan incertidumbre, shocks y decisiones orientadas al futuro.\nDesigualdad educativa: cómo la riqueza y la seguridad moldean trayectorias escolares y universitarias.\n\n\n\nProyectos actuales\n\nConfiguraciones patrimoniales y la desigual seguridad de los futuros familiares en Chile\nReconstrucción de riqueza mediante encuestas y machine learning\nHardship económico subjetivo en Chile utilizando EBS 2023"
   }
 ]

@@ -7,7 +7,9 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: EN
+      - href: index-es.qmd
+        text: ES
       - about.qmd
 
 format:
