@@ -1,40 +1,40 @@
 /* css styles */
 
 
-.hero {
-  padding: 4rem 2rem;
-  margin-bottom: 2rem;
+.hero-section {
+  padding: 4rem 3rem;
+  margin: 2rem auto 3rem auto;
+  max-width: 1100px;
   border-radius: 24px;
   background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
-  text-align: left;
 }
 
-.hero h1 {
+.hero-section h1 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-.hero h2 {
+.hero-section h2 {
   font-size: 1.4rem;
   font-weight: 400;
   color: #4a5568;
   margin-bottom: 1.5rem;
 }
 
-.hero p {
+.hero-section p {
   font-size: 1.1rem;
-  max-width: 760px;
+  max-width: 780px;
 }
 
-.grid {
+.research-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
   gap: 1.2rem;
   margin: 2rem 0;
 }
 
-.card,
+.research-card,
 .project-card {
   padding: 1.4rem;
   border-radius: 18px;
@@ -43,11 +43,17 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
 }
 
-.card h3,
+.research-card h3,
 .project-card h3 {
   margin-top: 0;
 }
 
 .project-card {
   margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,9 +1,10 @@
 ---
-title: "Gonzalo Torres Rosales"
+title: ""
 page-layout: full
+toc: false
 ---
 
-::: {.hero}
+::: {.hero-section}
 # Gonzalo Torres Rosales
 
 ## Sociology of Wealth, Inequality & Educational Trajectories
@@ -17,20 +18,20 @@ I am a PhD candidate in Sociology at Pontificia Universidad Católica de Chile. 
 
 My work studies wealth not only as a stock of resources, but as a configuration of assets, liabilities, liquidity, collateral, and intertemporal security. I am especially interested in how these configurations shape family capacities to absorb shocks, plan for the future, and sustain educational trajectories.
 
-::: {.grid}
-::: {.card}
+::: {.research-grid}
+::: {.research-card}
 ### Wealth configurations
 
 Assets and debts as structured forms of advantage and vulnerability.
 :::
 
-::: {.card}
+::: {.research-card}
 ### Economic security
 
 How households manage uncertainty, shocks, and future-oriented decisions.
 :::
 
-::: {.card}
+::: {.research-card}
 ### Educational inequality
 
 How wealth and security shape school and higher education trajectories.
