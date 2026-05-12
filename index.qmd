@@ -1,29 +1,69 @@
 ---
-title: "Gonzalo Torres | Inequality research"
+title: "Gonzalo Torres Rosales"
+page-layout: full
 ---
 
-## About
+::: {.hero}
+# Gonzalo Torres Rosales
 
-I am a PhD candidate in Sociology at Pontificia Universidad Católica de Chile.  
-My research focuses on **household wealth, economic security, and educational trajectories**, with an emphasis on how asset–debt configurations shape unequal futures.
+## Sociology of Wealth, Inequality & Educational Trajectories
+
+I am a PhD candidate in Sociology at Pontificia Universidad Católica de Chile. My research examines how household wealth, debt, and economic security shape unequal educational futures in Chile.
+
+[Research](research.qmd){.btn .btn-primary} [GitHub](https://github.com/gonzalotr11){.btn .btn-outline-primary}
+:::
 
 ## Research agenda
 
-- Wealth as configuration (assets + liabilities, liquidity, collateralizability)  
-- Economic security as a temporal capacity (shock absorption and planning)  
-- Educational trajectories under unequal financial infrastructures
+My work studies wealth not only as a stock of resources, but as a configuration of assets, liabilities, liquidity, collateral, and intertemporal security. I am especially interested in how these configurations shape family capacities to absorb shocks, plan for the future, and sustain educational trajectories.
+
+::: {.grid}
+::: {.card}
+### Wealth configurations
+
+Assets and debts as structured forms of advantage and vulnerability.
+:::
+
+::: {.card}
+### Economic security
+
+How households manage uncertainty, shocks, and future-oriented decisions.
+:::
+
+::: {.card}
+### Educational inequality
+
+How wealth and security shape school and higher education trajectories.
+:::
+:::
 
 ## Current projects
 
-- *Household Wealth Configurations and the Unequal Security of Family Futures in Chile*  
-- Wealth reconstruction using survey data and machine learning  
-- Economic hardship and age profiles (EBS 2023)
+::: {.project-card}
+### Household Wealth Configurations and the Unequal Security of Family Futures in Chile
+
+Doctoral research project focused on measuring wealth configurations and examining their consequences for economic security and educational trajectories.
+:::
+
+::: {.project-card}
+### Wealth reconstruction using survey data and machine learning
+
+Methodological work on estimating patrimonial conditions across surveys and administrative data.
+:::
+
+::: {.project-card}
+### Subjective economic hardship in Chile
+
+Analysis of economic insecurity, age profiles, income position, housing tenure, and debt burden using EBS 2023.
+:::
 
 ## Data & Code
 
-Selected projects and reproducible pipelines are available on GitHub.
+Selected reproducible pipelines and methodological materials are available on GitHub.
+
+- [GitHub profile](https://github.com/gonzalotr11)
 
 ## Contact
 
 - Email: gonzalo.torres11@gmail.com  
-- GitHub: https://github.com/gonzalotr11
+- GitHub: [gonzalotr11](https://github.com/gonzalotr11)
