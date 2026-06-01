@@ -1,0 +1,108 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.top-banner}
+:::
+
+# Research
+
+My current research agenda examines social inequality, economic security, well-being, and educational trajectories through quantitative and interdisciplinary approaches. I am especially interested in how objective social positions, subjective experiences of vulnerability, and institutional contexts jointly shape life chances.
+
+::: {.research-section}
+
+## Articles under review
+
+::: {.research-item}
+### Profiles of Attachment and Teacher Well-being: A Latent Class and Mediation Analysis
+
+**Authors:** Paulina Guzmán M.; Jorge Varela T.; Gonzalo Torres-Rosales; Joaquín Cortés; Roy Hidalgo C.  
+
+**Status:** Submitted manuscript  
+
+This article examines profiles of attachment and teacher well-being using latent class and mediation analysis. It contributes to research on educational psychology, teacher well-being, and psychosocial mechanisms in school contexts.
+:::
+
+::: {.research-item}
+### Debt, Age, and the Conversion Gap in Subjective Economic Hardship: Evidence from Chile
+
+**Authors:** Joaquín Prieto; Gonzalo Torres-Rosales  
+
+**Status:** Submitted manuscript  
+
+This article studies how debt, age, income position, and housing tenure shape subjective economic hardship in Chile. The paper examines the gap between objective socioeconomic location and subjective experiences of economic vulnerability.
+:::
+
+:::
+
+::: {.research-section}
+
+## Conference papers and presentations
+
+::: {.research-item}
+### How does vulnerability to poverty affect subjective well-being? A secure middle-class perspective for Chile
+
+**Authors:** Joaquín Prieto; Gonzalo Torres  
+
+**Presented at:** ECINEQ 2025, 11th Conference of the Society for the Study of Economic Inequality, Washington, DC  
+
+This paper examines how vulnerability to poverty affects subjective well-being from the perspective of middle-class security in Chile.
+:::
+
+:::
+
+::: {.research-section}
+
+## Ongoing manuscripts
+
+::: {.research-item}
+### Household Wealth, Data Fragmentation, and Educational Stratification: A Survey-to-Administrative Strategy from Chile
+
+**Author:** Gonzalo Torres-Rosales  
+
+**Status:** Doctoral thesis article / working paper  
+
+This article develops a strategy for incorporating household wealth into the study of educational stratification in contexts where administrative education records do not directly observe assets and debts. Using Chile as a strategic case, the paper proposes a survey-to-administrative approach to reconstruct functional indicators of household wealth and examine their relevance for educational inequality.
+:::
+
+::: {.research-item}
+### Economic Security Beyond Socioeconomic Status: Objective Position, Subjective Vulnerability, and Mental Health
+
+**Authors:** Gonzalo Torres-Rosales; Cristóbal Cabezas  
+
+**Status:** Working paper  
+
+This article examines the relationship between objective socioeconomic position, subjective vulnerability, and mental health. It contributes to debates on economic security by distinguishing conventional socioeconomic status from subjective experiences of insecurity and psychological well-being.
+:::
+
+:::
+
+::: {.research-section}
+
+## Broader research interests
+
+::: {.research-grid}
+
+::: {.research-card}
+### Social inequality and well-being
+
+I study how social and economic inequalities shape subjective well-being, mental health, and life opportunities.
+:::
+
+::: {.research-card}
+### Wealth and economic security
+
+My doctoral work focuses on wealth, debt, economic insecurity, and educational stratification.
+:::
+
+::: {.research-card}
+### Quantitative and computational methods
+
+I work with survey data, administrative records, longitudinal designs, latent class analysis, and prediction-based measurement strategies.
+:::
+
+:::
+
+:::
