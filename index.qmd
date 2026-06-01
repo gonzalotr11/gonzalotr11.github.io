@@ -14,32 +14,31 @@ toc: false
 
 # Gonzalo Torres Rosales
 
+Social Psychologist  
 PhD Candidate in Sociology  
 Pontificia Universidad Católica de Chile  
 
 [GitHub](https://github.com/gonzalotr11){.btn .btn-outline-primary}
 [LinkedIn](https://www.linkedin.com/in/gonzalo-torres-rosales-38a21068){.btn .btn-outline-primary}
+[ORCID](https://orcid.org/0000-0002-9612-2787){.btn .btn-outline-primary}
 [Email](mailto:gonzalo.torres11@gmail.com){.btn .btn-outline-primary}
 :::
 
 ::: {.profile-right}
-## Sociology of Wealth, Inequality & Educational Trajectories
+## Social Inequality, Well-Being, and Quantitative Social Research
 
-I am a PhD candidate in Sociology at Pontificia Universidad Católica de Chile. My research examines how household wealth, debt, and economic security shape unequal educational futures in Chile.
+I am a Social Psychologist and PhD Candidate in Sociology at Pontificia Universidad Católica de Chile. My research focuses on social inequality, economic well-being, and the conditions that shape life opportunities across the life course. I am particularly interested in how wealth, economic security, and educational trajectories interact to reproduce—or mitigate—social disadvantage.
 
-My work studies wealth not only as a stock of resources, but as a configuration of assets, liabilities, liquidity, collateral, and intertemporal security. I am especially interested in how these configurations shape family capacities to absorb shocks, plan for the future, and sustain educational trajectories.
+My work is fundamentally interdisciplinary. I draw on perspectives from sociology, psychology, and economics to understand how structural conditions and individual experiences jointly shape human development and social outcomes. Methodologically, I specialize in quantitative social research, combining survey data, administrative records, longitudinal designs, and computational approaches to study complex social processes.
 
-### Research agenda
+Beyond academia, my research agenda has been shaped by direct experience in civil society organizations, educational projects, and applied policy research. These experiences have reinforced my interest in producing knowledge that is both analytically rigorous and socially consequential. Across my work, I seek to contribute to a better understanding of the mechanisms that generate inequality and to inform debates about how societies can expand opportunities, security, and well-being.
 
-- Wealth configurations: assets and debts as structured forms of advantage and vulnerability.
-- Economic security: how households manage uncertainty, shocks, and future-oriented decisions.
-- Educational inequality: how wealth and security shape school and higher education trajectories.
+### Core areas
 
-### Current projects
-
-- *Household Wealth Configurations and the Unequal Security of Family Futures in Chile*
-- Wealth reconstruction using survey data and machine learning
-- Subjective economic hardship in Chile using EBS 2023
+- Social inequality and economic well-being
+- Wealth, economic security, and educational trajectories
+- Quantitative methods, survey data, and administrative records
+- Interdisciplinary social science across sociology, psychology, and economics
 :::
 
 :::
