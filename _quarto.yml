@@ -12,8 +12,10 @@ website:
         text: ES
       - href: research.qmd
         text: Research
+      - href: teaching-data.qmd
+        text: Teaching & Data Work
       - href: beyond-research.qmd
-        text: Beyond research
+        text: Beyond Research
       - about.qmd
 
 format:
