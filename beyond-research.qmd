@@ -1,40 +1,86 @@
 ---
-title: ""
-page-layout: full
+title: "Beyond Research"
+page-layout: article
 toc: false
 ---
 
-::: {.top-banner}
+# Beyond Research
+
+My work extends beyond academic research. Over the last decade, I have worked across civil society organizations, consulting, public policy, and public writing, developing applied knowledge on education, poverty, work, and social inequality.
+
+## Civil Society and Social Intervention
+
+::: {.research-item}
+### Research and Development in Civil Society
+
+**Fundación INFOCAP (2018–2024)**
+
+I worked in research and institutional development in a civil society organization focused on labor training, education, and social inclusion. My work included internal and external analysis, institutional development proposals, research reports, and evidence-based support for programs addressing vulnerability, work, and adult education.
 :::
 
-### Beyond research
+## Consulting and Policy Reports
 
-My academic work is shaped by experience beyond the university. Before and alongside my doctoral training, I have worked in the social sector, policy-oriented research, consulting, public writing, and teaching.
+::: {.research-item}
+### Advanced Quantitative Analysis for Social Well-Being
 
-::: {.distinctive-grid}
+**United Nations Development Programme, Chile**
 
-::: {.distinctive-card}
-#### Social sector
-
-Experience in research and development in civil society organizations, especially around labor training and social inclusion.
+Independent consultant for the analysis of the Social Well-Being Survey of the Ministry of Social Development and Family, using advanced quantitative methods.
 :::
 
-::: {.distinctive-card}
-#### Public writing
+::: {.research-item}
+### Evaluation of Education Research Proposals
 
-Opinion columns and public-facing writing on social inequality, education, and institutional change.
+**Ministry of Education, Chile — FONIDE 2023**
+
+Technical evaluator for proposals submitted to the Education Research and Development Fund. The evaluation considered methodological quality, internal coherence, and alignment with public policy priorities in education.
 :::
 
-::: {.distinctive-card}
-#### Consulting
+::: {.research-item}
+### Higher Education, Science, and Innovation Policy
 
-Applied research and data analysis for organizations, policy projects, and educational institutions.
+**National Council for Science, Technology, Knowledge and Innovation for Development (Consejo CTCI), 2025**
+
+Author of the report *Recommendations of the CTCI Council in Higher Education: A Systematization of Contributions from Recent Decades*, focused on synthesizing policy recommendations in higher education, science, technology, knowledge, and innovation.
+
+[Report available here](https://docs.consejoctci.cl/pdfs.php?i=215)
 :::
 
-::: {.distinctive-card}
-#### Teaching
+## Public Writing
 
-Experience teaching statistics, methods, English, Spanish, and applied social science topics.
+::: {.research-item}
+### Opinion Columns on Poverty, Education, and Social Policy
+
+I have written public-facing opinion columns on poverty, adult education, lifelong learning, inequality, and institutional development, mainly in *El Mostrador*. These pieces reflect my interest in connecting social research with public debate.
+
+Selected columns include:
+
+- *Avanzar hacia una institucionalidad chilena para el Aprendizaje a lo largo de toda la vida* (2023)
+- *Mejores definiciones de la pobreza para mejores soluciones a los problemas de Chile* (2022)
+- *Educación de adultos como un eje central para el desarrollo socioeconómico del país post-pandemia* (2022)
+- *El nepotismo, un problema complejo: educación, equidad y redes* (2018)
+:::
+
+## Social Innovation Projects
+
+::: {.research-grid}
+
+::: {.research-card}
+### Labor Training and Social Inclusion
+
+Development and evaluation of projects aimed at expanding training opportunities for people facing socioeconomic vulnerability.
+:::
+
+::: {.research-card}
+### Adult Education and Lifelong Learning
+
+Applied work on adult education, employability, and institutional development for lifelong learning.
+:::
+
+::: {.research-card}
+### Digital and Environmental Skills
+
+Participation in initiatives connecting labor training, digital inclusion, and renewable energy skills.
 :::
 
 :::
