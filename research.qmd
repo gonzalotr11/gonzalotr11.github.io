@@ -7,6 +7,10 @@ toc: false
 ::: {.top-banner}
 :::
 
+::: {.language-switch}
+[EN](research.qmd) | [ES](research-es.qmd)
+:::
+
 # Research
 
 My current research agenda examines social inequality, economic security, well-being, and educational trajectories through quantitative and interdisciplinary approaches. I am especially interested in how objective social positions, subjective experiences of vulnerability, and institutional contexts jointly shape life chances.

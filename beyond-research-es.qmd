@@ -1,0 +1,109 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.top-banner}
+:::
+
+::: {.language-switch}
+[EN](beyond-research.qmd) | [ES](beyond-research-es.qmd)
+:::
+
+# Más allá de la investigación
+
+Mi trabajo se extiende más allá de la investigación académica. Durante la última década, he trabajado en organizaciones de la sociedad civil, consultorías, política pública y escritura pública, desarrollando conocimiento aplicado sobre educación, pobreza, trabajo y desigualdad social.
+
+::: {.research-section}
+
+## Sociedad civil e intervención social
+
+::: {.research-item}
+### Investigación y desarrollo en la sociedad civil
+
+**Fundación INFOCAP (2018–2024)**
+
+Trabajé en investigación y desarrollo institucional en una organización de la sociedad civil enfocada en capacitación laboral, educación e inclusión social. Mi trabajo incluyó análisis internos y externos, propuestas de desarrollo institucional, informes de investigación y apoyo basado en evidencia para programas orientados a vulnerabilidad, trabajo y educación de personas adultas.
+:::
+
+:::
+
+::: {.research-section}
+
+## Consultorías e informes de política pública
+
+::: {.research-item}
+### Análisis cuantitativo avanzado sobre bienestar social
+
+**Programa de las Naciones Unidas para el Desarrollo, Chile**
+
+Consultor independiente para el análisis de la Encuesta de Bienestar Social del Ministerio de Desarrollo Social y Familia, utilizando métodos cuantitativos avanzados.
+:::
+
+::: {.research-item}
+### Evaluación de propuestas de investigación educativa
+
+**Ministerio de Educación, Chile — FONIDE 2023**
+
+Evaluador técnico de propuestas presentadas al Fondo de Investigación y Desarrollo en Educación. La evaluación consideró calidad metodológica, coherencia interna y alineación con prioridades de política pública en educación.
+:::
+
+::: {.research-item}
+### Educación superior, ciencia e innovación
+
+**Consejo Nacional de Ciencia, Tecnología, Conocimiento e Innovación para el Desarrollo (Consejo CTCI), 2025**
+
+Autor del informe *Recomendaciones del Consejo CTCI en educación superior: una sistematización de aportes de las últimas décadas*, orientado a sintetizar recomendaciones de política pública en educación superior, ciencia, tecnología, conocimiento e innovación.
+
+[Informe disponible aquí](https://docs.consejoctci.cl/pdfs.php?i=215)
+:::
+
+:::
+
+::: {.research-section}
+
+## Escritura pública
+
+::: {.research-item}
+### Columnas de opinión sobre pobreza, educación y política social
+
+He escrito columnas de opinión dirigidas al debate público sobre pobreza, educación de adultos, aprendizaje a lo largo de la vida, desigualdad y desarrollo institucional, principalmente en *El Mostrador*. Estos textos reflejan mi interés por conectar la investigación social con la discusión pública.
+
+Algunas columnas seleccionadas incluyen:
+
+- *Avanzar hacia una institucionalidad chilena para el Aprendizaje a lo largo de toda la vida* (2023)
+- *Mejores definiciones de la pobreza para mejores soluciones a los problemas de Chile* (2022)
+- *Educación de adultos como un eje central para el desarrollo socioeconómico del país post-pandemia* (2022)
+- *El nepotismo, un problema complejo: educación, equidad y redes* (2018)
+:::
+
+:::
+
+::: {.research-section}
+
+## Proyectos de innovación social
+
+::: {.research-grid}
+
+::: {.research-card}
+### Capacitación laboral e inclusión social
+
+Desarrollo y evaluación de proyectos orientados a expandir oportunidades de formación para personas en situación de vulnerabilidad socioeconómica.
+:::
+
+::: {.research-card}
+### Educación de personas adultas y aprendizaje permanente
+
+Trabajo aplicado en educación de personas adultas, empleabilidad y desarrollo institucional para el aprendizaje a lo largo de la vida.
+:::
+
+::: {.research-card}
+### Habilidades digitales y ambientales
+
+Participación en iniciativas que conectan capacitación laboral, inclusión digital y formación en energías renovables.
+:::
+
+:::
+
+:::

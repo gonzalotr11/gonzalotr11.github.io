@@ -3,20 +3,20 @@ project:
   output-dir: docs
 
 website:
-  title: "Gonzalo Torres | Inequality research"
+  title: "Gonzalo Torres"
   navbar:
     left:
       - href: index.qmd
-        text: EN
-      - href: index-es.qmd
-        text: ES
+        text: Home
       - href: research.qmd
         text: Research
       - href: teaching-data.qmd
         text: Teaching & Data Work
       - href: beyond-research.qmd
         text: Beyond Research
-      - about.qmd
+
+
+
 
 format:
   html:

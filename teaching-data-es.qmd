@@ -1,0 +1,105 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.top-banner}
+:::
+
+::: {.language-switch}
+[EN](teaching-data.qmd) | [ES](teaching-data-es.qmd)
+:::
+
+# Docencia y trabajo con datos
+
+Esta sección presenta mi experiencia en docencia universitaria, asistencia de investigación y trabajo cuantitativo con datos en proyectos de educación, sociología, psicología y política social.
+
+::: {.research-section}
+
+## Docencia universitaria
+
+::: {.research-item}
+### Estadística y Probabilidades para Pedagogía en Ciencias
+
+**Universidad Alberto Hurtado (2025–presente)**
+
+Docente para estudiantes de pregrado en Pedagogía en Ciencias. El curso aborda estadística descriptiva, probabilidades, visualización de datos y razonamiento cuantitativo introductorio para futuros profesores de ciencias.
+:::
+
+::: {.research-item}
+### Psicología y métodos de investigación
+
+**Universidad San Sebastián (2015–2021)**
+
+Docente en cursos de pregrado en psicología, incluyendo:
+
+- Fundamentos socioantropológicos del comportamiento humano
+- Métodos cualitativos de investigación
+- Psicología comunitaria
+- Psicología social
+- Evaluación de tesis y trabajos de grado
+
+Estos cursos articularon perspectivas teóricas con habilidades prácticas de investigación e intervención.
+:::
+
+::: {.research-item}
+### Talleres de habilidades profesionales
+
+**Universidad del Desarrollo (2015–2017)**
+
+Docente en cursos de desarrollo profesional para estudiantes de psicología, con énfasis en:
+
+- Escritura científica
+- Diseño de proyectos de investigación
+- Argumentación basada en evidencia
+- Resolución interdisciplinaria de problemas
+:::
+
+:::
+
+::: {.research-section}
+
+## Trabajo con datos y asistencia de investigación
+
+::: {.research-item}
+### Investigador doctoral
+
+**Wealth and Social Cohesion from a Relational Perspective (2025–presente)**
+
+Proyecto financiado por la Volkswagen Foundation a través del proyecto ISI-LMU Munich.
+
+Mi tesis doctoral examina configuraciones de riqueza de los hogares, seguridad económica y desigualdad educativa en Chile. El proyecto combina encuestas, registros administrativos y métodos cuantitativos para estudiar cómo la riqueza configura oportunidades de vida y trayectorias educativas.
+:::
+
+::: {.research-item}
+### Asistente de investigación
+
+**Princeton University (2024–2025)**
+
+Analista de datos para el proyecto *Intergenerational Mobility in Latin America: Patterns and Trends*.
+
+Las responsabilidades incluyeron:
+
+- Procesamiento estadístico de bases de datos de gran escala
+- Armonización y gestión de datos
+- Análisis cuantitativo de indicadores educativos y de movilidad
+- Documentación y flujos de trabajo reproducibles
+:::
+
+::: {.research-item}
+### Asistente de investigación
+
+**Millennium Nucleus LM2C2 (2024–2025)**
+
+Asistente de investigación para construcción de bases de datos y análisis cuantitativo.
+
+Las responsabilidades incluyeron:
+
+- Construcción de bases de datos
+- Limpieza e integración de datos
+- Análisis estadístico
+- Apoyo a publicaciones e informes de investigación
+:::
+
+:::

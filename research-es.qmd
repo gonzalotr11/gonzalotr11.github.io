@@ -1,0 +1,112 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.top-banner}
+:::
+
+::: {.language-switch}
+[EN](research.qmd) | [ES](research-es.qmd)
+:::
+
+# Investigación
+
+Mi agenda actual de investigación examina la desigualdad social, la seguridad económica, el bienestar y las trayectorias educativas mediante enfoques cuantitativos e interdisciplinarios. Me interesa especialmente comprender cómo las posiciones sociales objetivas, las experiencias subjetivas de vulnerabilidad y los contextos institucionales configuran conjuntamente las oportunidades de vida.
+
+::: {.research-section}
+
+## Artículos en evaluación
+
+::: {.research-item}
+### Profiles of Attachment and Teacher Well-being: A Latent Class and Mediation Analysis
+
+**Autores:** Paulina Guzmán M.; Jorge Varela T.; Gonzalo Torres-Rosales; Joaquín Cortés; Roy Hidalgo C.
+
+**Estado:** Manuscrito enviado
+
+Este artículo examina perfiles de apego y bienestar docente mediante análisis de clases latentes y modelos de mediación. Contribuye a la investigación en psicología educacional, bienestar docente y mecanismos psicosociales en contextos escolares.
+:::
+
+::: {.research-item}
+### Debt, Age, and the Conversion Gap in Subjective Economic Hardship: Evidence from Chile
+
+**Autores:** Joaquín Prieto; Gonzalo Torres-Rosales
+
+**Estado:** Manuscrito enviado
+
+Este artículo estudia cómo la deuda, la edad, la posición de ingresos y la tenencia de vivienda configuran las experiencias subjetivas de hardship económico en Chile. El trabajo examina la brecha entre la posición socioeconómica objetiva y las experiencias subjetivas de vulnerabilidad económica.
+:::
+
+:::
+
+::: {.research-section}
+
+## Ponencias y presentaciones
+
+::: {.research-item}
+### How does vulnerability to poverty affect subjective well-being? A secure middle-class perspective for Chile
+
+**Autores:** Joaquín Prieto; Gonzalo Torres
+
+**Presentado en:** ECINEQ 2025, 11th Conference of the Society for the Study of Economic Inequality, Washington, DC
+
+Este trabajo examina cómo la vulnerabilidad a la pobreza afecta el bienestar subjetivo desde la perspectiva de la seguridad económica de las clases medias en Chile.
+:::
+
+:::
+
+::: {.research-section}
+
+## Manuscritos en desarrollo
+
+::: {.research-item}
+### Household Wealth, Data Fragmentation, and Educational Stratification: A Survey-to-Administrative Strategy from Chile
+
+**Autor:** Gonzalo Torres-Rosales
+
+**Estado:** Artículo de tesis doctoral / Working paper
+
+Este artículo desarrolla una estrategia para incorporar la riqueza de los hogares al estudio de la estratificación educativa en contextos donde los registros administrativos de educación no observan directamente activos ni deudas. Utilizando Chile como caso estratégico, el trabajo propone un enfoque de integración entre encuestas y registros administrativos para reconstruir indicadores funcionales de riqueza y examinar su relevancia para la desigualdad educativa.
+:::
+
+::: {.research-item}
+### Economic Security Beyond Socioeconomic Status: Objective Position, Subjective Vulnerability, and Mental Health
+
+**Autores:** Gonzalo Torres-Rosales; Cristóbal Cabezas
+
+**Estado:** Working paper
+
+Este artículo examina la relación entre posición socioeconómica objetiva, vulnerabilidad subjetiva y salud mental. Contribuye a los debates sobre seguridad económica al distinguir entre el estatus socioeconómico convencional y las experiencias subjetivas de inseguridad y bienestar psicológico.
+:::
+
+:::
+
+::: {.research-section}
+
+## Intereses de investigación
+
+::: {.research-grid}
+
+::: {.research-card}
+### Desigualdad social y bienestar
+
+Estudio cómo las desigualdades sociales y económicas configuran el bienestar subjetivo, la salud mental y las oportunidades de vida.
+:::
+
+::: {.research-card}
+### Riqueza y seguridad económica
+
+Mi trabajo doctoral se centra en la riqueza, la deuda, la seguridad económica y la estratificación educativa.
+:::
+
+::: {.research-card}
+### Métodos cuantitativos y computacionales
+
+Trabajo con encuestas, registros administrativos, diseños longitudinales, análisis de clases latentes y estrategias de medición basadas en modelos predictivos.
+:::
+
+:::
+
+:::

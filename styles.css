@@ -4,9 +4,7 @@
   display: none;
 }
 
-/* =========================
-   Top banner
-========================= */
+/* Top banner */
 
 .top-banner {
   width: 100%;
@@ -17,9 +15,7 @@
   margin-bottom: 3rem;
 }
 
-/* =========================
-   Main profile layout
-========================= */
+/* Main profile layout */
 
 .profile-layout {
   display: grid;
@@ -61,9 +57,7 @@
   margin-top: 0;
 }
 
-/* =========================
-   Distinctive profile cards
-========================= */
+/* Distinctive cards */
 
 .distinctive-grid {
   display: grid;
@@ -84,27 +78,7 @@
   color: #243b53;
 }
 
-/* =========================
-   Responsive
-========================= */
-
-@media (max-width: 850px) {
-
-  .profile-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .profile-right {
-    border-left: none;
-    padding-left: 0;
-  }
-
-  .distinctive-grid {
-    grid-template-columns: 1fr;
-  }
-
-}
-
+/* Research cards */
 
 .research-section {
   max-width: 1000px;
@@ -145,8 +119,38 @@
   color: #243b53;
 }
 
+/* Responsive */
+
 @media (max-width: 850px) {
+
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-right {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .distinctive-grid {
+    grid-template-columns: 1fr;
+  }
+
   .research-grid {
     grid-template-columns: 1fr;
   }
+
+}
+
+.language-switch {
+  max-width: 1100px;
+  margin: 0 auto 1.5rem auto;
+  padding: 0 2rem;
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.language-switch a {
+  font-weight: 600;
+  text-decoration: none;
 }

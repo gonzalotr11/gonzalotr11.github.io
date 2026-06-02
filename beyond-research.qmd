@@ -1,12 +1,21 @@
 ---
-title: "Beyond Research"
-page-layout: article
+title: ""
+page-layout: full
 toc: false
 ---
+
+::: {.top-banner}
+:::
+
+::: {.language-switch}
+[EN](beyond-research.qmd) | [ES](beyond-research-es.qmd)
+:::
 
 # Beyond Research
 
 My work extends beyond academic research. Over the last decade, I have worked across civil society organizations, consulting, public policy, and public writing, developing applied knowledge on education, poverty, work, and social inequality.
+
+::: {.research-section}
 
 ## Civil Society and Social Intervention
 
@@ -17,6 +26,10 @@ My work extends beyond academic research. Over the last decade, I have worked ac
 
 I worked in research and institutional development in a civil society organization focused on labor training, education, and social inclusion. My work included internal and external analysis, institutional development proposals, research reports, and evidence-based support for programs addressing vulnerability, work, and adult education.
 :::
+
+:::
+
+::: {.research-section}
 
 ## Consulting and Policy Reports
 
@@ -46,6 +59,10 @@ Author of the report *Recommendations of the CTCI Council in Higher Education: A
 [Report available here](https://docs.consejoctci.cl/pdfs.php?i=215)
 :::
 
+:::
+
+::: {.research-section}
+
 ## Public Writing
 
 ::: {.research-item}
@@ -60,6 +77,10 @@ Selected columns include:
 - *Educación de adultos como un eje central para el desarrollo socioeconómico del país post-pandemia* (2022)
 - *El nepotismo, un problema complejo: educación, equidad y redes* (2018)
 :::
+
+:::
+
+::: {.research-section}
 
 ## Social Innovation Projects
 
@@ -81,6 +102,8 @@ Applied work on adult education, employability, and institutional development fo
 ### Digital and Environmental Skills
 
 Participation in initiatives connecting labor training, digital inclusion, and renewable energy skills.
+:::
+
 :::
 
 :::
