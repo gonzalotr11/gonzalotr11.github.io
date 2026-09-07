@@ -18,7 +18,7 @@ toc: false
 
 # Gonzalo Torres Rosales
 
-Social Psychologist  
+Computational Social Scientist  
 PhD Candidate in Sociology  
 Pontificia Universidad Católica de Chile  
 
@@ -29,20 +29,23 @@ Pontificia Universidad Católica de Chile
 :::
 
 ::: {.profile-right}
-## Social Inequality, Well-Being, and Quantitative Social Research
+## Inequality, Economic Security, and Computational Social Science
 
-I am a Social Psychologist and PhD Candidate in Sociology at Pontificia Universidad Católica de Chile. My research focuses on social inequality, economic well-being, and the conditions that shape life opportunities across the life course. I am particularly interested in how wealth, economic security, and educational trajectories interact to reproduce—or mitigate—social disadvantage.
+I study how economic and social conditions shape people's security, well-being, and life trajectories. My work connects social psychology and sociology with computational and quantitative methods, focusing on inequality, household economic security, wealth, debt, and educational stratification.
 
-My work is fundamentally interdisciplinary. I draw on perspectives from sociology, psychology, and economics to understand how structural conditions and individual experiences jointly shape human development and social outcomes. Methodologically, I specialize in quantitative social research, combining survey data, administrative records, longitudinal designs, and computational approaches to study complex social processes.
+My broader agenda asks how structural inequalities become lived experiences, decisions, and cumulative advantages or disadvantages. I am especially interested in the links between objective economic conditions, subjective vulnerability, mental health, and educational opportunities.
 
-Beyond academia, my research agenda has been shaped by direct experience in civil society organizations, educational projects, and applied policy research. These experiences have reinforced my interest in producing knowledge that is both analytically rigorous and socially consequential. Across my work, I seek to contribute to a better understanding of the mechanisms that generate inequality and to inform debates about how societies can expand opportunities, security, and well-being.
+Methodologically, I work with survey data, administrative records, longitudinal designs, latent class models, prediction-based measurement, and emerging computational approaches. I am also developing an interest in research infrastructure: tools that help social scientists organize evidence, extract structure from text, and turn complex literatures into navigable data.
+
+Before my doctoral work, I built experience across civil society, education, applied policy research, and public writing. That background continues to shape my interest in producing research that is theoretically grounded, empirically careful, and useful beyond the university.
 
 ### Core areas
 
-- Social inequality and economic well-being
-- Wealth, economic security, and educational trajectories
-- Quantitative methods, survey data, and administrative records
-- Interdisciplinary social science across sociology, psychology, and economics
+- Inequality, economic security, and human development
+- Wealth, debt, vulnerability, and educational trajectories
+- Social psychology of inequality and subjective well-being
+- Quantitative and computational methods for social research
+- Research tools, evidence mapping, and reproducible data workflows
 :::
 
 :::

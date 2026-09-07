@@ -8,12 +8,12 @@ toc: false
 :::
 
 ::: {.language-switch}
-[EN](teaching.qmd) | [ES](teaching-data-es.qmd)
+[EN](teaching-data.qmd) | [ES](teaching-data-es.qmd)
 :::
 
 # Teaching & Data Work
 
-This section presents my experience in university teaching, research assistance, and quantitative data work across education, sociology, psychology, and social policy projects.
+This section presents my experience in university teaching, research assistance, and data-intensive social research across education, sociology, psychology, and public policy.
 
 ::: {.research-section}
 
@@ -24,7 +24,7 @@ This section presents my experience in university teaching, research assistance,
 
 **Universidad Alberto Hurtado (2025–present)**
 
-Instructor for undergraduate students in Science Education. The course covers descriptive statistics, probability, data visualization, and introductory quantitative reasoning for future science teachers.
+Instructor for undergraduate students in Science Education. The course develops descriptive statistics, probability, data visualization, and quantitative reasoning for future science teachers.
 :::
 
 ::: {.research-item}
@@ -40,7 +40,7 @@ Instructor in undergraduate psychology courses, including:
 - Social Psychology
 - Undergraduate thesis and capstone assessment
 
-These courses connected theoretical perspectives with practical research and intervention skills.
+These courses connected social theory, research design, and practical intervention skills.
 :::
 
 ::: {.research-item}
@@ -83,7 +83,7 @@ Responsibilities included:
 
 - Statistical processing of large-scale datasets
 - Data harmonization and management
-- Quantitative analysis of educational and mobility indicators
+- Quantitative analysis of education and mobility indicators
 - Documentation and reproducible workflows
 :::
 

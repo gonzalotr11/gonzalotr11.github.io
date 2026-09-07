@@ -18,7 +18,7 @@ toc: false
 
 # Gonzalo Torres Rosales
 
-Psicólogo Social  
+Investigador en Ciencias Sociales Computacionales  
 Candidato a Doctor en Sociología  
 Pontificia Universidad Católica de Chile  
 
@@ -29,20 +29,23 @@ Pontificia Universidad Católica de Chile
 :::
 
 ::: {.profile-right}
-## Desigualdad Social, Bienestar e Investigación Social Cuantitativa
+## Desigualdad, Seguridad Económica y Ciencias Sociales Computacionales
 
-Soy Psicólogo Social y Candidato a Doctor en Sociología en la Pontificia Universidad Católica de Chile. Mi investigación se centra en la desigualdad social, el bienestar económico y las condiciones que moldean las oportunidades de vida a lo largo del ciclo vital. Me interesa especialmente comprender cómo la riqueza, la seguridad económica y las trayectorias educativas interactúan para reproducir —o mitigar— las desventajas sociales.
+Estudio cómo las condiciones económicas y sociales moldean la seguridad, el bienestar y las trayectorias de vida de las personas. Mi trabajo conecta psicología social y sociología con métodos cuantitativos y computacionales, con foco en desigualdad, seguridad económica de los hogares, riqueza, deuda y estratificación educativa.
 
-Mi trabajo es fundamentalmente interdisciplinario. Integro perspectivas de la sociología, la psicología y la economía para comprender cómo las condiciones estructurales y las experiencias individuales configuran conjuntamente el desarrollo humano y los resultados sociales. Desde el punto de vista metodológico, me especializo en investigación social cuantitativa, combinando encuestas, registros administrativos, diseños longitudinales y enfoques computacionales para estudiar procesos sociales complejos.
+Mi agenda pregunta cómo las desigualdades estructurales se transforman en experiencias, decisiones y ventajas o desventajas acumulativas. Me interesan especialmente las relaciones entre condiciones económicas objetivas, vulnerabilidad subjetiva, salud mental y oportunidades educativas.
 
-Más allá de la academia, mi agenda de investigación ha sido moldeada por la experiencia directa en organizaciones de la sociedad civil, proyectos educativos e investigación aplicada para políticas públicas. Estas experiencias han reforzado mi interés por producir conocimiento que sea al mismo tiempo rigurosamente analítico y socialmente relevante. A través de mi trabajo busco contribuir a una mejor comprensión de los mecanismos que generan desigualdad y aportar evidencia para debates sobre cómo ampliar las oportunidades, la seguridad y el bienestar de las personas.
+Metodológicamente, trabajo con encuestas, registros administrativos, diseños longitudinales, modelos de clases latentes, medición basada en predicción y enfoques computacionales emergentes. También estoy desarrollando una línea de interés en infraestructura de investigación: herramientas para organizar evidencia, extraer estructura desde textos y transformar literaturas complejas en datos navegables.
+
+Antes de mi trabajo doctoral, acumulé experiencia en organizaciones de la sociedad civil, educación, investigación aplicada para políticas públicas y escritura pública. Esa trayectoria sigue orientando mi interés por producir investigación teóricamente fundada, empíricamente cuidadosa y útil más allá de la universidad.
 
 ### Áreas principales
 
-- Desigualdad social y bienestar económico
-- Riqueza, seguridad económica y trayectorias educativas
-- Métodos cuantitativos, encuestas y registros administrativos
-- Investigación interdisciplinaria en sociología, psicología y economía
+- Desigualdad, seguridad económica y desarrollo humano
+- Riqueza, deuda, vulnerabilidad y trayectorias educativas
+- Psicología social de la desigualdad y bienestar subjetivo
+- Métodos cuantitativos y computacionales para la investigación social
+- Herramientas de investigación, mapas de evidencia y flujos de datos reproducibles
 :::
 
 :::

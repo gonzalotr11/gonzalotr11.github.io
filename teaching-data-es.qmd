@@ -13,7 +13,7 @@ toc: false
 
 # Docencia y trabajo con datos
 
-Esta sección presenta mi experiencia en docencia universitaria, asistencia de investigación y trabajo cuantitativo con datos en proyectos de educación, sociología, psicología y política social.
+Esta sección presenta mi experiencia en docencia universitaria, asistencia de investigación e investigación social intensiva en datos en proyectos de educación, sociología, psicología y política pública.
 
 ::: {.research-section}
 
@@ -24,7 +24,7 @@ Esta sección presenta mi experiencia en docencia universitaria, asistencia de i
 
 **Universidad Alberto Hurtado (2025–presente)**
 
-Docente para estudiantes de pregrado en Pedagogía en Ciencias. El curso aborda estadística descriptiva, probabilidades, visualización de datos y razonamiento cuantitativo introductorio para futuros profesores de ciencias.
+Docente para estudiantes de pregrado en Pedagogía en Ciencias. El curso desarrolla estadística descriptiva, probabilidades, visualización de datos y razonamiento cuantitativo para futuros profesores de ciencias.
 :::
 
 ::: {.research-item}
@@ -40,7 +40,7 @@ Docente en cursos de pregrado en psicología, incluyendo:
 - Psicología social
 - Evaluación de tesis y trabajos de grado
 
-Estos cursos articularon perspectivas teóricas con habilidades prácticas de investigación e intervención.
+Estos cursos articularon teoría social, diseño de investigación y habilidades prácticas de intervención.
 :::
 
 ::: {.research-item}
@@ -79,11 +79,11 @@ Mi tesis doctoral examina configuraciones de riqueza de los hogares, seguridad e
 
 Analista de datos para el proyecto *Intergenerational Mobility in Latin America: Patterns and Trends*.
 
-Las responsabilidades incluyeron:
+Responsabilidades principales:
 
 - Procesamiento estadístico de bases de datos de gran escala
 - Armonización y gestión de datos
-- Análisis cuantitativo de indicadores educativos y de movilidad
+- Análisis cuantitativo de indicadores de educación y movilidad
 - Documentación y flujos de trabajo reproducibles
 :::
 

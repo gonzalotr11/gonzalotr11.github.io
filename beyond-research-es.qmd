@@ -13,7 +13,9 @@ toc: false
 
 # Más allá de la investigación
 
-Mi trabajo se extiende más allá de la investigación académica. Durante la última década, he trabajado en organizaciones de la sociedad civil, consultorías, política pública y escritura pública, desarrollando conocimiento aplicado sobre educación, pobreza, trabajo y desigualdad social.
+Mi trabajo se extiende más allá de la investigación académica. Durante la última década, he trabajado en sociedad civil, consultorías, política pública y escritura pública, desarrollando conocimiento aplicado sobre educación, pobreza, trabajo y desigualdad social.
+
+Estas experiencias moldean mi forma de entender la investigación: como indagación rigurosa, pero también como infraestructura práctica para instituciones que necesitan comprender problemas sociales, evaluar intervenciones y tomar mejores decisiones con evidencia.
 
 ::: {.research-section}
 
@@ -24,7 +26,7 @@ Mi trabajo se extiende más allá de la investigación académica. Durante la ú
 
 **Fundación INFOCAP (2018–2024)**
 
-Trabajé en investigación y desarrollo institucional en una organización de la sociedad civil enfocada en capacitación laboral, educación e inclusión social. Mi trabajo incluyó análisis internos y externos, propuestas de desarrollo institucional, informes de investigación y apoyo basado en evidencia para programas orientados a vulnerabilidad, trabajo y educación de personas adultas.
+Trabajé en investigación y desarrollo institucional en una organización de la sociedad civil enfocada en capacitación laboral, educación e inclusión social. Mi trabajo incluyó análisis institucional, informes de investigación, propuestas de desarrollo y apoyo basado en evidencia para programas orientados a vulnerabilidad, trabajo y educación de personas adultas.
 :::
 
 :::
@@ -38,7 +40,7 @@ Trabajé en investigación y desarrollo institucional en una organización de la
 
 **Programa de las Naciones Unidas para el Desarrollo, Chile**
 
-Consultor independiente para el análisis de la Encuesta de Bienestar Social del Ministerio de Desarrollo Social y Familia, utilizando métodos cuantitativos avanzados.
+Consultor independiente para el análisis de la Encuesta de Bienestar Social del Ministerio de Desarrollo Social y Familia, utilizando métodos cuantitativos avanzados para examinar el bienestar social en Chile.
 :::
 
 ::: {.research-item}

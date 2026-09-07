@@ -13,7 +13,9 @@ toc: false
 
 # Beyond Research
 
-My work extends beyond academic research. Over the last decade, I have worked across civil society organizations, consulting, public policy, and public writing, developing applied knowledge on education, poverty, work, and social inequality.
+My work extends beyond academic research. Over the last decade, I have worked across civil society, consulting, public policy, and public writing, building applied knowledge on education, poverty, work, and social inequality.
+
+These experiences shape the way I approach research: as a form of rigorous inquiry, but also as a practical infrastructure for institutions that need to understand social problems, evaluate interventions, and make better decisions with evidence.
 
 ::: {.research-section}
 
@@ -24,7 +26,7 @@ My work extends beyond academic research. Over the last decade, I have worked ac
 
 **Fundación INFOCAP (2018–2024)**
 
-I worked in research and institutional development in a civil society organization focused on labor training, education, and social inclusion. My work included internal and external analysis, institutional development proposals, research reports, and evidence-based support for programs addressing vulnerability, work, and adult education.
+I worked in research and institutional development in a civil society organization focused on labor training, education, and social inclusion. My work included institutional analysis, research reports, development proposals, and evidence-based support for programs addressing vulnerability, work, and adult education.
 :::
 
 :::
@@ -38,7 +40,7 @@ I worked in research and institutional development in a civil society organizati
 
 **United Nations Development Programme, Chile**
 
-Independent consultant for the analysis of the Social Well-Being Survey of the Ministry of Social Development and Family, using advanced quantitative methods.
+Independent consultant for the analysis of the Social Well-Being Survey of the Ministry of Social Development and Family, using advanced quantitative methods to examine social well-being in Chile.
 :::
 
 ::: {.research-item}

@@ -13,7 +13,9 @@ toc: false
 
 # Research
 
-My current research agenda examines social inequality, economic security, well-being, and educational trajectories through quantitative and interdisciplinary approaches. I am especially interested in how objective social positions, subjective experiences of vulnerability, and institutional contexts jointly shape life chances.
+My research examines how inequality, economic security, and institutional contexts shape well-being and life trajectories. I focus on the mechanisms that connect structural conditions with subjective vulnerability, mental health, educational opportunities, and cumulative disadvantage.
+
+Across projects, I combine social-psychological theory with quantitative and computational social science. I work especially with survey data, administrative records, longitudinal designs, latent class analysis, and measurement strategies that use prediction or data integration to study social processes that are difficult to observe directly.
 
 ::: {.research-section}
 
@@ -26,7 +28,7 @@ My current research agenda examines social inequality, economic security, well-b
 
 **Status:** Submitted manuscript  
 
-This article examines profiles of attachment and teacher well-being using latent class and mediation analysis. It contributes to research on educational psychology, teacher well-being, and psychosocial mechanisms in school contexts.
+This article identifies profiles of attachment and teacher well-being using latent class and mediation analysis. It contributes to research on educational psychology, teacher well-being, and psychosocial mechanisms in school contexts.
 :::
 
 ::: {.research-item}
@@ -36,7 +38,7 @@ This article examines profiles of attachment and teacher well-being using latent
 
 **Status:** Submitted manuscript  
 
-This article studies how debt, age, income position, and housing tenure shape subjective economic hardship in Chile. The paper examines the gap between objective socioeconomic location and subjective experiences of economic vulnerability.
+This article studies how debt, age, income position, and housing tenure shape subjective economic hardship in Chile. It examines the gap between objective socioeconomic location and lived experiences of economic vulnerability.
 :::
 
 :::
@@ -52,7 +54,7 @@ This article studies how debt, age, income position, and housing tenure shape su
 
 **Presented at:** ECINEQ 2025, 11th Conference of the Society for the Study of Economic Inequality, Washington, DC  
 
-This paper examines how vulnerability to poverty affects subjective well-being from the perspective of middle-class security in Chile.
+This paper examines how vulnerability to poverty affects subjective well-being from the perspective of middle-class economic security in Chile.
 :::
 
 :::
@@ -68,7 +70,7 @@ This paper examines how vulnerability to poverty affects subjective well-being f
 
 **Status:** Doctoral thesis article / working paper  
 
-This article develops a strategy for incorporating household wealth into the study of educational stratification in contexts where administrative education records do not directly observe assets and debts. Using Chile as a strategic case, the paper proposes a survey-to-administrative approach to reconstruct functional indicators of household wealth and examine their relevance for educational inequality.
+This article develops a strategy for incorporating household wealth into the study of educational stratification when administrative education records do not directly observe assets and debts. Using Chile as a strategic case, it proposes a survey-to-administrative approach to reconstruct functional indicators of household wealth and examine their relevance for educational inequality.
 :::
 
 ::: {.research-item}
@@ -90,21 +92,21 @@ This article examines the relationship between objective socioeconomic position,
 ::: {.research-grid}
 
 ::: {.research-card}
-### Social inequality and well-being
+### Inequality and well-being
 
-I study how social and economic inequalities shape subjective well-being, mental health, and life opportunities.
+I study how economic and social inequalities shape subjective well-being, mental health, and life opportunities.
 :::
 
 ::: {.research-card}
 ### Wealth and economic security
 
-My doctoral work focuses on wealth, debt, economic insecurity, and educational stratification.
+My doctoral work focuses on wealth, debt, vulnerability, economic security, and educational stratification.
 :::
 
 ::: {.research-card}
-### Quantitative and computational methods
+### Computational social science
 
-I work with survey data, administrative records, longitudinal designs, latent class analysis, and prediction-based measurement strategies.
+I use quantitative and computational methods to study mechanisms that connect economic structures with individual and household trajectories.
 :::
 
 :::

@@ -13,7 +13,9 @@ toc: false
 
 # Investigación
 
-Mi agenda actual de investigación examina la desigualdad social, la seguridad económica, el bienestar y las trayectorias educativas mediante enfoques cuantitativos e interdisciplinarios. Me interesa especialmente comprender cómo las posiciones sociales objetivas, las experiencias subjetivas de vulnerabilidad y los contextos institucionales configuran conjuntamente las oportunidades de vida.
+Mi investigación examina cómo la desigualdad, la seguridad económica y los contextos institucionales configuran el bienestar y las trayectorias de vida. Me enfoco en los mecanismos que conectan condiciones estructurales con vulnerabilidad subjetiva, salud mental, oportunidades educativas y desventajas acumulativas.
+
+A través de distintos proyectos, combino teoría social-psicológica con métodos cuantitativos y ciencias sociales computacionales. Trabajo especialmente con encuestas, registros administrativos, diseños longitudinales, análisis de clases latentes y estrategias de medición que usan predicción o integración de datos para estudiar procesos sociales difíciles de observar directamente.
 
 ::: {.research-section}
 
@@ -26,7 +28,7 @@ Mi agenda actual de investigación examina la desigualdad social, la seguridad e
 
 **Estado:** Manuscrito enviado
 
-Este artículo examina perfiles de apego y bienestar docente mediante análisis de clases latentes y modelos de mediación. Contribuye a la investigación en psicología educacional, bienestar docente y mecanismos psicosociales en contextos escolares.
+Este artículo identifica perfiles de apego y bienestar docente mediante análisis de clases latentes y modelos de mediación. Contribuye a la investigación en psicología educacional, bienestar docente y mecanismos psicosociales en contextos escolares.
 :::
 
 ::: {.research-item}
@@ -36,7 +38,7 @@ Este artículo examina perfiles de apego y bienestar docente mediante análisis 
 
 **Estado:** Manuscrito enviado
 
-Este artículo estudia cómo la deuda, la edad, la posición de ingresos y la tenencia de vivienda configuran las experiencias subjetivas de hardship económico en Chile. El trabajo examina la brecha entre la posición socioeconómica objetiva y las experiencias subjetivas de vulnerabilidad económica.
+Este artículo estudia cómo la deuda, la edad, la posición de ingresos y la tenencia de vivienda configuran experiencias subjetivas de dificultad económica en Chile. El trabajo examina la brecha entre la posición socioeconómica objetiva y las experiencias vividas de vulnerabilidad económica.
 :::
 
 :::
@@ -68,7 +70,7 @@ Este trabajo examina cómo la vulnerabilidad a la pobreza afecta el bienestar su
 
 **Estado:** Artículo de tesis doctoral / Working paper
 
-Este artículo desarrolla una estrategia para incorporar la riqueza de los hogares al estudio de la estratificación educativa en contextos donde los registros administrativos de educación no observan directamente activos ni deudas. Utilizando Chile como caso estratégico, el trabajo propone un enfoque de integración entre encuestas y registros administrativos para reconstruir indicadores funcionales de riqueza y examinar su relevancia para la desigualdad educativa.
+Este artículo desarrolla una estrategia para incorporar la riqueza de los hogares al estudio de la estratificación educativa cuando los registros administrativos de educación no observan directamente activos ni deudas. Utilizando Chile como caso estratégico, propone un enfoque de integración entre encuestas y registros administrativos para reconstruir indicadores funcionales de riqueza y examinar su relevancia para la desigualdad educativa.
 :::
 
 ::: {.research-item}
@@ -90,21 +92,21 @@ Este artículo examina la relación entre posición socioeconómica objetiva, vu
 ::: {.research-grid}
 
 ::: {.research-card}
-### Desigualdad social y bienestar
+### Desigualdad y bienestar
 
-Estudio cómo las desigualdades sociales y económicas configuran el bienestar subjetivo, la salud mental y las oportunidades de vida.
+Estudio cómo las desigualdades económicas y sociales configuran el bienestar subjetivo, la salud mental y las oportunidades de vida.
 :::
 
 ::: {.research-card}
 ### Riqueza y seguridad económica
 
-Mi trabajo doctoral se centra en la riqueza, la deuda, la seguridad económica y la estratificación educativa.
+Mi trabajo doctoral se centra en riqueza, deuda, vulnerabilidad, seguridad económica y estratificación educativa.
 :::
 
 ::: {.research-card}
-### Métodos cuantitativos y computacionales
+### Ciencias sociales computacionales
 
-Trabajo con encuestas, registros administrativos, diseños longitudinales, análisis de clases latentes y estrategias de medición basadas en modelos predictivos.
+Uso métodos cuantitativos y computacionales para estudiar mecanismos que conectan estructuras económicas con trayectorias individuales y familiares.
 :::
 
 :::
