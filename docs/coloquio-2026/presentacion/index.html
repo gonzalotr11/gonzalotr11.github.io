@@ -1,0 +1,1252 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coloquio de avance · Gonzalo Torres Rosales</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --azul:#0176DE;        /* azul UC */
+  --azul-osc:#173F8A;    /* azul oscuro UC */
+  --azul-noche:#03122E;
+  --amarillo:#FEC60D;    /* amarillo UC */
+  --amarillo-suave:#FFF4CC;
+  --azul-suave:#E6F1FC;
+  --tinta:#1B2433;
+  --gris:#5B6475;
+  --linea:#D9DEE7;
+  --blanco:#FFFFFF;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#EEF1F5;font-family:"Libre Franklin",system-ui,sans-serif;color:var(--tinta);overflow:hidden}
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#deck{width:1280px;height:720px;position:relative;transform-origin:center center}
+.slide{position:absolute;inset:0;background:var(--blanco);padding:64px 80px 56px;display:none;flex-direction:column;box-shadow:0 10px 40px rgba(3,18,46,.12);overflow:hidden}
+.slide.active{display:flex}
+/* motivo: franja lateral y detalle amarillo */
+.slide::before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:var(--azul-osc)}
+.slide::after{content:"";position:absolute;left:0;top:0;width:10px;height:96px;background:var(--amarillo)}
+.kicker{display:none!important;font-size:15px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul);margin-bottom:10px;display:flex;align-items:center;gap:12px}
+h1{font-family:"Libre Franklin",sans-serif;font-weight:700;color:var(--azul-osc);font-size:44px;line-height:1.12;letter-spacing:-.01em}
+h2{font-family:"Libre Franklin",sans-serif;font-weight:700;color:var(--azul-osc);font-size:33px;letter-spacing:-.01em;line-height:1.15;margin-bottom:26px;max-width:1040px}
+h3{font-size:21px;font-weight:700;color:var(--azul-osc);margin-bottom:8px}
+p,li{font-size:20px;line-height:1.45}
+.muted{color:var(--gris)}
+.small{font-size:16px}
+.ref{font-size:14.5px;color:var(--gris);line-height:1.35}
+.ref b{color:var(--azul-osc);font-weight:600}
+em{font-style:italic}
+strong{font-weight:700;color:var(--azul-osc)}
+.hl{background:linear-gradient(transparent 58%,var(--amarillo) 58%);padding:0 2px}
+ul.clean{list-style:none}
+ul.clean li{position:relative;padding-left:26px;margin-bottom:12px}
+ul.clean li::before{content:"";position:absolute;left:2px;top:.62em;width:10px;height:10px;background:var(--amarillo);border-radius:2px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid var(--linea);border-top:5px solid var(--azul);border-radius:6px;padding:20px 22px;background:#fff}
+.card.y{border-top-color:var(--amarillo)}
+.card.d{border-top-color:var(--azul-osc)}
+.card p,.card li{font-size:17.5px;line-height:1.4}
+.pill{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:0 0 3px;border-bottom:2px solid currentColor;color:var(--azul)}
+.pill.y{color:#8A6200}
+.foot{position:absolute;left:80px;right:80px;bottom:22px;display:flex;justify-content:space-between;font-size:13px;color:var(--gris);letter-spacing:.02em}
+.foot .n{font-weight:700;color:var(--azul-osc)}
+.quote{font-family:"Libre Franklin",sans-serif;font-weight:400;font-size:25px;line-height:1.35;color:var(--azul-osc);border-left:6px solid var(--amarillo);padding:6px 0 6px 26px}
+.def{display:grid;grid-template-columns:230px 1fr;gap:22px;padding:16px 0;border-bottom:1px solid var(--linea);align-items:start}
+.def:last-child{border-bottom:0}
+.def .t{font-family:"Libre Franklin",sans-serif;font-size:23px;font-weight:600;color:var(--azul-osc);line-height:1.2}
+.def .t span{display:block;font-family:"Libre Franklin";font-size:14px;font-weight:600;color:var(--azul);font-style:italic;margin-top:4px}
+.def p{font-size:18.5px}
+
+/* portada */
+.cover{padding:0;flex-direction:column}
+.cover::before,.cover::after{display:none}
+.cover .left{flex:1;padding:150px 140px 70px;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center}
+.cover h1{font-size:44px;margin:0 auto 22px;max-width:960px}
+
+.cover .en{font-family:"Libre Franklin",sans-serif;font-style:italic;font-size:21px;color:var(--gris);line-height:1.35}
+.cover .who{font-size:21px;font-weight:700;color:var(--azul-osc)}
+.cover .who span{display:block;font-weight:400;color:var(--gris);font-size:17px;margin-top:4px}
+
+/* divisores de sección */
+.divider{background:var(--azul-osc);color:#fff;justify-content:center}
+.divider::before{background:var(--amarillo);width:10px}
+.divider::after{display:none}
+.divider .num{font-family:"Libre Franklin",sans-serif;font-size:120px;line-height:1;color:var(--amarillo);font-weight:600}
+.divider h2{color:#fff;font-size:44px;max-width:900px;margin:18px 0 14px}
+.divider p{color:#C9D7F0;font-size:21px;max-width:880px}
+.divider .foot{color:#9FB3D6}.divider .foot .n{color:var(--amarillo)}
+
+/* placeholders */
+.ph{flex:1;border:2px dashed #BFD3EE;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;background:repeating-linear-gradient(-45deg,#fff,#fff 14px,#F7FAFE 14px,#F7FAFE 28px)}
+.ph p{font-size:18px;color:var(--gris);text-align:center;max-width:760px}
+
+/* tabla artículos */
+table.arts{width:100%;border-collapse:separate;border-spacing:0}
+table.arts th{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--gris);font-weight:700;text-align:left;padding:0 14px 10px}
+table.arts th.a{width:30%;color:#fff;background:var(--azul-osc);padding:12px 14px;font-size:15px;letter-spacing:.04em;text-transform:none;letter-spacing:normal}
+table.arts th.a span{display:block;color:var(--amarillo);font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:2px}
+table.arts td{font-size:16.5px;line-height:1.35;padding:11px 14px;border-bottom:1px solid var(--linea);vertical-align:top}
+table.arts td.k{font-weight:700;color:var(--azul-osc);font-size:14px;letter-spacing:.06em;text-transform:uppercase;width:150px}
+table.arts tr:nth-child(even) td:not(.k){background:#FAFBFD}
+
+/* artículo 1 */
+.moment{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--linea)}
+.moment:last-child{border-bottom:0}
+.moment h3{font-size:19px;margin-bottom:2px}
+.moment p{font-size:16.5px;line-height:1.4}
+.mk{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;margin-top:2px}
+.mk.ok{background:var(--azul-osc);color:#fff}
+.mk.no{background:#fff;border:2px solid var(--gris);color:var(--gris)}
+.sw{display:inline-block;width:11px;height:11px;border-radius:2px;vertical-align:-1px;margin-right:4px}
+table.mini{border-collapse:collapse;width:100%}
+table.mini th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--gris);text-align:left;padding:4px 8px;border-bottom:2px solid var(--azul-osc)}
+table.mini td{font-size:16px;padding:5px 8px;border-bottom:1px solid var(--linea)}
+.eq{margin-top:10px;background:var(--azul-suave);border-left:5px solid var(--azul);padding:14px 16px;font-size:17px;color:var(--azul-osc);border-radius:4px;line-height:1.5}
+table.rob th{font-size:13px}
+table.rob td{font-size:17px;padding:10px 14px}
+table.rob td.k2{font-weight:600;color:var(--azul-osc)}
+table.rob tr.alt td{background:var(--amarillo-suave)!important}
+.deflist{display:flex;flex-direction:column}
+.drow{display:grid;grid-template-columns:210px 1fr;gap:20px;padding:8px 0;border-bottom:1px solid var(--linea)}
+.drow:last-child{border-bottom:0}
+.dt{font-size:19px;font-weight:700;color:var(--azul-osc);line-height:1.2}
+.dt span{display:block;font-size:13px;font-weight:500;color:var(--azul);margin-top:4px}
+.dd p{font-size:16.5px;line-height:1.4}
+.chips{display:flex;gap:8px}
+.chip{flex:1;font-size:14px;line-height:1.3;padding:6px 10px;border-radius:6px;border:1px solid var(--linea);background:#fff}
+.chip b{display:block;font-size:14.5px;color:var(--azul-osc)}
+.chip.st{background:var(--azul-suave);border-color:#BFD8F5}
+.chip.pr{background:#F3F4F7}
+.chip.ev{background:var(--amarillo-suave);border-color:#F2DC8C}
+.step{display:grid;grid-template-columns:40px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--linea)}
+.step:last-child{border-bottom:0}
+.step h3{font-size:18px;margin-bottom:2px}
+.step p{font-size:16px;line-height:1.4}
+.sn{width:32px;height:32px;border-radius:50%;background:var(--azul-osc);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px;margin-top:2px}
+.annex table.rob td{font-size:15px;padding:9px 10px}
+.annex .card{padding:14px 18px}
+.annex .card p{font-size:15.5px}
+.annex .card h3{font-size:18px;margin-bottom:4px}
+table.coh td,table.coh th{font-size:14.5px;padding:5px 8px}
+table.coh tr.s td{background:var(--azul-suave);font-weight:600}
+table.coh tr.n td{color:#9AA1AE}
+table.mtx td,table.mtx th{font-size:13.5px;padding:4px 8px}
+table.mtx td.hi{background:var(--amarillo-suave);font-weight:700}
+.lead-in{font-size:17px;margin:-12px 0 8px;color:var(--tinta)}
+table.mech td{font-size:15px;line-height:1.33;padding:8px 12px}
+table.mech th{padding-bottom:6px}
+table.mech td.k2{font-size:16px;font-weight:700;color:var(--azul-osc)}
+table.mech td.k2 span{display:block;font-size:12.5px;font-weight:400;color:var(--gris);margin-top:3px}
+.mechcell{display:flex;gap:10px;align-items:center}
+.mechcell svg{flex:0 0 140px;width:140px;height:71px}
+.card.slim{padding:12px 18px}
+.card.slim p{font-size:15.5px}
+.pipe{display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr;gap:6px;align-items:stretch;margin-top:6px}
+.pstep{border:1px solid var(--linea);border-top:5px solid var(--azul);border-radius:6px;padding:16px 18px;position:relative}
+.pstep.y{border-top-color:var(--amarillo)}
+.pstep .sn{position:absolute;top:14px;right:14px}
+.pstep h3{font-size:21px;margin-bottom:2px}
+.pstep .q{font-size:15px;font-style:italic;color:var(--azul);margin-bottom:10px}
+.pstep p{font-size:15.5px;line-height:1.42}
+.pstep .ref{margin-top:10px}
+.parrow{display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--azul-osc);font-weight:700}
+.next{margin-top:22px;border-top:2px solid var(--linea);padding-top:14px}
+.next h3{font-size:18px;margin-bottom:8px}
+.nrow{display:grid;grid-template-columns:80px 1fr;gap:12px;align-items:baseline;padding:4px 0}
+.nrow p{font-size:16.5px}
+/* logo UC */
+.logo{position:absolute;top:26px;right:44px;height:44px;width:auto;z-index:2;pointer-events:none}
+.divider .logo{filter:brightness(0) invert(1);opacity:.9}
+.cover .logo{top:48px;left:50%;right:auto;transform:translateX(-50%);height:72px}
+/* barra de progreso */
+#progress{position:fixed;left:0;bottom:0;height:4px;background:var(--amarillo);transition:width .25s}
+#notes{position:fixed;right:16px;bottom:16px;width:420px;max-height:40vh;overflow:auto;background:var(--azul-noche);color:#E8EEF8;font-size:15px;line-height:1.45;padding:16px 18px;border-radius:8px;display:none;box-shadow:0 10px 30px rgba(0,0,0,.3);z-index:10}
+#notes b{color:var(--amarillo)}
+#help{position:fixed;right:16px;top:12px;font-size:12px;color:#8A93A6;z-index:5;transition:opacity 1s}#help.off{opacity:0}
+.notes{display:none}
+@media print{
+  html,body{overflow:visible;background:#fff}
+  #viewport{position:static;display:block}
+  #deck{transform:none!important;width:auto;height:auto}
+  .slide{display:flex!important;position:relative;width:1280px;height:720px;page-break-after:always;box-shadow:none}
+  #progress,#help,#notes{display:none!important}
+  @page{size:1280px 720px;margin:0}
+}
+</style>
+</head>
+<body>
+<div id="viewport"><div id="deck">
+
+<!-- ============ 0. PORTADA ============ -->
+<section class="slide cover" data-title="Portada">
+  <div class="left">
+    <div>
+      <h1>Configuraciones económicas de los hogares y la seguridad desigual del futuro familiar en Chile</h1>
+      <p class="en">Household Economic Configurations and the Unequal Security of Family Futures in Chile</p>
+    </div>
+    <div>
+      <p class="who">Gonzalo Torres Rosales<span>Instituto de Sociología · Pontificia Universidad Católica de Chile · Octubre 2026</span></p>
+    </div>
+  </div>
+  <div class="notes">Presentación breve: tema general, conceptos centrales y avance de los tres artículos. ~15 minutos.</div>
+</section>
+
+<!-- ============ 1. EL PROBLEMA ============ -->
+<section class="slide" data-title="El problema">
+  <div class="kicker">El problema</div>
+  <h2>Hogares con el mismo ingreso pueden tener futuros muy distintos</h2>
+  <div class="grid2" style="align-items:stretch">
+    <div class="card">
+      <span class="pill">Hogar A</span>
+      <h3 style="margin-top:12px">Ingreso medio</h3>
+      <ul class="clean" style="margin-top:8px">
+        <li>Empleo formal y estable</li>
+        <li>Vivienda con hipoteca avanzada</li>
+        <li>Algo de ahorro líquido</li>
+      </ul>
+      <p class="small muted" style="margin-top:6px">Ante una pérdida de empleo: seguro de cesantía, ahorro y colateral disponible.</p>
+    </div>
+    <div class="card y">
+      <span class="pill y">Hogar B</span>
+      <h3 style="margin-top:12px">El mismo ingreso medio</h3>
+      <ul class="clean" style="margin-top:8px">
+        <li>Trabajo por cuenta propia, informal</li>
+        <li>Arriendo</li>
+        <li>Crédito de consumo y tarjetas de casas comerciales</li>
+      </ul>
+      <p class="small muted" style="margin-top:6px">Ante la misma pérdida: sin seguro, sin colchón y con obligaciones que comprometen el ingreso futuro.</p>
+    </div>
+  </div>
+  <p style="margin-top:28px;max-width:1080px">Los indicadores habituales (ingreso, quintil, índices de NSE) tratan a ambos hogares como equivalentes. <span class="hl">La desigualdad relevante está en la capacidad de sostener el futuro</span>, no solo en el nivel de recursos de hoy.</p>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Ejemplo estilizado. Idea: el ingreso y la riqueza están lejos de estar perfectamente correlacionados (≈0,5 en EE.UU., Keister 2018 citado en Keister et al. 2026), y la composición importa.</div>
+</section>
+
+<!-- ============ 2. CONTEXTO CHILENO ============ -->
+<section class="slide" data-title="Contexto chileno">
+  <div class="kicker">¿Por qué Chile?</div>
+  <h2>Un régimen donde la seguridad económica se juega, en buena parte, dentro del hogar</h2>
+  <div class="grid4">
+    <div class="card d"><h3>Protección social incompleta</h3><p>Un modelo de provisión privatizada desde los años 80 (pensiones, salud, educación) traslada al hogar riesgos que otros regímenes socializan.</p></div>
+    <div class="card"><h3>Informalidad laboral</h3><p>Una proporción importante del empleo queda fuera del seguro de desempleo, la previsión y el crédito formal.</p></div>
+    <div class="card y"><h3>Expansión del crédito</h3><p>Crédito de consumo y retail masivo: la deuda se vuelve parte normal de la reproducción cotidiana de los hogares.</p></div>
+    <div class="card d"><h3>Vivienda como activo central</h3><p>La propiedad de la vivienda es el principal activo de la mayoría de los hogares; es poco líquida pero sirve de colateral.</p></div>
+  </div>
+  <p style="margin-top:30px;max-width:1080px">Crecimiento sostenido y reducción de la pobreza conviven con <strong>vulnerabilidad persistente</strong>: muchos hogares no pobres siguen expuestos a caer (López-Calva &amp; Ortiz-Juárez 2014).</p>
+  <p class="ref" style="margin-top:auto">OECD (2024) <i>Informality and Households' Vulnerabilities in Latin America</i> · Banco Central de Chile, WP 703 (endeudamiento de hogares) · Estudios sociales del crédito en Chile (retailización de la deuda).</p>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Responde al comentario de Pfeffer: dar más contexto chileno (privatización, retracción del Estado, mercados de crédito y vivienda). Agregar cifras verificadas de informalidad y deuda/ingreso antes del coloquio.</div>
+</section>
+
+<!-- ============ 3. PREGUNTA ============ -->
+<section class="slide" data-title="Pregunta general">
+  <div class="kicker">Pregunta general</div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:36px">
+    <p class="quote">¿Cómo producen las configuraciones de la posición económica de los hogares grados desiguales de seguridad, y cómo se transmite esa desigualdad al desarrollo de niños y jóvenes y a las trayectorias financieras de las familias?</p>
+    <div class="grid3">
+      <div><span class="pill">Desplazamiento 1</span><p style="margin-top:10px">De <strong>cuánto</strong> tiene un hogar a <strong>con qué</strong>: una configuración de trabajo, ingresos, activos y deudas.</p></div>
+      <div><span class="pill">Desplazamiento 2</span><p style="margin-top:10px">De la <strong>foto</strong> a la <strong>trayectoria</strong>: la seguridad se juega en el tiempo.</p></div>
+      <div><span class="pill y">Desplazamiento 3</span><p style="margin-top:10px">Del nivel a la <strong>función</strong>: qué permite la posición frente a un shock.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+</section>
+
+<!-- ============ 4. TRADICIONES TEÓRICAS ============ -->
+<section class="slide" data-title="Marco teórico">
+  <div class="kicker">Marco teórico</div>
+  <h2>La tesis se ubica en el cruce de tres tradiciones</h2>
+  <div class="grid3" style="flex:1">
+    <div class="card">
+      <span class="pill">1 · Posición</span>
+      <h3 style="margin-top:12px">La posición económica como configuración</h3>
+      <p>El estatus financiero es una configuración multidimensional y no jerárquica de ingresos, activos y deudas. Los resúmenes en una cifra ocultan combinaciones cruzadas de ventaja y vulnerabilidad.</p>
+      <p class="ref" style="margin-top:12px"><b>Keister, Moody &amp; Qiu 2026</b> · Waitkus &amp; Groh-Samberg 2019 · Savage et al. 2013 · Weber: <i>situación de mercado</i></p>
+    </div>
+    <div class="card d">
+      <span class="pill">2 · Recursos</span>
+      <h3 style="margin-top:12px">La riqueza en la estratificación</h3>
+      <p>La riqueza es una dimensión propia del origen social, no reducible al ingreso ni a la educación. Además de una función de <em>oportunidad</em>, cumple una función de <em>seguro</em>: permite tomar riesgos y amortiguar caídas.</p>
+      <p class="ref" style="margin-top:12px"><b>Killewald, Pfeffer &amp; Schachner 2017</b> · Pfeffer &amp; Hällsten 2012 · Hällsten &amp; Thaning 2022 · Spilerman 2000</p>
+    </div>
+    <div class="card y">
+      <span class="pill y">3 · Riesgo</span>
+      <h3 style="margin-top:12px">Inseguridad económica</h3>
+      <p>La inseguridad es la exposición a pérdidas económicas <em>y</em> la falta de protección para absorberlas. Es una dimensión de la estratificación distinta de la pobreza y de la desigualdad de ingresos.</p>
+      <p class="ref" style="margin-top:12px"><b>Western, Bloome, Sosnaud &amp; Tach 2012</b> · Hacker et al. 2014 · Petrov &amp; Romaguera-de-la-Cruz 2025</p>
+    </div>
+  </div>
+  <p style="margin-top:22px" class="small muted">Puente hacia los outcomes: el modelo de inversión familiar (Becker &amp; Tomes 1986), el modelo de estrés familiar (Conger et al. 1992) y la escasez como carga cognitiva (Mani et al. 2013).</p>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+</section>
+
+<!-- ============ 5. EVIDENCIA EMPÍRICA ============ -->
+<section class="slide" data-title="Evidencia empírica">
+  <div class="kicker">Evidencia empírica</div>
+  <h2>Lo que sabemos y lo que falta</h2>
+  <div class="grid2" style="flex:1;gap:36px">
+    <div>
+      <h3>Lo que sabemos</h3>
+      <ul class="clean" style="margin-top:12px">
+        <li><p class="small" style="font-size:18px">Ingreso y riqueza están <strong>lejos de estar perfectamente correlacionados</strong>; al analizarlos juntos aparecen posiciones cruzadas (p. ej., altos ingresos y alto apalancamiento).</p><p class="ref">Keister et al. 2026; Fisher et al. 2022</p></li>
+        <li><p class="small" style="font-size:18px">La inseguridad medida con ingreso <strong>y</strong> riqueza es mayor que la que muestra el ingreso solo.</p><p class="ref">Petrov &amp; Romaguera-de-la-Cruz 2025</p></li>
+        <li><p class="small" style="font-size:18px">La pobreza de patrimonio neto y la inestabilidad del ingreso se asocian con peores resultados infantiles, <strong>más allá del nivel de ingreso</strong>.</p><p class="ref">Gibson-Davis et al. 2022; Hill et al. 2013; Miller et al. 2021</p></li>
+        <li><p class="small" style="font-size:18px">En Chile, las brechas socioeconómicas en vocabulario aparecen temprano y persisten.</p><p class="ref">Contreras &amp; Puentes 2017; Abufhele et al. 2022</p></li>
+      </ul>
+    </div>
+    <div class="card y" style="align-self:start">
+      <h3>Lo que falta</h3>
+      <ul class="clean" style="margin-top:10px">
+        <li><p style="font-size:18px">Estudios que usen la <strong>configuración</strong> y no un indicador único, en contextos de alta informalidad.</p></li>
+        <li><p style="font-size:18px">Lecturas <strong>temporales</strong>: los estudios configuracionales son transversales. Keister et al. piden estudiar el movimiento entre configuraciones y sus consecuencias.</p></li>
+        <li><p style="font-size:18px">Evidencia latinoamericana que distinga <strong>exposición, amortiguación y recomposición</strong> frente a shocks.</p></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+</section>
+
+<!-- ============ 6. CONCEPTOS CENTRALES ============ -->
+<section class="slide" data-title="Conceptos centrales">
+  <div class="kicker">Ideas centrales</div>
+  <h2 style="margin-bottom:10px">Cuatro conceptos que organizan la tesis</h2>
+  <div>
+    <div class="def"><div class="t">Posición económica del hogar<span>household economic position</span></div>
+      <p>Ubicación del hogar según la combinación de su <strong>inserción laboral</strong> (ocupación, formalidad, estabilidad) y su <strong>situación financiera</strong> (ingresos, activos, deudas). Es la <em>situación de mercado</em> weberiana, extendida al trabajo porque en América Latina la informalidad condiciona el acceso al crédito y al seguro.</p></div>
+    <div class="def"><div class="t">Configuración<span>configuration</span></div>
+      <p>La forma empírica de esa posición: <strong>combinaciones</strong> de componentes cuyo significado depende de cómo se articulan (por ejemplo, vivienda con empleo formal no equivale a vivienda con deuda de consumo). No se ordenan en una sola escala.</p></div>
+    <div class="def"><div class="t">Seguridad económica<span>economic (in)security</span></div>
+      <p>Propiedad funcional de la posición: su capacidad para <strong>evitar</strong> shocks, <strong>amortiguarlos</strong> y <strong>recomponerse</strong> después. La inseguridad es la exposición a pérdidas sin protección suficiente.</p></div>
+    <div class="def"><div class="t">Trayectoria<span>trajectory</span></div>
+      <p>Secuencia de posiciones en el tiempo. Dos hogares que hoy comparten posición pueden haber llegado por caminos distintos (estabilidad, recuperación, deterioro, cronicidad), y el camino deja huella.</p></div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+</section>
+
+<!-- ============ 7. MODELO ============ -->
+<section class="slide" data-title="Modelo analítico">
+  <div class="kicker">Modelo analítico</div>
+  <h2>De la posición a los resultados: la seguridad como mecanismo</h2>
+  <svg viewBox="0 0 1120 440" width="1120" height="440" role="img" aria-label="Diagrama: la posición económica configura la seguridad económica en tres momentos, que se traduce en outcomes de desarrollo infantil, educativo y trayectorias financieras">
+    <defs>
+      <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#173F8A"/></marker>
+    </defs>
+    <!-- contexto -->
+    <rect x="0" y="0" width="1120" height="440" rx="10" fill="#F7FAFE" stroke="#D9DEE7"/>
+    <text x="20" y="28" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#5B6475" letter-spacing="1.5">CONTEXTO CHILENO · protección social incompleta · informalidad · crédito masivo · vivienda</text>
+    <!-- posición -->
+    <rect x="30" y="60" width="300" height="350" rx="8" fill="#fff" stroke="#0176DE" stroke-width="2"/>
+    <rect x="30" y="60" width="300" height="52" rx="8" fill="#0176DE"/>
+    <rect x="30" y="96" width="300" height="16" fill="#0176DE"/>
+    <text x="180" y="93" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="20" font-weight="700" fill="#fff">Posición económica</text>
+    <g font-family="Libre Franklin, sans-serif" font-size="17" fill="#1B2433">
+      <rect x="54" y="132" width="252" height="50" rx="6" fill="#E6F1FC"/><text x="180" y="163" text-anchor="middle">Inserción laboral</text>
+      <rect x="54" y="192" width="252" height="50" rx="6" fill="#E6F1FC"/><text x="180" y="223" text-anchor="middle">Ingresos (nivel y fuentes)</text>
+      <rect x="54" y="252" width="252" height="50" rx="6" fill="#E6F1FC"/><text x="180" y="283" text-anchor="middle">Activos (tipo y liquidez)</text>
+      <rect x="54" y="312" width="252" height="50" rx="6" fill="#E6F1FC"/><text x="180" y="343" text-anchor="middle">Deudas (tipo y costo)</text>
+    </g>
+    <text x="180" y="392" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="14" font-style="italic" fill="#5B6475">configuración · trayectoria</text>
+    <!-- flecha -->
+    <line x1="338" y1="235" x2="408" y2="235" stroke="#173F8A" stroke-width="3" marker-end="url(#ar)"/>
+    <!-- seguridad -->
+    <rect x="416" y="60" width="330" height="350" rx="8" fill="#fff" stroke="#FEC60D" stroke-width="2.5"/>
+    <rect x="416" y="60" width="330" height="52" rx="8" fill="#FEC60D"/>
+    <rect x="416" y="96" width="330" height="16" fill="#FEC60D"/>
+    <text x="581" y="93" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="20" font-weight="700" fill="#03122E">Seguridad económica</text>
+    <g font-family="Libre Franklin, sans-serif">
+      <circle cx="460" cy="162" r="18" fill="#173F8A"/><text x="460" y="168" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">1</text>
+      <text x="490" y="157" font-size="18" font-weight="700" fill="#173F8A">Exposición</text><text x="490" y="178" font-size="15" fill="#5B6475">¿se evita el shock? (antes)</text>
+      <circle cx="460" cy="252" r="18" fill="#173F8A"/><text x="460" y="258" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">2</text>
+      <text x="490" y="247" font-size="18" font-weight="700" fill="#173F8A">Amortiguación</text><text x="490" y="268" font-size="15" fill="#5B6475">¿se absorbe el daño? (durante)</text>
+      <circle cx="460" cy="342" r="18" fill="#173F8A"/><text x="460" y="348" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">3</text>
+      <text x="490" y="337" font-size="18" font-weight="700" fill="#173F8A">Recomposición</text><text x="490" y="358" font-size="15" fill="#5B6475">¿se recupera la posición? (después)</text>
+    </g>
+    <!-- flechas a outcomes -->
+    <line x1="754" y1="235" x2="812" y2="120" stroke="#173F8A" stroke-width="3" marker-end="url(#ar)"/>
+    <line x1="754" y1="235" x2="812" y2="235" stroke="#173F8A" stroke-width="3" marker-end="url(#ar)"/>
+    <line x1="754" y1="235" x2="812" y2="350" stroke="#173F8A" stroke-width="3" marker-end="url(#ar)"/>
+    <!-- outcomes -->
+    <g font-family="Libre Franklin, sans-serif">
+      <rect x="820" y="72" width="276" height="96" rx="8" fill="#173F8A"/>
+      <text x="840" y="100" font-size="13" font-weight="700" fill="#FEC60D" letter-spacing="1.5">ARTÍCULO 1</text>
+      <text x="840" y="126" font-size="18" font-weight="700" fill="#fff">Desarrollo infantil</text>
+      <text x="840" y="150" font-size="15" fill="#C9D7F0">cognitivo y socioemocional</text>
+      <rect x="820" y="187" width="276" height="96" rx="8" fill="#173F8A"/>
+      <text x="840" y="215" font-size="13" font-weight="700" fill="#FEC60D" letter-spacing="1.5">ARTÍCULO 2</text>
+      <text x="840" y="241" font-size="18" font-weight="700" fill="#fff">Trayectoria educativa</text>
+      <text x="840" y="265" font-size="15" fill="#C9D7F0">expectativas y decisiones</text>
+      <rect x="820" y="302" width="276" height="96" rx="8" fill="#173F8A"/>
+      <text x="840" y="330" font-size="13" font-weight="700" fill="#FEC60D" letter-spacing="1.5">ARTÍCULO 3</text>
+      <text x="840" y="356" font-size="18" font-weight="700" fill="#fff">Trayectorias financieras</text>
+      <text x="840" y="380" font-size="14" fill="#C9D7F0">puentes seguros y espirales</text>
+    </g>
+  </svg>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">El A3 no es un "outcome" en el mismo sentido: estudia la dinámica de la propia posición (retroalimentación). Puede decirse en voz alta.</div>
+</section>
+
+<!-- ============ 8. LOS TRES ARTÍCULOS ============ -->
+<section class="slide" data-title="Los tres artículos">
+  <div class="kicker">Diseño de la tesis</div>
+  <h2 style="margin-bottom:18px">Tres artículos, tres escalas de la seguridad económica</h2>
+  <table class="arts">
+    <thead><tr><th></th>
+      <th class="a"><span>Artículo 1</span>Trayectorias económicas del hogar y desarrollo infantil</th>
+      <th class="a"><span>Artículo 2</span>Movilidad escolar, redes de pares y expectativas</th>
+      <th class="a"><span>Artículo 3</span>Redes de activos y deudas</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Escala</td><td>El hogar en el tiempo</td><td>El hogar frente a la escuela</td><td>La estructura financiera del hogar</td></tr>
+      <tr><td class="k">Posición</td><td>Trayectoria ocupacional, shocks de ingreso, activos</td><td>Cambio de dependencia escolar como hecho económico</td><td>Configuraciones de activos y deudas</td></tr>
+      <tr><td class="k">Pregunta</td><td>¿La recuperación económica revierte el costo en el desarrollo?</td><td>¿Cómo reconfigura la movilidad escolar las expectativas vía la red de pares?</td><td>¿Qué caminos llevan a posiciones seguras o frágiles?</td></tr>
+      <tr><td class="k">Datos</td><td>ELPI 2010–2024</td><td>MINEDUC/CEM + SIMCE</td><td>Panel EFH</td></tr>
+      <tr><td class="k">Estado</td><td><span class="pill">Análisis completo</span></td><td><span class="pill y">Diseño</span></td><td><span class="pill y">Idea y diseño inicial</span></td></tr>
+    </tbody>
+  </table>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+</section>
+
+<!-- ============ ARTÍCULO 1 ============ -->
+<section class="slide divider" data-title="Artículo 1">
+  <div class="num">01</div>
+  <h2>Trayectorias económicas del hogar y desarrollo infantil</h2>
+  <p>Estabilidad, recuperación, deterioro y cronicidad · ELPI 2010–2024</p>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+</section>
+
+<!-- A1.1 Pregunta -->
+<section class="slide" data-title="A1 · Pregunta y datos">
+  <div class="kicker">Artículo 1 · Pregunta</div>
+  <h2>¿La recuperación económica del hogar revierte el costo en el desarrollo infantil?</h2>
+  <div class="grid2" style="grid-template-columns:1.25fr 1fr;gap:40px;flex:1">
+    <div>
+      <p>Que la privación económica daña el desarrollo infantil está bien establecido. Lo que se sabe menos es cómo lo moldean el <strong>momento</strong>, la <strong>duración</strong> y la <strong>reversibilidad</strong> de esa privación.</p>
+      <ul class="clean" style="margin-top:18px">
+        <li><p style="font-size:18.5px">La posición económica se lee como <strong>trayectoria</strong> de la inserción laboral del hogar, no como un nivel observado una vez.</p></li>
+        <li><p style="font-size:18.5px">Los <strong>activos</strong> del hogar son el componente patrimonial de la posición: vivienda y bienes durables.</p></li>
+        <li><p style="font-size:18.5px">Se ponen a prueba tres mecanismos: <strong>inversión</strong> familiar, <strong>estrés</strong> familiar y <strong>carga cognitiva</strong> de la escasez.</p></li>
+      </ul>
+      <p class="ref" style="margin-top:14px">Becker &amp; Tomes 1986 · Conger et al. 1992 · Mani et al. 2013 · Mari &amp; Keizer 2021 · Ratcliffe &amp; McKernan 2010</p>
+    </div>
+    <div class="card d" style="align-self:start">
+      <span class="pill">Datos</span>
+      <h3 style="margin-top:12px">Encuesta Longitudinal de Primera Infancia (ELPI)</h3>
+      <p>Cohorte nacional representativa seguida desde el nacimiento.</p>
+      <table class="mini" style="margin-top:12px">
+        <tr><th>Ola</th><th>Casos</th><th>Retención*</th></tr>
+        <tr><td>2010</td><td>15.175</td><td>100%</td></tr>
+        <tr><td>2012</td><td>16.033</td><td>85%</td></tr>
+        <tr><td>2017</td><td>17.307</td><td>67%</td></tr>
+        <tr><td>2024</td><td>10.003</td><td>66%</td></tr>
+      </table>
+      <p class="ref" style="margin-top:8px">* Hogares de 2010 observados en cada ola. Outcome principal: vocabulario receptivo (TVIP, estandarizado). Secundarios: CBCL ansiedad/depresión y notas.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Ubicación en la tesis: A1 observa los tres momentos de la seguridad (exposición, amortiguación y recomposición) en el hogar a lo largo del tiempo.</div>
+</section>
+
+<!-- A1.2 Medición -->
+<section class="slide" data-title="A1 · Definiciones">
+  <div class="kicker">Artículo 1 · Diseño (1/4) · Qué se mide</div>
+  <h2>Posición económica, shock y activos: cómo se definen</h2>
+  <div class="deflist">
+    <div class="drow"><div class="dt">Posición ocupacional<span>cuidador/a principal, en cada ola</span></div>
+      <div class="dd"><div class="chips">
+        <span class="chip st"><b>Formal estable</b> empleador/a · asalariado/a público o privado · FF.AA. y de Orden</span>
+        <span class="chip pr"><b>Informal precaria</b> cuenta propia · familiar no remunerado · servicio doméstico</span>
+        <span class="chip pr"><b>Sin empleo</b> no trabajó al menos 1 hora la semana anterior</span></div>
+        <p class="ref" style="margin-top:5px"><b>Precaria</b> = informal o sin empleo: sin acceso a amortiguadores (seguro de cesantía, previsión, crédito).</p></div></div>
+    <div class="drow"><div class="dt">Shock económico<span>evento entre dos olas</span></div>
+      <div class="dd"><p>Ocurre si se da <strong>al menos uno</strong> de tres eventos:</p>
+        <div class="chips" style="margin-top:6px">
+        <span class="chip ev"><b>Ingreso</b> el hogar cae 2 o más quintiles</span>
+        <span class="chip ev"><b>Empleo</b> el/la cuidador/a pasa de ocupado/a a no ocupado/a</span>
+        <span class="chip ev"><b>Ocupación</b> pasa de formal estable a informal precaria</span></div>
+        <p class="ref" style="margin-top:5px">Quintiles calculados dentro de cada ola.</p></div></div>
+    <div class="drow"><div class="dt">Activos del hogar<span>componente patrimonial</span></div>
+      <div class="dd"><p><strong>Índice = promedio de z(tenencia de vivienda) y z(n.º de bienes durables, 0–11)</strong>, estandarizado. Tenencia ordenada empíricamente por ingreso medio. Excluye la ocupación, para no dejar fuera a los hogares sin empleo.</p></div></div>
+    <div class="drow"><div class="dt">Desarrollo infantil<span>outcome</span></div>
+      <div class="dd"><p><strong>TVIP</strong> (vocabulario receptivo): puntaje estándar con normas hispanas, z = (PE − 100)/15. Secundarios: CBCL ansiedad/depresión y notas escolares (2017).</p></div></div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Robustez del shock: shock de ingreso absoluto (caída real ≥20% o ≥30%, deflactada por IPC). La vivienda "pagada" suele ser subsidiada, por eso la tenencia se ordena por ingreso medio y no a priori. Distinción clave: el <b>shock</b> es un evento (algo que pasa entre dos olas); la <b>posición</b> es un estado (dónde está el hogar en cada ola). La trayectoria combina posiciones al inicio y al final de la ventana.</div>
+</section>
+
+<!-- A1.3 Línea base -->
+<section class="slide" data-title="A1 · Línea base propia">
+  <div class="kicker">Artículo 1 · Diseño (2/4) · Cómo se identifica</div>
+  <h2>Cada niño se compara con su propio curso esperado</h2>
+  <svg viewBox="0 0 1120 150" width="1120" height="150" role="img" aria-label="Línea de tiempo del diseño: línea base 2012, ventana de exposición 2012-2017 y outcome 2017, con extensión a 2024">
+<g font-family="Libre Franklin, sans-serif">
+<line x1="40" y1="70" x2="1080" y2="70" stroke="#D9DEE7" stroke-width="4"/>
+<rect x="330" y="58" width="470" height="24" rx="12" fill="#FEC60D"/>
+<text x="565" y="75" text-anchor="middle" font-size="14" font-weight="700" fill="#03122E">VENTANA DE EXPOSICIÓN · shock y trayectoria ocupacional</text>
+<line x1="800" y1="70" x2="1040" y2="70" stroke="#B9C7DC" stroke-width="4" stroke-dasharray="6 6"/>
+<g><circle cx="90" cy="70" r="11" fill="#fff" stroke="#5B6475" stroke-width="3"/><text x="90" y="40" text-anchor="middle" font-size="18" font-weight="700" fill="#5B6475">2010</text><text x="90" y="108" text-anchor="middle" font-size="13" fill="#5B6475">historia previa</text><text x="90" y="125" text-anchor="middle" font-size="13" fill="#5B6475">(absorbida en 2012)</text></g>
+<g><circle cx="330" cy="70" r="15" fill="#173F8A"/><text x="330" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#173F8A">2012</text><text x="330" y="112" text-anchor="middle" font-size="14" font-weight="700" fill="#173F8A">Línea base</text><text x="330" y="130" text-anchor="middle" font-size="13" fill="#1B2433">TVIP · activos · posición · PSI</text></g>
+<g><circle cx="800" cy="70" r="15" fill="#0176DE"/><text x="800" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#0176DE">2017</text><text x="800" y="112" text-anchor="middle" font-size="14" font-weight="700" fill="#0176DE">Outcome</text><text x="800" y="130" text-anchor="middle" font-size="13" fill="#1B2433">TVIP · CBCL · notas · posición</text></g>
+<g><circle cx="1040" cy="70" r="11" fill="#fff" stroke="#0176DE" stroke-width="3"/><text x="1040" y="40" text-anchor="middle" font-size="18" font-weight="700" fill="#0176DE">2024</text><text x="1040" y="108" text-anchor="middle" font-size="13" fill="#5B6475">extensión</text><text x="1040" y="125" text-anchor="middle" font-size="13" fill="#5B6475">(12 años)</text></g>
+</g></svg>
+  <div class="grid3" style="margin-top:14px;gap:18px">
+    <div class="card"><h3>1 · Línea base (2012)</h3><p>El TVIP de 2012 resume la dotación, el temperamento y <strong>toda la historia económica previa</strong> del hogar, incluida la transición 2010–2012.</p></div>
+    <div class="card y"><h3>2 · Exposición (2012→2017)</h3><p>Shock y trayectoria ocupacional se miden <strong>solo después</strong> de la línea base. Así el TVIP 2012 no puede ser mediador del efecto: evita el sesgo de "mal control" de los modelos de valor agregado.</p></div>
+    <div class="card d"><h3>3 · Lectura de β</h3><p>Entre niños con el <strong>mismo TVIP en 2012</strong>, cuánto se aleja el TVIP 2017 de lo esperado según la trayectoria del hogar: una <strong>desviación</strong>, no un nivel.</p></div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Lo que el diseño NO resuelve: selección en características no reflejadas en el TVIP 2012 (Mayer 1997); no hay diseño de hermanos (un niño índice por hogar). Error de medición en el TVIP base (atenuación típica de la variable dependiente rezagada).</div>
+</section>
+
+<!-- A1.4 Tipología y modelos -->
+<section class="slide" data-title="A1 · Tipología y estimación">
+  <div class="kicker">Artículo 1 · Diseño (3/4) · Trayectorias y modelos</div>
+  <h2>Cuatro trayectorias y una secuencia de modelos anidados</h2>
+  <div class="grid2" style="grid-template-columns:540px 1fr;gap:36px;flex:1">
+    <div><svg viewBox="0 0 520 330" width="520" height="330" role="img" aria-label="Tipología 2x2 de trayectorias ocupacionales del hogar entre 2012 y 2017 con tamaños muestrales">
+<g font-family="Libre Franklin, sans-serif">
+<text x="330" y="18" text-anchor="middle" font-size="13" font-weight="700" fill="#5B6475" letter-spacing="1.5">POSICIÓN EN 2017</text>
+<text x="235" y="44" text-anchor="middle" font-size="15" font-weight="700" fill="#173F8A">Estable</text>
+<text x="425" y="44" text-anchor="middle" font-size="15" font-weight="700" fill="#173F8A">Precaria</text>
+<text x="18" y="200" text-anchor="middle" font-size="13" font-weight="700" fill="#5B6475" letter-spacing="1.5" transform="rotate(-90 18 200)">POSICIÓN EN 2012</text>
+<text x="92" y="120" text-anchor="end" font-size="15" font-weight="700" fill="#173F8A">Estable</text>
+<text x="92" y="255" text-anchor="end" font-size="15" font-weight="700" fill="#173F8A">Precaria</text>
+<rect x="140" y="56" width="186" height="125" rx="8" fill="#E6F1FC"/>
+<text x="233" y="106" text-anchor="middle" font-size="19" font-weight="700" fill="#173F8A">Estabilidad</text>
+<text x="233" y="130" text-anchor="middle" font-size="14" fill="#5B6475">referencia · n = 1.505</text>
+<rect x="334" y="56" width="186" height="125" rx="8" fill="#fff" stroke="#0176DE" stroke-width="2"/>
+<text x="427" y="106" text-anchor="middle" font-size="19" font-weight="700" fill="#173F8A">Deterioro</text>
+<text x="427" y="130" text-anchor="middle" font-size="14" fill="#5B6475">n = 1.084</text>
+<rect x="140" y="189" width="186" height="125" rx="8" fill="#FFF4CC" stroke="#B98300" stroke-width="2"/>
+<text x="233" y="239" text-anchor="middle" font-size="19" font-weight="700" fill="#173F8A">Recuperación</text>
+<text x="233" y="263" text-anchor="middle" font-size="14" fill="#5B6475">n = 1.089</text>
+<rect x="334" y="189" width="186" height="125" rx="8" fill="#173F8A"/>
+<text x="427" y="239" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">Cronicidad</text>
+<text x="427" y="263" text-anchor="middle" font-size="14" fill="#C9D7F0">n = 3.131</text>
+</g></svg>
+      <p class="ref" style="margin-top:4px">Posición del/la cuidador/a principal en 2012 y en 2017. Muestra analítica con TVIP en ambas olas y covariables completas: <b>N = 6.809</b>.</p>
+    </div>
+    <div>
+      <div class="eq">TVIP<sub>2017</sub> = α + ρ·TVIP<sub>2012</sub> + Σ β<sub>k</sub>·Trayectoria<sub>k</sub> + δ·Shock + γ·Activos<sub>2012</sub> + ε</div>
+      <table class="mini" style="margin-top:14px">
+        <tr><th style="width:60px">Modelo</th><th>Agrega</th></tr>
+        <tr><td><b>M0</b></td><td>solo la línea base (TVIP 2012)</td></tr>
+        <tr><td><b>M1</b></td><td>+ shock 2012–2017</td></tr>
+        <tr><td><b>M2</b></td><td>línea base + trayectoria ocupacional</td></tr>
+        <tr><td><b>M3</b></td><td>+ shock + activos 2012 · <b>modelo principal</b></td></tr>
+        <tr><td><b>M4–M6</b></td><td>robustez: estructura familiar, ganancia simétrica, shock regional</td></tr>
+      </table>
+      <p class="ref" style="margin-top:10px">MCO con errores robustos (HC1). Mediación: activos → estrés parental (PSI) → outcome, con bootstrap de 2.000 réplicas.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">La trayectoria distingue entrada, salida y permanencia en precariedad; el shock binario no lo hace. Por eso la pregunta de la recuperación se responde con la tipología.</div>
+</section>
+
+<!-- A1.5 Estimación de lo esperado -->
+<section class="slide" data-title="A1 · Observado vs. esperado">
+  <div class="kicker">Artículo 1 · Diseño (4/4) · Cómo se estima lo esperado</div>
+  <h2>Desviación = TVIP observado − TVIP esperado según la propia línea base</h2>
+  <div class="grid2" style="grid-template-columns:1fr 520px;gap:30px;flex:1">
+    <div>
+      <div class="step"><span class="sn">1</span><div><h3>Curso esperado</h3><p>Se regresa el TVIP 2017 sobre el TVIP 2012 en toda la muestra:</p><div class="eq" style="margin-top:6px;padding:8px 14px">TVIP esperado<sub>2017</sub> = 1,03 + 0,37 · TVIP<sub>2012</sub></div><p class="ref" style="margin-top:4px">0,37 = cuánto de la ventaja o desventaja de 2012 persiste a 2017. La constante absorbe el corrimiento de toda la cohorte respecto de las normas del test.</p></div></div>
+      <div class="step"><span class="sn">2</span><div><h3>Desviación individual</h3><p>Un niño con TVIP 0 en 2012 debería llegar a 1,03. Si obtiene 0,90, su desviación es <strong>−0,13</strong>: quedó bajo lo que su propio punto de partida predecía.</p></div></div>
+      <div class="step"><span class="sn">3</span><div><h3>Comparación entre trayectorias</h3><p>β = diferencia promedio de desviación respecto de la estabilidad, descontando shock y activos. El M3 lo hace en una sola regresión (equivalente por Frisch–Waugh–Lovell).</p></div></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center">
+      <svg viewBox="0 0 300 200" width="246" height="164" role="img" aria-label="Esquema: recta de lo esperado y desviaciones de dos niños">
+<g font-family="Libre Franklin, sans-serif">
+<line x1="40" y1="170" x2="290" y2="170" stroke="#5B6475"/><line x1="40" y1="170" x2="40" y2="10" stroke="#5B6475"/>
+<text x="165" y="192" text-anchor="middle" font-size="12" fill="#5B6475">TVIP 2012 (línea base)</text>
+<text x="16" y="90" text-anchor="middle" font-size="12" fill="#5B6475" transform="rotate(-90 16 90)">TVIP 2017</text>
+<line x1="40" y1="132" x2="290" y2="58" stroke="#0176DE" stroke-width="3"/>
+<text x="288" y="48" text-anchor="end" font-size="12" font-weight="700" fill="#0176DE">esperado</text>
+<line x1="110" y1="111" x2="110" y2="66" stroke="#173F8A" stroke-width="2" stroke-dasharray="4 3"/>
+<circle cx="110" cy="66" r="7" fill="#173F8A"/><text x="121" y="62" font-size="12" font-weight="700" fill="#173F8A">sobre lo esperado (+)</text>
+<line x1="220" y1="79" x2="220" y2="134" stroke="#B98300" stroke-width="2" stroke-dasharray="4 3"/>
+<circle cx="220" cy="134" r="7" fill="#B98300"/><text x="210" y="152" text-anchor="end" font-size="12" font-weight="700" fill="#8A6200">bajo lo esperado (−)</text>
+</g></svg>
+      <p class="ref" style="margin:2px 0 0;align-self:flex-start">Promedio por trayectoria: ○ esperado según su TVIP 2012 · ● observado en 2017</p>
+      <div style="transform:scale(.74);transform-origin:top center;height:222px"><svg viewBox="0 0 520 300" width="520" height="300" role="img" aria-label="TVIP 2017 esperado según la línea base y observado, promedio por trayectoria">
+<line x1="150.0" y1="20" x2="150.0" y2="250" stroke="#E6E9EF"/>
+<text x="150.0" y="268" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#5B6475">0,9</text>
+<line x1="225.6" y1="20" x2="225.6" y2="250" stroke="#E6E9EF"/>
+<text x="225.6" y="268" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#5B6475">1,0</text>
+<line x1="301.1" y1="20" x2="301.1" y2="250" stroke="#E6E9EF"/>
+<text x="301.1" y="268" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#5B6475">1,1</text>
+<line x1="376.7" y1="20" x2="376.7" y2="250" stroke="#E6E9EF"/>
+<text x="376.7" y="268" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#5B6475">1,2</text>
+<line x1="452.2" y1="20" x2="452.2" y2="250" stroke="#E6E9EF"/>
+<text x="452.2" y="268" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#5B6475">1,3</text>
+<text x="320.0" y="290" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#5B6475">TVIP 2017 (z, promedio del grupo)</text>
+<g><title>Estabilidad (n = 1.505): esperado 1,16 · observado 1,28 · desviación +0,12</title>
+<text x="10" y="55" font-family="Libre Franklin, sans-serif" font-size="15" font-weight="700" fill="#173F8A">Estabilidad</text>
+<line x1="348.7" y1="50" x2="435.6" y2="50" stroke="#173F8A" stroke-width="3"/>
+<circle cx="348.7" cy="50" r="7" fill="#fff" stroke="#5B6475" stroke-width="2.5"/>
+<circle cx="435.6" cy="50" r="8" fill="#173F8A"/>
+<text x="449.6" y="55" text-anchor="start" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">+0,12</text></g>
+<g><title>Deterioro (n = 1.084): esperado 1,11 · observado 1,22 · desviación +0,11</title>
+<text x="10" y="113" font-family="Libre Franklin, sans-serif" font-size="15" font-weight="700" fill="#173F8A">Deterioro</text>
+<line x1="306.4" y1="108" x2="388.0" y2="108" stroke="#173F8A" stroke-width="3"/>
+<circle cx="306.4" cy="108" r="7" fill="#fff" stroke="#5B6475" stroke-width="2.5"/>
+<circle cx="388.0" cy="108" r="8" fill="#173F8A"/>
+<text x="402.0" y="113" text-anchor="start" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">+0,11</text></g>
+<g><title>Recuperación (n = 1.089): esperado 1,07 · observado 1,02 · desviación −0,05</title>
+<text x="10" y="171" font-family="Libre Franklin, sans-serif" font-size="15" font-weight="700" fill="#173F8A">Recuperación</text>
+<line x1="275.4" y1="166" x2="239.9" y2="166" stroke="#B98300" stroke-width="3"/>
+<circle cx="275.4" cy="166" r="7" fill="#fff" stroke="#5B6475" stroke-width="2.5"/>
+<circle cx="239.9" cy="166" r="8" fill="#B98300"/>
+<text x="225.9" y="171" text-anchor="end" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">−0,05</text></g>
+<g><title>Cronicidad (n = 3.131): esperado 1,06 · observado 0,98 · desviación −0,08</title>
+<text x="10" y="229" font-family="Libre Franklin, sans-serif" font-size="15" font-weight="700" fill="#173F8A">Cronicidad</text>
+<line x1="270.9" y1="224" x2="213.5" y2="224" stroke="#B98300" stroke-width="3"/>
+<circle cx="270.9" cy="224" r="7" fill="#fff" stroke="#5B6475" stroke-width="2.5"/>
+<circle cx="213.5" cy="224" r="8" fill="#B98300"/>
+<text x="199.5" y="229" text-anchor="end" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">−0,08</text></g>
+</svg></div>
+      <p class="ref" style="margin-top:2px;align-self:flex-start;font-size:13px">Datos ELPI (N = 6.809). Residuo promedio por trayectoria del modelo con solo la línea base; aún sin descontar shock ni activos (lo agrega el M3).</p>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Los niños de hogares estables quedan 0,12 DE sobre lo esperado; los de cronicidad, 0,08 bajo lo esperado. La brecha bruta (~0,19) se reduce a −0,13 al descontar shock y activos. Esperado del grupo = observado − desviación media (residuo del M0, N = 6.809). Si preguntan por el supuesto de persistencia: ver anexo (puntaje de cambio).</div>
+</section>
+
+<!-- A1.2 Antesala -->
+<section class="slide" data-title="A1 · Cuándo protegen los activos">
+  <div class="kicker">Artículo 1 · Resultados (1/4) · Activos y shocks</div>
+  <h2>¿Cuándo protegen los activos? Antes y después del shock, no durante</h2>
+  <div class="grid2" style="grid-template-columns:1fr 1.05fr;gap:34px;flex:1">
+    <div>
+      <div class="moment"><span class="mk ok">✓</span><div><h3>Exposición</h3><p>Más activos → <strong>menor probabilidad de shock</strong> en las tres transiciones (OR 0,68 · 0,85 · 0,80 por DE). Se sostiene con el shock medido en ingreso absoluto y controlando por quintil de origen.</p></div></div>
+      <div class="moment"><span class="mk no">✗</span><div><h3>Amortiguación</h3><p>Los activos <strong>no atenúan</strong> el efecto del shock sobre el vocabulario ni sobre el estrés parental (interacciones n.s.).</p></div></div>
+      <div class="moment"><span class="mk ok">✓</span><div><h3>Recomposición</h3><p>Los activos predicen la <strong>recuperación</strong> del ingreso previo. Pero el empleo decide más: sin empleo, solo ~3 de cada 10 hogares se recuperan.</p></div></div>
+    </div>
+    <div>
+      <h3 style="font-size:17px">Recuperación total del ingreso tras un shock, 2012–2024</h3>
+      <p class="ref" style="margin-bottom:6px">% de hogares con shock que vuelven a su nivel previo, según configuración familiar-laboral previa</p>
+      <svg viewBox="0 0 470 250" width="470" height="250" role="img" aria-label="Porcentaje de hogares con recuperación total del ingreso tras un shock, 2012–2024, por configuración familiar-laboral">
+<line x1="30" y1="200.0" x2="465" y2="200.0" stroke="#5B6475"/>
+<text x="24" y="204.0" text-anchor="end" font-family="Libre Franklin, sans-serif" font-size="11" fill="#5B6475">0%</text>
+<line x1="30" y1="152.5" x2="465" y2="152.5" stroke="#D9DEE7"/>
+<text x="24" y="156.5" text-anchor="end" font-family="Libre Franklin, sans-serif" font-size="11" fill="#5B6475">25%</text>
+<line x1="30" y1="105.0" x2="465" y2="105.0" stroke="#D9DEE7"/>
+<text x="24" y="109.0" text-anchor="end" font-family="Libre Franklin, sans-serif" font-size="11" fill="#5B6475">50%</text>
+<line x1="30" y1="57.5" x2="465" y2="57.5" stroke="#D9DEE7"/>
+<text x="24" y="61.5" text-anchor="end" font-family="Libre Franklin, sans-serif" font-size="11" fill="#5B6475">75%</text>
+<g><title>Biparental · sin empleo: 30,5% recupera totalmente</title>
+<path d="M40 200 v-53.949999999999996 q0 -4 4 -4 h44 q4 0 4 4 v53.949999999999996 z" fill="#B98300"/>
+<text x="66.0" y="134.05" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">30%</text>
+<text x="66.0" y="216" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#1B2433">sin empleo</text></g>
+<g><title>Biparental · informal: 50,2% recupera totalmente</title>
+<path d="M106 200 v-91.38 q0 -4 4 -4 h44 q4 0 4 4 v91.38 z" fill="#0176DE"/>
+<text x="132.0" y="96.62" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">50%</text>
+<text x="132.0" y="216" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#1B2433">informal</text></g>
+<g><title>Biparental · formal: 48,8% recupera totalmente</title>
+<path d="M172 200 v-88.71999999999998 q0 -4 4 -4 h44 q4 0 4 4 v88.71999999999998 z" fill="#0176DE"/>
+<text x="198.0" y="99.28000000000002" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">49%</text>
+<text x="198.0" y="216" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#1B2433">formal</text></g>
+<g><title>Monoparental · sin empleo: 28,3% recupera totalmente</title>
+<path d="M264 200 v-49.769999999999996 q0 -4 4 -4 h44 q4 0 4 4 v49.769999999999996 z" fill="#B98300"/>
+<text x="290.0" y="138.23000000000002" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">28%</text>
+<text x="290.0" y="216" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#1B2433">sin empleo</text></g>
+<g><title>Monoparental · informal: 71,1% recupera totalmente</title>
+<path d="M330 200 v-131.08999999999997 q0 -4 4 -4 h44 q4 0 4 4 v131.08999999999997 z" fill="#0176DE"/>
+<text x="356.0" y="56.910000000000025" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">71%</text>
+<text x="356.0" y="216" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#1B2433">informal</text></g>
+<g><title>Monoparental · formal: 61,6% recupera totalmente</title>
+<path d="M396 200 v-113.03999999999999 q0 -4 4 -4 h44 q4 0 4 4 v113.03999999999999 z" fill="#0176DE"/>
+<text x="422.0" y="74.96000000000001" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">62%</text>
+<text x="422.0" y="216" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#1B2433">formal</text></g>
+<text x="132.0" y="236" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="13" font-weight="700" fill="#173F8A">Biparental</text>
+<text x="356.0" y="236" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="13" font-weight="700" fill="#173F8A">Monoparental</text>
+</svg>
+      <p class="ref"><span class="sw" style="background:#0176DE"></span>con empleo &nbsp; <span class="sw" style="background:#B98300"></span>sin empleo · n = 1.615 hogares con shock</p>
+    </div>
+  </div>
+  <p style="font-size:18.5px;margin-top:6px">La riqueza opera como <span class="hl">colchón antes y después</span> del shock, no como amortiguador directo del daño. Por eso hay que mirar <strong>trayectorias</strong>.</p>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Recuperación = el quintil de ingreso en la ola siguiente vuelve al nivel previo al shock (hogares ya en Q1 se reportan aparte). Fuentes: scripts 14, 17, 18 y 20. OR de activos sobre incidencia de shock, muestra completa: 2010–12 = 0,68; 2012–17 = 0,85; 2017–24 = 0,80 (todas p&lt;0,001). Recuperación total: 45,7% (2010–17) y 47,5% (2012–24).</div>
+</section>
+
+<!-- A1.4 Resultado -->
+<section class="slide" data-title="A1 · Resultado central">
+  <div class="kicker">Artículo 1 · Resultados (2/4) · Trayectorias</div>
+  <h2>Recuperarse no borra el costo: la recuperación se parece a la cronicidad</h2>
+  <div class="grid2" style="grid-template-columns:730px 1fr;gap:30px;flex:1">
+    <div>
+      <p class="ref" style="margin-bottom:4px">Desviación del TVIP 2017 respecto de lo esperado (DE), modelo M3 · IC 95%</p>
+      <svg viewBox="0 0 720 330" width="720" height="330" role="img" aria-label="Coeficientes del modelo M3 con intervalos de confianza al 95%">
+<line x1="298.9" y1="20" x2="298.9" y2="290" stroke="#D9DEE7" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="298.9" y="310" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="13" fill="#5B6475">−0,2</text>
+<line x1="396.7" y1="20" x2="396.7" y2="290" stroke="#D9DEE7" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="396.7" y="310" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="13" fill="#5B6475">−0,1</text>
+<line x1="494.4" y1="20" x2="494.4" y2="290" stroke="#5B6475" stroke-width="1.5" />
+<text x="494.4" y="310" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="13" fill="#5B6475">0</text>
+<line x1="592.2" y1="20" x2="592.2" y2="290" stroke="#D9DEE7" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="592.2" y="310" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="13" fill="#5B6475">+0,1</text>
+<line x1="690.0" y1="20" x2="690.0" y2="290" stroke="#D9DEE7" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="690.0" y="310" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="13" fill="#5B6475">+0,2</text>
+<g><title>Deterioro: β = 0,039 · IC95% [−0,071; 0,149] · p = 0,485</title>
+<text x="10" y="44" font-family="Libre Franklin, sans-serif" font-size="16" font-weight="700" fill="#173F8A">Deterioro</text>
+<text x="10" y="62" font-family="Libre Franklin, sans-serif" font-size="13" fill="#5B6475">estable → precario · n = 1.084</text>
+<line x1="425.3" y1="46" x2="639.9" y2="46" stroke="#5B6475" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="532.6" cy="46" r="7" fill="#fff" stroke="#5B6475" stroke-width="2.5"/>
+<text x="532.6" y="33" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="400" fill="#1B2433">+0,04</text></g>
+<g><title>Recuperación: β = −0,114 · IC95% [−0,200; −0,028] · p = 0,010</title>
+<text x="10" y="94" font-family="Libre Franklin, sans-serif" font-size="16" font-weight="700" fill="#173F8A">Recuperación</text>
+<text x="10" y="112" font-family="Libre Franklin, sans-serif" font-size="13" fill="#5B6475">precario → estable · n = 1.089</text>
+<line x1="298.7" y1="96" x2="467.3" y2="96" stroke="#173F8A" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="383.0" cy="96" r="7" fill="#173F8A" stroke="#173F8A" stroke-width="2.5"/>
+<text x="383.0" y="83" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">−0,11</text></g>
+<g><title>Cronicidad: β = −0,132 · IC95% [−0,199; −0,065] · p = <0,001</title>
+<text x="10" y="144" font-family="Libre Franklin, sans-serif" font-size="16" font-weight="700" fill="#173F8A">Cronicidad</text>
+<text x="10" y="162" font-family="Libre Franklin, sans-serif" font-size="13" fill="#5B6475">precario → precario · n = 3.131</text>
+<line x1="300.2" y1="146" x2="430.5" y2="146" stroke="#173F8A" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="365.4" cy="146" r="7" fill="#173F8A" stroke="#173F8A" stroke-width="2.5"/>
+<text x="365.4" y="133" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">−0,13</text></g>
+<line x1="10" y1="182" x2="710" y2="182" stroke="#D9DEE7"/>
+<g><title>Shock 2012–2017: β = −0,040 · IC95% [−0,118; 0,038] · p = 0,318</title>
+<text x="10" y="208" font-family="Libre Franklin, sans-serif" font-size="16" font-weight="700" fill="#173F8A">Shock 2012–2017</text>
+<text x="10" y="226" font-family="Libre Franklin, sans-serif" font-size="13" fill="#5B6475">ingreso / empleo / ocupación</text>
+<line x1="378.7" y1="210" x2="532.0" y2="210" stroke="#5B6475" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="455.3" cy="210" r="7" fill="#fff" stroke="#5B6475" stroke-width="2.5"/>
+<text x="455.3" y="197" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="400" fill="#1B2433">−0,04</text></g>
+<g><title>Activos 2012: β = 0,127 · IC95% [0,100; 0,154] · p = <0,001</title>
+<text x="10" y="258" font-family="Libre Franklin, sans-serif" font-size="16" font-weight="700" fill="#173F8A">Activos 2012</text>
+<text x="10" y="276" font-family="Libre Franklin, sans-serif" font-size="13" fill="#5B6475">+1 DE del índice</text>
+<line x1="591.8" y1="260" x2="645.5" y2="260" stroke="#173F8A" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="618.6" cy="260" r="7" fill="#173F8A" stroke="#173F8A" stroke-width="2.5"/>
+<text x="618.6" y="247" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="14" font-weight="700" fill="#1B2433">+0,13</text></g>
+</svg>
+      <p class="ref">Referencia: estabilidad · ● significativo al 5% &nbsp; ○ no significativo · MCO con EE robustos · N = 6.809</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div class="card y"><p><strong>Recuperación ≈ cronicidad.</strong> −0,11 y −0,13 DE; estadísticamente indistinguibles.</p></div>
+      <div class="card"><p><strong>Asimetría.</strong> El deterioro desde una posición estable no deja huella detectable a 5 años.</p></div>
+      <div class="card d"><p><strong>Activos.</strong> +0,13 DE por cada DE del índice, independiente de la trayectoria ocupacional.</p></div>
+      <p class="small muted">R²: 0,131 (solo línea base) → 0,136 (+ trayectoria) → 0,146 (+ activos)</p>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Lectura: es consistente con un período sensible. Lo que importa es cuándo ocurre la precariedad, no solo cuánto dura. El shock puntual deja de ser significativo una vez que entra la trayectoria.</div>
+</section>
+
+<!-- A1.5 Mecanismos -->
+<section class="slide" data-title="A1 · Mecanismos">
+  <div class="kicker">Artículo 1 · Resultados (3/4) · Mecanismos</div>
+  <h2>Inversión y estrés operan en dominios distintos del desarrollo</h2>
+  <div class="grid2" style="grid-template-columns:660px 1fr;gap:34px;flex:1">
+    <div>
+      <p class="ref" style="margin-bottom:6px">% del efecto de los activos (2012) mediado por el estrés parental (PSI)</p>
+      <svg viewBox="0 0 640 250" width="640" height="250" role="img" aria-label="Porcentaje del efecto de los activos mediado por estrés parental, por outcome">
+<line x1="210.0" y1="16" x2="210.0" y2="220" stroke="#5B6475"/>
+<text x="210.0" y="238" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#5B6475">0%</text>
+<line x1="332.5" y1="16" x2="332.5" y2="220" stroke="#D9DEE7"/>
+<text x="332.5" y="238" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#5B6475">25%</text>
+<line x1="455.0" y1="16" x2="455.0" y2="220" stroke="#D9DEE7"/>
+<text x="455.0" y="238" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#5B6475">50%</text>
+<line x1="577.5" y1="16" x2="577.5" y2="220" stroke="#D9DEE7"/>
+<text x="577.5" y="238" text-anchor="middle" font-family="Libre Franklin, sans-serif" font-size="12" fill="#5B6475">75%</text>
+<text x="198" y="52" text-anchor="end" font-family="Libre Franklin, sans-serif" font-size="15" font-weight="700" fill="#173F8A">Vocabulario (TVIP)</text>
+<g><title>Vocabulario (TVIP) · angustia parental: 12,4% mediado</title>
+<path d="M210 30 h56.760000000000005 q4 0 4 4 v10 q0 4 -4 4 h-56.760000000000005 z" fill="#0176DE"/>
+<text x="278.76" y="44" font-family="Libre Franklin, sans-serif" font-size="13" font-weight="700" fill="#1B2433">12%</text></g>
+<g><title>Vocabulario (TVIP) · interacción disfuncional: 17,4% mediado</title>
+<path d="M210 52 h81.26 q4 0 4 4 v10 q0 4 -4 4 h-81.26 z" fill="#B98300"/>
+<text x="303.26" y="66" font-family="Libre Franklin, sans-serif" font-size="13" font-weight="700" fill="#1B2433">17%</text></g>
+<text x="198" y="114" text-anchor="end" font-family="Libre Franklin, sans-serif" font-size="15" font-weight="700" fill="#173F8A">Notas escolares</text>
+<g><title>Notas escolares · angustia parental: 10,7% mediado</title>
+<path d="M210 92 h48.43 q4 0 4 4 v10 q0 4 -4 4 h-48.43 z" fill="#0176DE"/>
+<text x="270.43" y="106" font-family="Libre Franklin, sans-serif" font-size="13" font-weight="700" fill="#1B2433">11%</text></g>
+<g><title>Notas escolares · interacción disfuncional: 20,0% mediado</title>
+<path d="M210 114 h94.0 q4 0 4 4 v10 q0 4 -4 4 h-94.0 z" fill="#B98300"/>
+<text x="316.0" y="128" font-family="Libre Franklin, sans-serif" font-size="13" font-weight="700" fill="#1B2433">20%</text></g>
+<text x="198" y="176" text-anchor="end" font-family="Libre Franklin, sans-serif" font-size="15" font-weight="700" fill="#173F8A">Ansiedad/depresión (CBCL)</text>
+<g><title>Ansiedad/depresión (CBCL) · angustia parental: 74,3% mediado</title>
+<path d="M210 154 h360.07 q4 0 4 4 v10 q0 4 -4 4 h-360.07 z" fill="#0176DE"/>
+<text x="582.0699999999999" y="168" font-family="Libre Franklin, sans-serif" font-size="13" font-weight="700" fill="#1B2433">74%</text></g>
+<g><title>Ansiedad/depresión (CBCL) · interacción disfuncional: 62,3% mediado</title>
+<path d="M210 176 h301.27 q4 0 4 4 v10 q0 4 -4 4 h-301.27 z" fill="#B98300"/>
+<text x="523.27" y="190" font-family="Libre Franklin, sans-serif" font-size="13" font-weight="700" fill="#1B2433">62% *</text></g>
+</svg>
+      <p class="ref"><span class="sw" style="background:#0176DE"></span>angustia parental &nbsp; <span class="sw" style="background:#B98300"></span>interacción cuidador-niño disfuncional · bootstrap 2.000 réplicas, todos los efectos indirectos p&lt;0,001</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div class="card"><h3>Cognitivo y logro</h3><p>El estrés media una fracción <strong>menor</strong> (10–20%). Domina el canal directo de <strong>inversión</strong> (Becker &amp; Tomes).</p></div>
+      <div class="card y"><h3>Socioemocional</h3><p>El estrés media la <strong>mayor parte</strong> (62–74%). Domina el canal de <strong>estrés familiar</strong> (Conger).</p></div>
+      <p class="ref">* En CBCL el efecto directo no es significativo, por lo que el % mediado se lee con cautela. Activos y PSI son contemporáneos (2012): es una mediación estadística, no una prueba fuerte de mecanismo.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Coherente con Mari &amp; Keizer (2021): los canales se reparten por dominio y no compiten. Pendiente: un mediador directo del canal de inversión (HOME/estimulación).</div>
+</section>
+
+<!-- A1.6 Robustez -->
+<section class="slide" data-title="A1 · Robustez">
+  <div class="kicker">Artículo 1 · Resultados (4/4) · Robustez y horizonte largo</div>
+  <h2>El hallazgo resiste; a 12 años, los activos ganan peso</h2>
+  <table class="arts rob">
+    <thead><tr><th style="width:36%">Especificación</th><th>Recuperación</th><th>Cronicidad</th><th style="width:30%">Qué descarta</th></tr></thead>
+    <tbody>
+      <tr><td class="k2">M3 · modelo principal</td><td>−0,114*</td><td>−0,132***</td><td>—</td></tr>
+      <tr><td class="k2">M4 · + cambio de estructura familiar</td><td>−0,112*</td><td>−0,136***</td><td>Recomposición familiar</td></tr>
+      <tr><td class="k2">M5 · + ganancia económica simétrica</td><td>−0,130*</td><td>−0,133***</td><td>Definición del shock</td></tr>
+      <tr><td class="k2">M6 · + tasa de shock regional</td><td>−0,116**</td><td>−0,134***</td><td>Condiciones regionales</td></tr>
+      <tr class="alt"><td class="k2">Ventana 2012–2024 (exploratoria)</td><td>−0,049 <span class="muted">n.s.</span></td><td>−0,085**</td><td>Horizonte corto</td></tr>
+    </tbody>
+  </table>
+  <p class="ref" style="margin-top:6px">* p&lt;0,05 · ** p&lt;0,01 · *** p&lt;0,001 · EE robustos (HC1)</p>
+  <div class="grid2" style="margin-top:16px;gap:28px">
+    <div class="card y"><p><strong>A 12 años</strong>, la cronicidad persiste. La penalización por recuperación se atenúa al controlar por activos de 2012: el colchón patrimonial pesa más cuanto más tiempo tiene para operar.</p></div>
+    <div class="card"><p><strong>Hallazgo lateral:</strong> ganar o perder un segundo cuidador empeora la desviación (−0,14 y −0,15). La monoparentalidad estable no la empeora. Pesa la <em>inestabilidad</em>, no la estructura.</p></div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Sin controlar por activos, la recuperación sí es significativa a 12 años (−0,096, p=0,002). La posición precaria acumulada 2012–24, ponderada por años, predice −0,115 (p&lt;0,001).</div>
+</section>
+
+<!-- A1.7 Estado -->
+<section class="slide" data-title="A1 · Aporte y estado">
+  <div class="kicker">Artículo 1 · Aporte, límites y estado</div>
+  <h2>Qué aporta, qué no resuelve y dónde está</h2>
+  <div class="grid3">
+    <div class="card"><span class="pill">Aporte</span>
+      <ul class="clean" style="margin-top:12px"><li><p>La recuperación económica no repara el costo temprano.</p></li><li><p>Mecanismos adjudicados por dominio del desarrollo.</p></li><li><p>Posición económica como trayectoria laboral y activos, no solo ingreso.</p></li></ul></div>
+    <div class="card d"><span class="pill">Límites declarados</span>
+      <ul class="clean" style="margin-top:12px"><li><p>Selección no observada (Mayer 1997); no hay diseño de hermanos.</p></li><li><p>Atenuación por error de medición en el TVIP base.</p></li><li><p>Mediadores contemporáneos; falta presión económica subjetiva.</p></li></ul></div>
+    <div class="card y"><span class="pill y">Estado</span>
+      <ul class="clean" style="margin-top:12px"><li><p>Análisis completo. Introducción, marco y métodos redactados.</p></li><li><p>Pendiente: resultados, robustez y discusión.</p></li><li><p>Revista objetivo: <em>World Development</em>. DEMOSAL, Montevideo, marzo de 2027.</p></li></ul></div>
+  </div>
+  <p class="small muted" style="margin-top:14px">Extensiones evaluadas: CBCL en la ventana 2012–2024 (ventana sensible por dominio) y un mediador directo de inversión (HOME).</p>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+</section>
+
+<!-- ============ ARTÍCULO 2 ============ -->
+<section class="slide divider" data-title="Artículo 2">
+  <div class="num">02</div>
+  <h2>Movilidad escolar como hecho económico, redes de pares y expectativas</h2>
+  <p>Registros MINEDUC/CEM y cuestionarios SIMCE · etapa de diseño</p>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+</section>
+
+<!-- A2.1 Pregunta -->
+<section class="slide" data-title="A2 · Pregunta">
+  <div class="kicker">Artículo 2 · Pregunta</div>
+  <h2>¿Cambiar de colegio cambia lo que un estudiante espera de su futuro?</h2>
+  <div class="grid2" style="grid-template-columns:1.2fr 1fr;gap:40px;flex:1">
+    <div>
+      <p>En Chile, moverse entre dependencias (municipal, subvencionado con copago, particular pagado) es una <strong>decisión económica del hogar</strong>: subir compromete recursos bajo incertidumbre; bajar puede señalar un shock.</p>
+      <p style="margin-top:14px">Ese movimiento cambia también la <strong>red de pares</strong>: entrar a un colegio más elitizado inserta al estudiante en un espacio de familias con posición económica consolidada y expectativas altas y homogéneas.</p>
+      <div class="quote" style="font-size:21px;margin-top:22px">¿La movilidad entre dependencias reconfigura las expectativas educativas vía la exposición a una nueva red de pares, y beneficia más a quienes ya tenían ventaja?</div>
+    </div>
+    <div class="card d" style="align-self:start">
+      <span class="pill">Marco: DiMaggio &amp; Garip 2012</span>
+      <h3 style="margin-top:12px">Cuándo las redes generan desigualdad</h3>
+      <ul class="clean" style="margin-top:8px">
+        <li><p style="font-size:17px">Adoptar la práctica depende de los <strong>recursos</strong> del hogar.</p></li>
+        <li><p style="font-size:17px">Las redes son <strong>homofílicas</strong>.</p></li>
+        <li><p style="font-size:17px">Adoptar depende de que los <strong>pares</strong> ya la hayan adoptado.</p></li>
+      </ul>
+      <p class="ref" style="margin-top:6px">Si se cumplen, las redes producen desigualdad <em>por sobre</em> la de las dotaciones individuales.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Encaje en la tesis: escala hogar ↔ escuela. La posición económica del hogar se expresa en la decisión escolar, y la escuela redistribuye expectativas. Mismo espíritu que el A1: comparar a cada estudiante con su propia línea base.</div>
+</section>
+
+<!-- A2.2 Mecanismo -->
+<section class="slide" data-title="A2 · Mecanismos">
+  <div class="kicker">Artículo 2 · Mecanismos</div>
+  <h2>Tres mecanismos de red y cómo aproximarlos sin lazos directos</h2>
+  <p class="lead-in">Medimos el entorno que el estudiante encuentra al llegar, con atributos de sus <strong>nuevos compañeros registrados en 4° básico, antes de su llegada</strong>.</p>
+  <table class="arts mech">
+    <thead><tr><th style="width:17%">Mecanismo</th><th style="width:23%">Huella según DiMaggio &amp; Garip</th><th>Cómo lo medimos en el curso de destino</th><th style="width:21%">Límite</th></tr></thead>
+    <tbody>
+      <tr><td class="k2">Externalidad de red<span>el valor crece con cada adoptante</span></td><td>Función continua del <b>número</b> de adoptantes</td><td>Proporción de compañeros cuyos <b>padres esperaban educación universitaria</b> en 4° básico (adopción previa de la norma)</td><td>Proporción del curso, no de la red personal</td></tr>
+      <tr><td class="k2">Aprendizaje social<span>información que reduce el riesgo</span></td><td><b>Umbral</b>: el efecto aparece con más de un par informado (n &gt; 1)</td><td><div class="mechcell"><div><b>Número</b> (0, 1, 2, 3+) de compañeros con padres con educación superior o expectativa universitaria</div><svg viewBox="0 0 190 96" width="190" height="96" role="img" aria-label="Esquema de umbral: efecto según número de compañeros adoptantes 0, 1, 2, 3 o más"><g font-family="Libre Franklin, sans-serif">
+<line x1="22" y1="72" x2="182" y2="72" stroke="#5B6475"/><line x1="22" y1="72" x2="22" y2="6" stroke="#5B6475"/>
+<rect x="34" y="62" width="26" height="10" rx="2" fill="#B9C7DC"/><rect x="72" y="60" width="26" height="12" rx="2" fill="#B9C7DC"/>
+<rect x="110" y="26" width="26" height="46" rx="2" fill="#0176DE"/><rect x="148" y="20" width="26" height="52" rx="2" fill="#0176DE"/>
+<text x="47" y="86" text-anchor="middle" font-size="11" fill="#1B2433">0</text><text x="85" y="86" text-anchor="middle" font-size="11" fill="#1B2433">1</text>
+<text x="123" y="86" text-anchor="middle" font-size="11" fill="#1B2433">2</text><text x="161" y="86" text-anchor="middle" font-size="11" fill="#1B2433">3+</text>
+<text x="104" y="14" text-anchor="middle" font-size="10.5" fill="#173F8A">salto después de n = 1</text>
+<text x="12" y="40" text-anchor="middle" font-size="10" fill="#5B6475" transform="rotate(-90 12 40)">efecto</text>
+</g></svg></div></td><td>Compartir curso no asegura contacto: el umbral queda atenuado</td></tr>
+      <tr><td class="k2">Influencia normativa<span>premios y sanciones de pares</span></td><td>% de adoptantes <b>ponderado por la densidad</b> de lazos entre ellos</td><td>Prevalencia de <b>autoconcepto y autoeficacia positivos</b> en 4° básico, ponderada por cuánto tiempo llevan juntos esos compañeros</td><td>La permanencia conjunta aproxima la densidad, no la mide</td></tr>
+    </tbody>
+  </table>
+  <div class="grid2" style="margin-top:12px;gap:18px">
+    <div class="card y slim"><p><strong>Hipótesis central · red × ventaja.</strong> Entre quienes suben, la exposición beneficia más a quienes ya tenían ventaja (<em>surplus inequality</em>). Se testea también la dirección inversa.</p></div>
+    <div class="card d slim"><p><strong>Gradiente de complejidad.</strong> El efecto debería crecer de asistencia → expectativas → postulación selectiva → matrícula y persistencia.</p></div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">D&amp;G (2012, Tabla 1): externalidad = función de n (lineal, log o exponencial); aprendizaje social = umbral n &gt; 1 en sus variantes de testimonio y apoyo en la adopción, y log n en la de apoyo continuo (su ejemplo es la migración); influencia normativa = % de adoptantes ponderado por la densidad de lazos. Ellos mismos advierten (p. 100) que los estudios de co-presencia no distinguen efectos de red de la agrupación en subgrupos homogéneos dentro del curso. Autoconcepto y gusto por las asignaturas son disposiciones de los pares (clima normativo), no adopción de la práctica; la expectativa de los padres de los compañeros sí es adopción previa. Alternativa para aprendizaje social: historial del colegio de destino en ingreso a educación superior (cohortes anteriores, vía MRUN).</div>
+</section>
+
+<!-- A2.3 Diseño -->
+<section class="slide" data-title="A2 · Diseño">
+  <div class="kicker">Artículo 2 · Diseño</div>
+  <h2>Una línea base familiar y una medición propia del estudiante</h2>
+  <svg viewBox="0 0 1120 150" width="1120" height="150" role="img" aria-label="Diseño del artículo 2: expectativa de padres en 4° básico, cambio de dependencia entre ambas mediciones y expectativa del estudiante en II medio">
+<g font-family="Libre Franklin, sans-serif">
+<line x1="60" y1="70" x2="1060" y2="70" stroke="#D9DEE7" stroke-width="4"/>
+<rect x="250" y="58" width="620" height="24" rx="12" fill="#FEC60D"/>
+<text x="560" y="75" text-anchor="middle" font-size="14" font-weight="700" fill="#03122E">MOVILIDAD · cambio de dependencia escolar (subir / bajar / quedarse)</text>
+<circle cx="250" cy="70" r="15" fill="#173F8A"/><text x="250" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#173F8A">4° básico</text>
+<text x="250" y="110" text-anchor="middle" font-size="14" font-weight="700" fill="#173F8A">Línea base</text><text x="250" y="128" text-anchor="middle" font-size="13" fill="#1B2433">expectativa declarada por padres · escolaridad</text>
+<circle cx="870" cy="70" r="15" fill="#0176DE"/><text x="870" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#0176DE">II medio</text>
+<text x="870" y="110" text-anchor="middle" font-size="14" font-weight="700" fill="#0176DE">Resultado</text><text x="870" y="128" text-anchor="middle" font-size="13" fill="#1B2433">expectativa del/la estudiante</text>
+<circle cx="1060" cy="70" r="10" fill="#fff" stroke="#0176DE" stroke-width="3"/><text x="1060" y="40" text-anchor="middle" font-size="15" font-weight="700" fill="#0176DE">Ed. superior</text><text x="1060" y="110" text-anchor="middle" font-size="12.5" fill="#5B6475">postulación ·</text><text x="1060" y="126" text-anchor="middle" font-size="12.5" fill="#5B6475">matrícula (MRUN)</text>
+<text x="90" y="75" text-anchor="middle" font-size="13" fill="#5B6475">1° básico</text>
+</g></svg>
+  <div class="grid3" style="margin-top:12px;gap:18px">
+    <div class="card"><h3>Δ dentro de la persona</h3><p style="font-size:16px"><strong>Δ = expectativa del estudiante (II medio) − expectativa de los padres (4° básico).</strong> Neta la disposición familiar de base, con otro informante que el resultado.</p></div>
+    <div class="card y"><h3>Dos grupos de referencia</h3><p style="font-size:16px">Movilizados <strong>entre</strong> 4° básico y II medio frente a (a) excompañeros que se quedaron y (b) nuevos compañeros del colegio de destino: ¿convergen o mantienen brecha?</p></div>
+    <div class="card d"><h3>Divergencia de varianza</h3><p style="font-size:16px">¿Los cursos de destino más homofílicos generan mayor dispersión de Δ? Réplica del diseño de DiMaggio &amp; Garip (2011), casi ausente en la literatura.</p></div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Identificación: efectos fijos de colegio de origen, sensibilidad a confusión no observada (VanderWeele 2011) y subgrupo de movilidad por traslado laboral de los padres (Hoxby &amp; Weingarth 2006). Se excluye o trata aparte a quienes cambiaron antes de 4° básico. Screening de exclusión: bullying por nivel socioeconómico (Cuestionario SIMCE).</div>
+</section>
+
+<!-- A2.4 Datos -->
+<section class="slide" data-title="A2 · Datos y cohortes">
+  <div class="kicker">Artículo 2 · Datos</div>
+  <h2>Hay datos: cuatro cohortes con expectativas completas en ambas olas</h2>
+  <div class="grid2" style="grid-template-columns:1fr 1fr;gap:34px;flex:1">
+    <div>
+      <table class="mini coh">
+        <tr><th>Cohorte*</th><th>Padres (4° b.)</th><th>Estudiante (II m.)</th><th>Estado</th></tr>
+        <tr class="y"><td><b>2003</b></td><td>81,9%</td><td>77,7%</td><td>Aceptable</td></tr><tr class="n"><td><b>2004</b></td><td>51,5%</td><td>71,3%</td><td>Débil</td></tr><tr class="y"><td><b>2005</b></td><td>82,0%</td><td>74,5%</td><td>Aceptable</td></tr><tr class="y"><td><b>2006</b></td><td>74,7%</td><td>82,6%</td><td>Aceptable</td></tr><tr class="s"><td><b>2007</b></td><td>85,8%</td><td>81,9%</td><td>Sólida</td></tr><tr class="s"><td><b>2008</b></td><td>85,9%</td><td>85,4%</td><td>Sólida</td></tr><tr class="s"><td><b>2009</b></td><td>82,7%</td><td>84,5%</td><td>Sólida</td></tr><tr class="n"><td><b>2013</b></td><td>80,5%</td><td>—</td><td>Archivo<br>dañado</td></tr><tr class="s"><td><b>2014</b></td><td>82,4%</td><td>81,2%</td><td>Sólida</td></tr><tr class="n"><td><b>2015</b></td><td>82,9%</td><td>—</td><td>Sin pregunta</td></tr>
+      </table>
+      <p class="ref" style="margin-top:6px">* Año de ingreso a 1° básico. % de alumnos de la cohorte (panel de Rendimiento, MINEDUC) con respuesta válida a la pregunta de expectativa.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div class="card y"><h3>Decisión</h3><p style="font-size:15.5px">Cohortes <strong>2007, 2008, 2009 y 2014</strong>: 4° básico 2010–2017, II medio 2016–2023, con cobertura &gt;80% en ambas expectativas y en la escolaridad de los padres. Supera el umbral fijado (60–70%): <strong>se mantiene el Plan A</strong> (expectativas).</p></div>
+      <div class="card"><h3>Panel base</h3><p style="font-size:15.5px">Rendimiento MINEDUC/CEM 2002–2024 por MRUN (dependencia, curso, promedio, asistencia), enlazable a educación superior.</p></div>
+      <div class="card d"><h3>Elitización del colegio</h3><p style="font-size:15.5px">Índice RBD-año: selectividad de admisión, proxy de arancel (SII) y ausencia de becas propias, validado contra el GSE-SIMCE.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Descartadas: 2004 (expectativa de padres 51,5%), 2013 (archivo de puntajes de II medio 2022 desalineado; se solicitará corrección), 2015 (el cuestionario 2024 eliminó la pregunta), 1999 (sin cuestionario de estudiante en 2008). 2003 y 2006 quedan como robustez.</div>
+</section>
+
+<!-- A2.4b Movilidad -->
+<section class="slide" data-title="A2 · Cuánto se mueven">
+  <div class="kicker">Artículo 2 · Movilidad observada</div>
+  <h2>Hay movimiento que estudiar: casi 1 de cada 3 cambia de dependencia</h2>
+  <div class="grid2" style="grid-template-columns:620px 1fr;gap:30px;flex:1">
+    <div>
+      <p class="ref" style="margin-bottom:4px">Dependencia en el primer año observado vs. al egresar de 4° medio, por cohorte</p>
+      <svg viewBox="0 0 600 230" width="600" height="230" role="img" aria-label="Movilidad de dependencia administrativa por cohorte: porcentaje que sube, permanece estable y baja"><g font-family="Libre Franklin, sans-serif">
+<text x="60" y="58.0" text-anchor="end" font-size="15" font-weight="700" fill="#173F8A">2007</text>
+<g><title>Cohorte 2007 · sube: 20,1% (44.656 de 222.437)</title>
+<rect x="70.0" y="34" width="98.4" height="38" fill="#0176DE" rx="3"/>
+<text x="120.2" y="58.0" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">20,1%</text></g>
+<g><title>Cohorte 2007 · estable: 66,6% (148.214 de 222.437)</title>
+<rect x="170.4" y="34" width="331.2" height="38" fill="#D5DAE3" rx="3"/>
+<text x="337.0" y="58.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1B2433">66,6%</text></g>
+<g><title>Cohorte 2007 · baja: 13,3% (29.567 de 222.437)</title>
+<rect x="503.5" y="34" width="64.5" height="38" fill="#B98300" rx="3"/>
+<text x="536.8" y="58.0" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">13,3%</text></g>
+<text x="60" y="108.0" text-anchor="end" font-size="15" font-weight="700" fill="#173F8A">2008</text>
+<g><title>Cohorte 2008 · sube: 18,9% (41.154 de 217.847)</title>
+<rect x="70.0" y="84" width="92.5" height="38" fill="#0176DE" rx="3"/>
+<text x="117.2" y="108.0" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">18,9%</text></g>
+<g><title>Cohorte 2008 · estable: 67,7% (147.511 de 217.847)</title>
+<rect x="164.5" y="84" width="336.6" height="38" fill="#D5DAE3" rx="3"/>
+<text x="333.7" y="108.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1B2433">67,7%</text></g>
+<g><title>Cohorte 2008 · baja: 13,4% (29.182 de 217.847)</title>
+<rect x="503.0" y="84" width="65.0" height="38" fill="#B98300" rx="3"/>
+<text x="536.5" y="108.0" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">13,4%</text></g>
+<text x="60" y="158.0" text-anchor="end" font-size="15" font-weight="700" fill="#173F8A">2009</text>
+<g><title>Cohorte 2009 · sube: 18,0% (39.294 de 218.041)</title>
+<rect x="70.0" y="134" width="88.1" height="38" fill="#0176DE" rx="3"/>
+<text x="115.1" y="158.0" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">18,0%</text></g>
+<g><title>Cohorte 2009 · estable: 68,5% (149.350 de 218.041)</title>
+<rect x="160.1" y="134" width="340.5" height="38" fill="#D5DAE3" rx="3"/>
+<text x="331.3" y="158.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1B2433">68,5%</text></g>
+<g><title>Cohorte 2009 · baja: 13,5% (29.397 de 218.041)</title>
+<rect x="502.6" y="134" width="65.4" height="38" fill="#B98300" rx="3"/>
+<text x="536.3" y="158.0" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">13,5%</text></g>
+<text x="60" y="208.0" text-anchor="end" font-size="15" font-weight="700" fill="#173F8A">2014*</text>
+<g><title>Cohorte 2014* · sube: 15,5% (25.644 de 165.648)</title>
+<rect x="70.0" y="184" width="75.4" height="38" fill="#0176DE" rx="3"/>
+<text x="108.7" y="208.0" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">15,5%</text></g>
+<g><title>Cohorte 2014* · estable: 71,3% (118.135 de 165.648)</title>
+<rect x="147.4" y="184" width="354.6" height="38" fill="#D5DAE3" rx="3"/>
+<text x="325.7" y="208.0" text-anchor="middle" font-size="14" font-weight="700" fill="#1B2433">71,3%</text></g>
+<g><title>Cohorte 2014* · baja: 13,2% (21.869 de 165.648)</title>
+<rect x="504.0" y="184" width="64.0" height="38" fill="#B98300" rx="3"/>
+<text x="537.0" y="208.0" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">13,2%</text></g>
+</g></svg>
+      <p class="ref"><span class="sw" style="background:#0176DE"></span>sube &nbsp; <span class="sw" style="background:#D5DAE3"></span>estable &nbsp; <span class="sw" style="background:#B98300"></span>baja · n comparable: 222.437 · 217.847 · 218.041 · 165.648</p>
+      <p class="ref" style="margin-top:4px">* 2014: solo 60% de la cohorte ha egresado dentro del panel (hasta 2025); cifras sobre una submuestra parcial.</p>
+      <table class="mini mtx" style="margin-top:12px">
+        <tr><th>Cohorte 2008 · origen → destino</th><th>Municipal</th><th>P. Subv.</th><th>P. Pagado</th></tr>
+        <tr><td><b>Municipal</b></td><td>59,3%</td><td>39,8%</td><td>0,9%</td></tr>
+        <tr><td><b>Part. subvencionado</b></td><td>23,6%</td><td>71,3%</td><td>5,2%</td></tr>
+        <tr><td><b>Part. pagado</b></td><td>3,2%</td><td>10,4%</td><td class="hi">86,4%</td></tr>
+      </table>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div class="card"><h3>Magnitud</h3><p style="font-size:16.5px">En las cohortes del estudio, <strong>15–20% sube</strong> (sobre todo de municipal a subvencionado) y <strong>~13% baja</strong>: entre 47.000 y 74.000 estudiantes por cohorte cambian de dependencia.</p></div>
+      <div class="card y"><h3>Asimetría en los extremos (GSE)</h3><p style="font-size:16.5px">Quien parte en el GSE <strong>alto</strong> termina ahí en <strong>84–88%</strong> de los casos; quien parte en el <strong>bajo</strong>, solo en <strong>47–60%</strong>. La cima se reproduce con más fuerza que la base.</p></div>
+      <div class="card d"><h3>Movilidad y territorio</h3><p style="font-size:16.5px">Quienes cambian de dependencia se mudan de comuna más a menudo (bajan: 24%, suben: 23%, estables: 18%).</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Fuente: panel de Rendimiento MINEDUC, cohortes 2002–2016 (reporte del 29-09-2026, cifras preliminares). Origen = primer año observado (normalmente 1° básico); destino = egreso de 4° medio. Ojo: esta ventana es más amplia que la del diseño (4° básico → II medio); los movilizados del estudio serán un subconjunto. GSE: 45–53% permanece en el mismo quintil.</div>
+</section>
+
+<!-- A2.5 Estado -->
+<section class="slide" data-title="A2 · Aporte y estado">
+  <div class="kicker">Artículo 2 · Aporte, límites y próximos pasos</div>
+  <h2>Qué aporta y qué falta</h2>
+  <div class="grid3">
+    <div class="card"><span class="pill">Aporte</span>
+      <ul class="clean" style="margin-top:12px"><li><p>Ataca a la vez la <strong>selección</strong> (vía Δ con línea base familiar) y la <strong>desigualdad</strong> (vía varianza).</p></li><li><p>El antecedente más cercano (Cattan, Salvanes &amp; Tominey 2022) no observa expectativas de base.</p></li></ul></div>
+    <div class="card d"><span class="pill">Límites declarados</span>
+      <ul class="clean" style="margin-top:12px"><li><p>El curso es co-presencia, no lazos reales (Sacerdote 2011): evidencia <em>consistente con</em> un mecanismo de red.</p></li><li><p>Elitización e ingreso del hogar: evidencia ecológica, no individual.</p></li></ul></div>
+    <div class="card y"><span class="pill y">Próximos pasos</span>
+      <ul class="clean" style="margin-top:12px"><li><p>Identificar movilizados entre 4° básico y II medio en las cuatro cohortes.</p></li><li><p>Construir el índice de elitización y la medida económica del hogar.</p></li><li><p>Solicitar a la Agencia de Calidad el archivo corregido de 2022.</p></li></ul></div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+</section>
+
+<!-- ============ ARTÍCULO 3 ============ -->
+<section class="slide divider" data-title="Artículo 3">
+  <div class="num">03</div>
+  <h2>Redes de activos y deudas</h2>
+  <p>Configuraciones financieras y trayectorias de (in)seguridad · Panel EFH 2007–2014</p>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+</section>
+
+<!-- A3.1 Inspiración -->
+<section class="slide" data-title="A3 · Inspiración">
+  <div class="kicker">Artículo 3 · Inspiración</div>
+  <h2>Leer posiciones a partir de flujos y co-ocurrencias, no de categorías fijadas de antemano</h2>
+  <div class="grid3" style="gap:18px">
+    <div class="card"><span class="pill">Movilidad</span><h3 style="margin-top:10px">Flujos entre posiciones</h3><p style="font-size:16px">Ocupaciones como nodos y movimientos de trabajadores como aristas: las <strong>clases de movilidad</strong> emergen de los caminos efectivamente recorridos.</p><p class="ref" style="margin-top:8px"><b>Cheng &amp; Park 2020</b>, <i>AJS</i> · Toubøl &amp; Larsen 2017, <i>Sociology</i></p></div>
+    <div class="card d"><span class="pill">Espacios de co-ocurrencia</span><h3 style="margin-top:10px">Proximidad y trayectorias</h3><p style="font-size:16px">Productos (o enfermedades) como nodos conectados por co-ocurrencia: las unidades se mueven hacia lo <strong>cercano</strong> a lo que ya tienen. La trayectoria depende de la posición en la red.</p><p class="ref" style="margin-top:8px"><b>Hidalgo et al. 2007</b>, <i>Science</i> · Hidalgo et al. 2009, <i>PLoS Comp. Biol.</i> · World Bank 2024, <i>Poverty Space</i></p></div>
+    <div class="card y"><span class="pill y">Riqueza relacional</span><h3 style="margin-top:10px">Composición y relaciones</h3><p style="font-size:16px">La riqueza como <strong>configuración</strong> de activos y deudas y como conjunto de <strong>derechos sobre recursos futuros</strong>; las clases patrimoniales se definen por la composición del portafolio.</p><p class="ref" style="margin-top:8px"><b>Keister et al. 2026</b> · Waitkus, Savage &amp; Toft 2025, <i>Sociology</i> · Dvir-Djerassi &amp; Pfeffer 2025</p></div>
+  </div>
+  <p style="margin-top:18px;font-size:18px">Keister et al. dejan abierta la pregunta clave: <span class="hl">¿cómo se mueven los hogares entre configuraciones en el tiempo?</span> Este artículo la aborda con una red.</p>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Idea transversal: Cheng y Park infieren fronteras de clase desde los flujos de movilidad (la definición weberiana de clase como conjunto de situaciones entre las que la movilidad es fácil y típica). El "product space" de Hidalgo et al. muestra que los países diversifican hacia productos próximos a los que ya exportan: la estructura de la red condiciona las trayectorias. Traducido: los hogares se mueven hacia instrumentos "cercanos" a su portafolio actual.</div>
+</section>
+
+<!-- A3.2 Idea central -->
+<section class="slide" data-title="A3 · Idea y modelo">
+  <div class="kicker">Artículo 3 · Idea central y modelo</div>
+  <h2>Los instrumentos son los nodos; los hogares, trayectorias que los recorren</h2>
+  <p class="lead-in">¿Qué configuraciones de activos y deudas protegen a los hogares, y qué caminos llevan hacia posiciones más seguras o más frágiles?</p>
+  <div class="pipe">
+    <div class="pstep"><span class="sn">1</span><h3>Estructura</h3><p class="q">¿Qué instrumentos van juntos?</p>
+      <p>Red de <strong>dependencias condicionales</strong> entre instrumentos (modelo de Ising): una arista indica co-tenencia que persiste descontando los demás instrumentos.</p>
+      <p class="ref">Comparación entre olas y estratos (Network Comparison Test)</p></div>
+    <div class="parrow">→</div>
+    <div class="pstep"><span class="sn">2</span><h3>Dinámica</h3><p class="q">¿Cómo se mueven los hogares?</p>
+      <p><strong>Estados de portafolio</strong> (clases latentes) y sus <strong>transiciones</strong> 2007 → 2011 → 2014 (análisis de transición latente). La matriz de transición es una red dirigida de flujos.</p>
+      <p class="ref">Covariables: educación, ocupación, informalidad, a igual ingreso</p></div>
+    <div class="parrow">→</div>
+    <div class="pstep y"><span class="sn">3</span><h3>Posición segura</h3><p class="q">¿Hacia dónde tiende cada hogar?</p>
+      <p>Probabilidad de <strong>permanecer o llegar</strong> a estados protectores y de quedar <strong>atrapado</strong> en estados frágiles (cadena de Markov): un índice de seguridad relacional.</p>
+      <p class="ref">Se compara con componentes simples en capacidad predictiva</p></div>
+  </div>
+  <div class="grid2" style="margin-top:16px;gap:18px">
+    <div class="card d slim"><p><strong>Por qué no solo comunidades por flujos.</strong> Cheng y Park tienen cientos de ocupaciones; aquí habrá 5–10 estados y ~2.000 transiciones. Lo informativo es la matriz de transición: persistencia, caminos y trampas.</p></div>
+    <div class="card y slim"><p><strong>Puentes y espirales.</strong> Un puente seguro es un camino de alta probabilidad hacia estados protectores; una espiral, una secuencia que concentra deuda no garantizada y mora.</p></div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Por qué no Infomap como eje: Cheng y Park trabajan con cientos de ocupaciones; aquí habrá 5–10 estados de portafolio y 1.988 transiciones, así que la detección de comunidades por flujos aporta poco. Con pocos estados, lo informativo es la matriz de transición: persistencia, tiempo esperado hasta un estado seguro y probabilidad de quedar atrapado. El modelo de Ising (red de asociaciones parciales para variables binarias, regularizado) separa co-tenencia directa de indirecta; la red de φ actual es solo bivariada. Referencias: Epskamp, Borsboom &amp; Fried 2018; van Borkulo et al. 2014; Collins &amp; Lanza 2010 (LTA); Rosvall &amp; Bergstrom 2008 (Infomap). Respuesta a Pfeffer: el índice solo se justifica si predice mejor que los componentes.</div>
+</section>
+
+<!-- A3.3 Datos -->
+<section class="slide" data-title="A3 · Datos">
+  <div class="kicker">Artículo 3 · Datos</div>
+  <h2>Estabilidad agregada, alta movilidad individual</h2>
+  <div class="grid2" style="grid-template-columns:720px 1fr;gap:24px;flex:1">
+    <div>
+      <p class="ref" style="margin-bottom:0">Transiciones entre configuraciones de portafolio, 2007 → 2011 → 2014 (EFH, 994 hogares). Número = % que permanece en el estado; flechas = % que pasa a otro estado (≥10%)</p>
+      <svg viewBox="0 0 720 410" width="720" height="410" role="img" aria-label="Red de transiciones entre configuraciones de portafolio, EFH 2007-2011-2014"><g font-family="Libre Franklin, sans-serif">
+<defs><marker id="tr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5E6B85"/></marker></defs>
+<g><title>Propietario sin deudas → Propietario + deuda de consumo: 37,3%</title><path d="M215 141 Q377 198 548 203" fill="none" stroke="#5E6B85" stroke-opacity=".65" stroke-width="7.2" marker-end="url(#tr)"/>
+<rect x="360" y="175" width="38" height="19" rx="9" fill="#fff" stroke="#D9DEE7"/><text x="379" y="189" text-anchor="middle" font-size="12" font-weight="700" fill="#1B2433">37%</text></g>
+<g><title>Propietario + deuda de consumo → Propietario sin deudas: 25,4%</title><path d="M555 188 Q393 131 222 126" fill="none" stroke="#5E6B85" stroke-opacity=".65" stroke-width="5.3" marker-end="url(#tr)"/>
+<rect x="372" y="134" width="38" height="19" rx="9" fill="#fff" stroke="#D9DEE7"/><text x="391" y="149" text-anchor="middle" font-size="12" font-weight="700" fill="#1B2433">25%</text></g>
+<g><title>Propietario con hipoteca → Propietario + deuda de consumo: 54,0%</title><path d="M392 82 Q458 155 552 184" fill="none" stroke="#5E6B85" stroke-opacity=".65" stroke-width="9.8" marker-end="url(#tr)"/>
+<rect x="446" y="134" width="38" height="19" rx="9" fill="#fff" stroke="#D9DEE7"/><text x="465" y="149" text-anchor="middle" font-size="12" font-weight="700" fill="#1B2433">54%</text></g>
+<g><title>Propietario con hipoteca → Propietario sin deudas: 16,0%</title><path d="M348 62 Q275 58 217 104" fill="none" stroke="#5E6B85" stroke-opacity=".65" stroke-width="3.8" marker-end="url(#tr)"/>
+<rect x="260" y="60" width="38" height="19" rx="9" fill="#fff" stroke="#D9DEE7"/><text x="279" y="75" text-anchor="middle" font-size="12" font-weight="700" fill="#1B2433">16%</text></g>
+<g><title>No propietario sin deudas → No propietario + deuda de consumo: 32,8%</title><path d="M181 315 Q305 349 432 331" fill="none" stroke="#5E6B85" stroke-opacity=".65" stroke-width="6.4" marker-end="url(#tr)"/>
+<rect x="287" y="326" width="38" height="19" rx="9" fill="#fff" stroke="#D9DEE7"/><text x="306" y="340" text-anchor="middle" font-size="12" font-weight="700" fill="#1B2433">33%</text></g>
+<g><title>No propietario + deuda de consumo → No propietario sin deudas: 23,3%</title><path d="M437 315 Q313 281 186 299" fill="none" stroke="#5E6B85" stroke-opacity=".65" stroke-width="4.9" marker-end="url(#tr)"/>
+<rect x="293" y="284" width="38" height="19" rx="9" fill="#fff" stroke="#D9DEE7"/><text x="312" y="299" text-anchor="middle" font-size="12" font-weight="700" fill="#1B2433">23%</text></g>
+<g><title>No propietario + deuda de consumo → Propietario + deuda de consumo: 22,6%</title><path d="M500 308 Q551 296 568 246" fill="none" stroke="#5E6B85" stroke-opacity=".65" stroke-width="4.8" marker-end="url(#tr)"/>
+<rect x="524" y="277" width="38" height="19" rx="9" fill="#fff" stroke="#D9DEE7"/><text x="543" y="291" text-anchor="middle" font-size="12" font-weight="700" fill="#1B2433">23%</text></g>
+<g><title>No propietario sin deudas → Propietario sin deudas: 22,7%</title><path d="M162 275 Q195 227 177 172" fill="none" stroke="#5E6B85" stroke-opacity=".65" stroke-width="4.8" marker-end="url(#tr)"/>
+<rect x="163" y="215" width="38" height="19" rx="9" fill="#fff" stroke="#D9DEE7"/><text x="182" y="230" text-anchor="middle" font-size="12" font-weight="700" fill="#1B2433">23%</text></g>
+<g><title>No propietario sin deudas → Propietario + deuda de consumo: 13,4%</title><path d="M182 306 Q373 290 552 224" fill="none" stroke="#5E6B85" stroke-opacity=".65" stroke-width="3.3" marker-end="url(#tr)"/>
+<rect x="351" y="268" width="38" height="19" rx="9" fill="#fff" stroke="#D9DEE7"/><text x="370" y="282" text-anchor="middle" font-size="12" font-weight="700" fill="#1B2433">13%</text></g>
+<g><title>Propietario sin deudas: 29,2% de los hogares (promedio de olas); permanece 48,4%</title>
+<circle cx="175" cy="125" r="49" fill="none" stroke="#0176DE" stroke-width="5.4" stroke-opacity=".35"/>
+<circle cx="175" cy="125" r="42" fill="#0176DE"/>
+<text x="175" y="130" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">48%</text>
+<text x="175" y="59" text-anchor="middle" font-size="13" font-weight="700" fill="#173F8A">Propietario</text><text x="175" y="74" text-anchor="middle" font-size="12.5" fill="#1B2433">sin deudas · 29%</text></g>
+<g><title>Propietario con hipoteca: 4,7% de los hogares (promedio de olas); permanece 23,0%</title>
+<circle cx="375" cy="62" r="32" fill="none" stroke="#173F8A" stroke-width="3.1" stroke-opacity=".35"/>
+<circle cx="375" cy="62" r="25" fill="#173F8A"/>
+<text x="375" y="67" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">23%</text>
+<text x="412" y="58" text-anchor="start" font-size="13" font-weight="700" fill="#173F8A">Propietario</text><text x="412" y="73" text-anchor="start" font-size="12.5" fill="#1B2433">con hipoteca · 5%</text></g>
+<g><title>Propietario + deuda de consumo: 41,4% de los hogares (promedio de olas); permanece 58,1%</title>
+<circle cx="600" cy="205" r="54" fill="none" stroke="#B98300" stroke-width="6.2" stroke-opacity=".35"/>
+<circle cx="600" cy="205" r="47" fill="#B98300"/>
+<text x="600" y="210" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">58%</text>
+<text x="600" y="134" text-anchor="middle" font-size="13" font-weight="700" fill="#173F8A">Propietario</text><text x="600" y="149" text-anchor="middle" font-size="12.5" fill="#1B2433">+ deuda de consumo · 41%</text></g>
+<g><title>No propietario sin deudas: 11,0% de los hogares (promedio de olas); permanece 29,0%</title>
+<circle cx="150" cy="305" r="38" fill="none" stroke="#8C95A6" stroke-width="3.6" stroke-opacity=".35"/>
+<circle cx="150" cy="305" r="31" fill="#8C95A6"/>
+<text x="150" y="310" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">29%</text>
+<text x="150" y="358" text-anchor="middle" font-size="13" font-weight="700" fill="#173F8A">No propietario</text><text x="150" y="373" text-anchor="middle" font-size="12.5" fill="#1B2433">sin deudas · 11%</text></g>
+<g><title>No propietario + deuda de consumo: 13,7% de los hogares (promedio de olas); permanece 44,4%</title>
+<circle cx="470" cy="325" r="40" fill="none" stroke="#8A6200" stroke-width="5.0" stroke-opacity=".35"/>
+<circle cx="470" cy="325" r="33" fill="#8A6200"/>
+<text x="470" y="330" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">44%</text>
+<text x="470" y="380" text-anchor="middle" font-size="13" font-weight="700" fill="#173F8A">No propietario</text><text x="470" y="395" text-anchor="middle" font-size="12.5" fill="#1B2433">+ deuda de consumo · 14%</text></g>
+</g></svg>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div class="card slim"><h3>Poco cambio agregado</h3><p style="font-size:15.5px">La distribución de estados casi no varía entre 2007 y 2014, pero solo el <strong>28%</strong> de los hogares permanece en el mismo estado en las tres olas.</p></div>
+      <div class="card y slim"><h3>La frontera más transitada</h3><p style="font-size:15.5px">Entre propietarios, entrar y salir de la <strong>deuda de consumo</strong>: 37% pasa de "sin deudas" a "con consumo" y 25% hace el camino inverso.</p></div>
+      <div class="card d slim"><h3>Un estado pegajoso</h3><p style="font-size:15.5px">El <strong>44%</strong> de los no propietarios con deuda de consumo sigue igual cuatro años después.</p></div>
+      <p class="ref">Preliminar: estados por reglas, sin ponderar; en el diseño final, clases latentes.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Construcción: panel balanceado EFH 2007-2011-2014 (llave oficial, sin imputación). Estado por hogar-ola: propietario (vivienda propia pagada o pagándose) × hipoteca × deuda de consumo (tarjeta retail o consumo bancario = consumo total menos retail, automotriz, educativo y otras). Transiciones de ambas ventanas sumadas (n = 1.988). Distribución 2007 / 2014: S1 30 / 30%, S2 5 / 4%, S3 41 / 43%, S4 12 / 9%, S5 13 / 14%. Secuencias más frecuentes: S3-S3-S3 (137), S1-S1-S1 (93), S3-S3-S1 (65), S1-S3-S3 (63). Cautela: 12% de los propietarios de 2007 aparece como no propietario en 2011 (y 32% de los no propietarios como propietario): parte puede ser error de medición o recomposición del hogar; revisar antes del análisis final. Fuera de este esquema: activos financieros y vehículo.</div>
+</section>
+
+<!-- ============ CIERRE ============ -->
+<section class="slide" data-title="Cierre">
+  <div class="kicker">Cierre</div>
+  <h2>La seguridad económica como posición y como trayectoria</h2>
+  <div class="grid3" style="gap:20px">
+    <div class="card"><span class="pill">1</span><h3 style="margin-top:10px">Configuración, no nivel</h3><p style="font-size:16.5px">La posición económica del hogar combina trabajo, ingresos, activos y deudas. Hogares con el mismo ingreso ocupan posiciones de seguridad muy distintas.</p></div>
+    <div class="card d"><span class="pill">2</span><h3 style="margin-top:10px">Lo decisivo es la dinámica</h3><p style="font-size:16.5px">La precariedad sostenida deja huella en el desarrollo infantil; el cambio de colegio mueve a los estudiantes de red; la estabilidad agregada esconde alta movilidad financiera.</p></div>
+    <div class="card y"><span class="pill y">3</span><h3 style="margin-top:10px">Tres escalas</h3><p style="font-size:16.5px">El hogar en el tiempo, el hogar frente a la escuela y la estructura financiera del hogar: tres ventanas a cómo se produce y se transmite la inseguridad.</p></div>
+  </div>
+  <div class="next">
+    <h3>Próximos pasos</h3>
+    <div class="nrow"><span class="pill">Art. 1</span><p>Redactar resultados y discusión; posición a nivel de hogar y corrección de la línea base con TVIP 2010.</p></div>
+    <div class="nrow"><span class="pill">Art. 2</span><p>Identificar movilizados entre 4° básico y II medio y construir la exposición a los nuevos compañeros.</p></div>
+    <div class="nrow"><span class="pill y">Art. 3</span><p>Estimar estados latentes de portafolio y sus transiciones; explorar el componente panel de EFH 2017–2024.</p></div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+  <div class="notes">Mensaje final: la tesis no pregunta cuánto tienen los hogares, sino qué tan gobernable es su futuro según cómo se configuran y se mueven sus recursos.</div>
+</section>
+
+<!-- ============ REFERENCIAS ============ -->
+<section class="slide" data-title="Referencias">
+  <div class="kicker">Referencias</div>
+  <h2 style="margin-bottom:16px">Referencias citadas</h2>
+  <div class="grid2" style="gap:18px 40px;font-size:13.5px;line-height:1.38;color:#1B2433">
+    <div>
+      <p class="ref">Abufhele, A. et al. (2022). Socioeconomic gradients in child development: Evidence from a Chilean longitudinal study 2010–2017.</p>
+      <p class="ref">Becker, G. &amp; Tomes, N. (1986). Human capital and the rise and fall of families. <i>J. of Labor Economics</i>.</p>
+      <p class="ref">Conger, R. et al. (1992). A family process model of economic hardship. <i>Child Development</i>.</p>
+      <p class="ref">Contreras, D. &amp; Puentes, E. (2017). Inequality of opportunities at early ages: Evidence from Chile.</p>
+      <p class="ref">Fisher, J., Johnson, D., Smeeding, T. &amp; Thompson, J. (2022). Inequality in 3-D. <i>Review of Income and Wealth</i>.</p>
+      <p class="ref">Gibson-Davis, C. et al. (2022). Net worth poverty and child development.</p>
+      <p class="ref">Hacker, J. et al. (2014). The Economic Security Index. <i>Review of Income and Wealth</i>.</p>
+      <p class="ref">Hällsten, M. &amp; Thaning, M. (2022). Wealth as one of the “Big Four” SES dimensions. <i>Social Forces</i>.</p>
+      <p class="ref">Hill, H. et al. (2013). The consequences of income instability for children’s well-being. <i>Child Dev. Perspectives</i>.</p>
+      <p class="ref">Keister, L., Moody, J. &amp; Qiu, S. (2026). Rethinking financial status. <i>Social Currents</i>.</p>
+      <p class="ref">Killewald, A., Pfeffer, F. &amp; Schachner, J. (2017). Wealth inequality and accumulation. <i>Annual Review of Sociology</i>.</p>
+    </div>
+    <div>
+      <p class="ref">López-Calva, L. F. &amp; Ortiz-Juárez, E. (2014). A vulnerability approach to the definition of the middle class. <i>J. of Economic Inequality</i>.</p>
+      <p class="ref">Mani, A. et al. (2013). Poverty impedes cognitive function. <i>Science</i>.</p>
+      <p class="ref">Miller, P. et al. (2021). Wealth and child development. </p>
+      <p class="ref">OECD (2024). <i>Informality and Households’ Vulnerabilities in Latin America</i>.</p>
+      <p class="ref">Petrov, D. &amp; Romaguera-de-la-Cruz, M. (2025). Measuring economic insecurity by combining income and wealth. <i>Rev. of Economics of the Household</i>.</p>
+      <p class="ref">Pfeffer, F. &amp; Hällsten, M. (2012). Mobility regimes and parental wealth.</p>
+      <p class="ref">Savage, M. et al. (2013). A new model of social class? <i>Sociology</i>.</p>
+      <p class="ref">Spilerman, S. (2000). Wealth and stratification processes. <i>Annual Review of Sociology</i>.</p>
+      <p class="ref">Waitkus, N. &amp; Groh-Samberg, O. (2019). The space of economic and cultural capital. Springer.</p>
+      <p class="ref">Western, B., Bloome, D., Sosnaud, B. &amp; Tach, L. (2012). Economic insecurity and social stratification. <i>Annual Review of Sociology</i>.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+</section>
+
+<!-- ============ ANEXO: SUPUESTO DE PERSISTENCIA ============ -->
+<section class="slide annex" data-title="Anexo · Supuesto de persistencia">
+  <div class="kicker">Anexo · Artículo 1 · Supuesto de persistencia</div>
+  <h2>¿Cuánto de la ventaja inicial persiste? El resultado depende de ese supuesto</h2>
+  <div class="grid2" style="grid-template-columns:1.05fr 1fr;gap:34px;flex:1">
+    <div>
+      <table class="arts rob">
+        <thead><tr><th style="width:30%">Modelo</th><th>Persistencia</th><th>Recup.</th><th>Cronic.</th><th>Activos</th></tr></thead>
+        <tbody>
+          <tr><td class="k2">Línea base propia (M3)</td><td>ρ estimado = 0,37</td><td>−0,114*</td><td>−0,132***</td><td>+0,127***</td></tr>
+          <tr><td class="k2">Puntaje de cambio</td><td>ρ fijado = 1</td><td>−0,004</td><td>−0,016</td><td>−0,015</td></tr>
+        </tbody>
+      </table>
+      <p class="ref" style="margin-top:8px">N = 6.809 · MCO con EE robustos · estimación exploratoria sin pesos. * p&lt;0,05 · *** p&lt;0,001</p>
+      <div class="card y" style="margin-top:18px"><p><strong>Paradoja de Lord.</strong> Los hogares precarios parten más abajo (TVIP 2012: 0,08–0,10 frente a 0,36) y crecen lo mismo en términos absolutos. Con ρ = 0,37 se esperaba que cerraran parte de la brecha y no lo hacen; con ρ = 1, no hay costo adicional.</p></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div class="card"><h3>Cuál es el correcto</h3><p>Si la diferencia inicial está en lo que mide el TVIP 2012, la línea base propia es la correcta. Si se debe a rasgos estables no medidos, lo es el puntaje de cambio. Ambos <strong>acotan</strong> el efecto (Angrist &amp; Pischke 2009).</p></div>
+      <div class="card d"><h3>Por qué importa aquí</h3><p>ρ = 0,37 es bajo: el TVIP a los 2–6 años tiene error de medición y controla solo en parte. El efecto puede estar sobreestimado.</p></div>
+      <div class="card y"><h3>Próximo paso</h3><p>Usar el TVIP 2010 como segundo control o como instrumento del TVIP 2012, para corregir el error de medición.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Configuraciones económicas y seguridad desigual</span><span class="n"></span></div>
+</section>
+
+</div></div>
+<div id="progress"></div>
+<div id="notes"></div>
+<div id="help">← → navegar · N notas · F pantalla completa</div>
+
+<script>
+(function(){
+  const slides=[...document.querySelectorAll('.slide')];
+  const deck=document.getElementById('deck');
+  const prog=document.getElementById('progress');
+  const notesBox=document.getElementById('notes');
+  let i=0, showNotes=false;
+  const total=slides.length;
+  slides.forEach((s,k)=>{const n=s.querySelector('.foot .n'); if(n) n.textContent=(k+1)+' / '+total;});
+  slides.forEach(s=>{const im=document.createElement('img'); im.src='logo-uc-azul.svg'; im.alt='Pontificia Universidad Católica de Chile'; im.className='logo'; s.appendChild(im);});
+  function fit(){const s=Math.min(window.innerWidth/1280,window.innerHeight/720)*0.98; deck.style.transform='scale('+s+')';}
+  function show(k){
+    i=Math.max(0,Math.min(total-1,k));
+    slides.forEach((s,j)=>s.classList.toggle('active',j===i));
+    prog.style.width=((i+1)/total*100)+'%';
+    const n=slides[i].querySelector('.notes');
+    notesBox.innerHTML=n?'<b>Notas · </b>'+n.innerHTML:'<b>Notas · </b>(sin notas)';
+    notesBox.style.display=showNotes?'block':'none';
+    if(history.replaceState) history.replaceState(null,'','#'+(i+1));
+  }
+  document.addEventListener('keydown',e=>{
+    if(['ArrowRight','PageDown',' ','Enter'].includes(e.key)){e.preventDefault();show(i+1);}
+    else if(['ArrowLeft','PageUp','Backspace'].includes(e.key)){e.preventDefault();show(i-1);}
+    else if(e.key==='Home') show(0);
+    else if(e.key==='End') show(total-1);
+    else if(e.key==='n'||e.key==='N'){showNotes=!showNotes;show(i);}
+    else if(e.key==='f'||e.key==='F'){ if(!document.fullscreenElement) document.documentElement.requestFullscreen?.(); else document.exitFullscreen?.(); }
+  });
+  document.addEventListener('click',e=>{ if(e.target.closest('#notes')) return; (e.clientX>window.innerWidth/3)?show(i+1):show(i-1); });
+  let tx=null; document.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});
+  document.addEventListener('touchend',e=>{if(tx===null)return; const d=e.changedTouches[0].clientX-tx; if(Math.abs(d)>40) show(d<0?i+1:i-1); tx=null;});
+  window.addEventListener('resize',fit);
+  fit();
+  setTimeout(()=>document.getElementById('help').classList.add('off'),5000);
+  const h=parseInt(location.hash.slice(1)); show(isNaN(h)?0:h-1);
+})();
+</script>
+</body>
+</html>
