@@ -1,0 +1,55 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.top-banner}
+:::
+
+::: {.language-switch}
+[EN](index.qmd) | [ES](index-es.qmd)
+:::
+
+::: {.profile-layout}
+
+::: {.profile-left}
+![](images/profile.jpg){.profile-img}
+
+# Gonzalo Torres Rosales
+
+Psicólogo social  
+Candidato a Doctor en Sociología  
+Pontificia Universidad Católica de Chile  
+
+[GitHub](https://github.com/gonzalotr11){.btn .btn-outline-primary}
+[LinkedIn](https://www.linkedin.com/in/gonzalo-torres-rosales-38a21068){.btn .btn-outline-primary}
+[ORCID](https://orcid.org/0000-0002-9612-2787){.btn .btn-outline-primary}
+[Email](mailto:gonzalo.torres11@gmail.com){.btn .btn-outline-primary}
+:::
+
+::: {.profile-right}
+## Desigualdad, economía de los hogares y bienestar
+
+Soy psicólogo social y candidato a doctor en Sociología. Investigo la desigualdad socioeconómica, la economía de los hogares y el bienestar: cómo el ingreso, la riqueza, la deuda y la inseguridad económica moldean lo que viven las personas, las decisiones que toman y las oportunidades que tienen.
+
+Trabajo con métodos cuantitativos y ciencias sociales computacionales para encontrar nuevas formas de representar la realidad social. Eso significa vincular encuestas con registros administrativos, convertir textos en datos estructurados y construir modelos que hagan visibles los mecanismos sociales, en lugar de dejarlos ocultos detrás de los promedios.
+
+Mi trabajo tiene también un propósito educativo. Desarrollo herramientas web interactivas que permiten a audiencias amplias y a quienes toman decisiones públicas explorar problemas sociales y su funcionamiento, con información de calidad, basada en evidencia y fácil de usar.
+
+Antes del doctorado trabajé durante una década en sociedad civil, educación, investigación aplicada para políticas públicas y escritura pública. Esa experiencia explica mi interés por una investigación rigurosa y, a la vez, útil fuera de la universidad.
+
+### Áreas principales
+
+- Desigualdad socioeconómica y seguridad económica de los hogares
+- Riqueza, deuda y economía de los hogares
+- Psicología social de la desigualdad y bienestar
+- Métodos cuantitativos y ciencias sociales computacionales
+- Herramientas interactivas para comprender problemas sociales con evidencia
+
+::: {.home-tools}
+**Explora mis herramientas:** [Economic Security Lab](tools-es.qmd#economic-security-lab) · [Mea Culpa, como datos](tools-es.qmd#mea-culpa-como-datos) · [Ver todas →](tools-es.qmd)
+:::
+:::
+
+:::

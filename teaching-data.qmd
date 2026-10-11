@@ -1,0 +1,105 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.top-banner}
+:::
+
+::: {.language-switch}
+[EN](teaching-data.qmd) | [ES](teaching-data-es.qmd)
+:::
+
+# Teaching & Data Work
+
+I teach statistics, research methods, and social psychology, and I have worked as a data analyst in research projects on education, mobility, and inequality. Teaching shapes how I build tools: the [interactive tools](tools.qmd) on this site started as ways to explain to students how social data and mechanisms work.
+
+::: {.research-section}
+
+## University Teaching
+
+::: {.research-item}
+### Statistics and Probability for Science Education
+
+**Universidad Alberto Hurtado (2025–present)**
+
+Instructor for undergraduate students in Science Education. The course develops descriptive statistics, probability, data visualization, and quantitative reasoning for future science teachers.
+:::
+
+::: {.research-item}
+### Psychology and Research Methods
+
+**Universidad San Sebastián (2015–2021)**
+
+Instructor in undergraduate psychology courses, including:
+
+- Foundations of Socioanthropological Approaches to Human Behavior
+- Qualitative Research Methods
+- Community Psychology
+- Social Psychology
+- Undergraduate thesis and capstone assessment
+
+These courses connected social theory, research design, and practical intervention skills.
+:::
+
+::: {.research-item}
+### Professional Skills Workshops
+
+**Universidad del Desarrollo (2015–2017)**
+
+Instructor in professional development courses for psychology students, emphasizing:
+
+- Scientific writing
+- Research project design
+- Evidence-based argumentation
+- Interdisciplinary problem solving
+:::
+
+:::
+
+::: {.research-section}
+
+## Data Work and Research Assistance
+
+::: {.research-item}
+### Doctoral Researcher
+
+**Wealth and Social Cohesion from a Relational Perspective (2025–present)**
+
+Funded by the Volkswagen Foundation through the ISI-LMU Munich project.
+
+My doctoral dissertation examines household wealth configurations, economic security, and educational inequality in Chile. The project combines survey data, administrative records, and quantitative methods to study how wealth shapes life opportunities and educational trajectories.
+:::
+
+::: {.research-item}
+### Research Assistant
+
+**Princeton University (2024–2025)**
+
+Data analyst for the project *Intergenerational Mobility in Latin America: Patterns and Trends*.
+
+Responsibilities included:
+
+- Statistical processing of large-scale datasets
+- Data harmonization and management
+- Quantitative analysis of education and mobility indicators
+- Documentation and reproducible workflows
+:::
+
+::: {.research-item}
+### Research Assistant
+
+**Millennium Nucleus LM2C2 (2024–2025)**
+
+Research assistant for database construction and quantitative analysis.
+
+Responsibilities included:
+
+- Database construction
+- Data cleaning and integration
+- Statistical analysis
+- Research support for publications and reports
+:::
+
+:::

@@ -1,0 +1,111 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.top-banner}
+:::
+
+::: {.language-switch}
+[EN](beyond-research.qmd) | [ES](beyond-research-es.qmd)
+:::
+
+# Beyond Research
+
+My work extends beyond academic research. Over the last decade, I have worked across civil society, consulting, public policy, and public writing, building applied knowledge on education, poverty, work, and social inequality.
+
+These experiences shape the way I approach research: as rigorous inquiry, and also as practical support for institutions and decision-makers who need to understand social problems, evaluate interventions, and decide with good evidence. The same goal drives the [interactive tools](tools.qmd) I build today.
+
+::: {.research-section}
+
+## Civil Society and Social Intervention
+
+::: {.research-item}
+### Research and Development in Civil Society
+
+**Fundación INFOCAP (2018–2024)**
+
+I worked in research and institutional development in a civil society organization focused on labor training, education, and social inclusion. My work included institutional analysis, research reports, development proposals, and evidence-based support for programs addressing vulnerability, work, and adult education.
+:::
+
+:::
+
+::: {.research-section}
+
+## Consulting and Policy Reports
+
+::: {.research-item}
+### Advanced Quantitative Analysis for Social Well-Being
+
+**United Nations Development Programme, Chile**
+
+Independent consultant for the analysis of the Social Well-Being Survey of the Ministry of Social Development and Family, using advanced quantitative methods to examine social well-being in Chile.
+:::
+
+::: {.research-item}
+### Evaluation of Education Research Proposals
+
+**Ministry of Education, Chile — FONIDE 2023**
+
+Technical evaluator for proposals submitted to the Education Research and Development Fund. The evaluation considered methodological quality, internal coherence, and alignment with public policy priorities in education.
+:::
+
+::: {.research-item}
+### Higher Education, Science, and Innovation Policy
+
+**National Council for Science, Technology, Knowledge and Innovation for Development (Consejo CTCI), 2025**
+
+Author of the report *Recommendations of the CTCI Council in Higher Education: A Systematization of Contributions from Recent Decades*, focused on synthesizing policy recommendations in higher education, science, technology, knowledge, and innovation.
+
+[Report available here](https://docs.consejoctci.cl/pdfs.php?i=215)
+:::
+
+:::
+
+::: {.research-section}
+
+## Public Writing
+
+::: {.research-item}
+### Opinion Columns on Poverty, Education, and Social Policy
+
+I have written public-facing opinion columns on poverty, adult education, lifelong learning, inequality, and institutional development, mainly in *El Mostrador*. These pieces reflect my interest in connecting social research with public debate.
+
+Selected columns include:
+
+- *Avanzar hacia una institucionalidad chilena para el Aprendizaje a lo largo de toda la vida* (2023)
+- *Mejores definiciones de la pobreza para mejores soluciones a los problemas de Chile* (2022)
+- *Educación de adultos como un eje central para el desarrollo socioeconómico del país post-pandemia* (2022)
+- *El nepotismo, un problema complejo: educación, equidad y redes* (2018)
+:::
+
+:::
+
+::: {.research-section}
+
+## Social Innovation Projects
+
+::: {.research-grid}
+
+::: {.research-card}
+### Labor Training and Social Inclusion
+
+Development and evaluation of projects aimed at expanding training opportunities for people facing socioeconomic vulnerability.
+:::
+
+::: {.research-card}
+### Adult Education and Lifelong Learning
+
+Applied work on adult education, employability, and institutional development for lifelong learning.
+:::
+
+::: {.research-card}
+### Digital and Environmental Skills
+
+Participation in initiatives connecting labor training, digital inclusion, and renewable energy skills.
+:::
+
+:::
+
+:::
