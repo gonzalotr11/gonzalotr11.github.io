@@ -34,7 +34,7 @@ Why is a household's monthly income not enough to know whether it is secure? The
 
 All amounts and probabilities are illustrative. The models explain mechanisms described in the literature on economic security and financial fragility; they are not estimates for real households.
 
-[Open the lab](https://gonzalotr11.github.io/economic-security-lab/economic-security-lab/){.btn .btn-primary}
+[Open the lab](https://gonzalotr11.github.io/economic-security-lab/){.btn .btn-primary}
 [Code on GitHub](https://github.com/gonzalotr11/economic-security-lab){.btn .btn-outline-primary}
 :::
 

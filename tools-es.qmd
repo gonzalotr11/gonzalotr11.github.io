@@ -34,7 +34,7 @@ Inseguridad económica de los hogares · Modelos interactivos
 
 Todos los montos y probabilidades son ilustrativos. Los modelos explican mecanismos descritos en la literatura sobre seguridad económica y fragilidad financiera; no son estimaciones sobre hogares reales.
 
-[Abrir el laboratorio](https://gonzalotr11.github.io/economic-security-lab/economic-security-lab/){.btn .btn-primary}
+[Abrir el laboratorio](https://gonzalotr11.github.io/economic-security-lab/){.btn .btn-primary}
 [Código en GitHub](https://github.com/gonzalotr11/economic-security-lab){.btn .btn-outline-primary}
 :::
 
