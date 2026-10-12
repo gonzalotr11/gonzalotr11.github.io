@@ -1,5 +1,8 @@
 ---
 title: ""
+lang: es
+aliases:
+  - teaching-data-es.html
 page-layout: full
 toc: false
 ---
@@ -8,98 +11,98 @@ toc: false
 :::
 
 ::: {.language-switch}
-[EN](teaching-data.qmd) | [ES](teaching-data-es.qmd)
+[ES](teaching-data.qmd) | [EN](teaching-data-en.qmd)
 :::
 
-# Teaching & Data Work
+# Docencia y trabajo con datos
 
-I teach statistics, research methods, and social psychology, and I have worked as a data analyst in research projects on education, mobility, and inequality.
+Enseño estadística, métodos de investigación y psicología social, y he trabajado como analista de datos en proyectos de investigación sobre educación, movilidad y desigualdad.
 
 ::: {.research-section}
 
-## University Teaching
+## Docencia universitaria
 
 ::: {.research-item}
-### Statistics and Probability for Science Education
+### Estadística y Probabilidades para Pedagogía en Ciencias
 
-**Universidad Alberto Hurtado (2025–present)**
+**Universidad Alberto Hurtado (2025–presente)**
 
-Instructor for undergraduate students in Science Education. The course develops descriptive statistics, probability, data visualization, and quantitative reasoning for future science teachers.
+Docente para estudiantes de pregrado en Pedagogía en Ciencias. El curso desarrolla estadística descriptiva, probabilidades, visualización de datos y razonamiento cuantitativo para futuros profesores de ciencias.
 :::
 
 ::: {.research-item}
-### Psychology and Research Methods
+### Psicología y métodos de investigación
 
 **Universidad San Sebastián (2015–2021)**
 
-Instructor in undergraduate psychology courses, including:
+Docente en cursos de pregrado en psicología, incluyendo:
 
-- Foundations of Socioanthropological Approaches to Human Behavior
-- Qualitative Research Methods
-- Community Psychology
-- Social Psychology
-- Undergraduate thesis and capstone assessment
+- Fundamentos socioantropológicos del comportamiento humano
+- Métodos cualitativos de investigación
+- Psicología comunitaria
+- Psicología social
+- Evaluación de tesis y trabajos de grado
 
-These courses connected social theory, research design, and practical intervention skills.
+Estos cursos articularon teoría social, diseño de investigación y habilidades prácticas de intervención.
 :::
 
 ::: {.research-item}
-### Professional Skills Workshops
+### Talleres de habilidades profesionales
 
 **Universidad del Desarrollo (2015–2017)**
 
-Instructor in professional development courses for psychology students, emphasizing:
+Docente en cursos de desarrollo profesional para estudiantes de psicología, con énfasis en:
 
-- Scientific writing
-- Research project design
-- Evidence-based argumentation
-- Interdisciplinary problem solving
+- Escritura científica
+- Diseño de proyectos de investigación
+- Argumentación basada en evidencia
+- Resolución interdisciplinaria de problemas
 :::
 
 :::
 
 ::: {.research-section}
 
-## Data Work and Research Assistance
+## Trabajo con datos y asistencia de investigación
 
 ::: {.research-item}
-### Doctoral Researcher
+### Investigador doctoral
 
-**Wealth and Social Cohesion from a Relational Perspective (2025–present)**
+**Wealth and Social Cohesion from a Relational Perspective (2025–presente)**
 
-Funded by the Volkswagen Foundation through the ISI-LMU Munich project.
+Proyecto financiado por la Volkswagen Foundation a través del proyecto ISI-LMU Munich.
 
-My doctoral dissertation examines household wealth configurations, economic security, and educational inequality in Chile. The project combines survey data, administrative records, and quantitative methods to study how wealth shapes life opportunities and educational trajectories.
+Mi tesis doctoral examina configuraciones de riqueza de los hogares, seguridad económica y desigualdad educativa en Chile. El proyecto combina encuestas, registros administrativos y métodos cuantitativos para estudiar cómo la riqueza configura oportunidades de vida y trayectorias educativas.
 :::
 
 ::: {.research-item}
-### Research Assistant
+### Asistente de investigación
 
 **Princeton University (2024–2025)**
 
-Data analyst for the project *Intergenerational Mobility in Latin America: Patterns and Trends*.
+Analista de datos para el proyecto *Intergenerational Mobility in Latin America: Patterns and Trends*.
 
-Responsibilities included:
+Responsabilidades principales:
 
-- Statistical processing of large-scale datasets
-- Data harmonization and management
-- Quantitative analysis of education and mobility indicators
-- Documentation and reproducible workflows
+- Procesamiento estadístico de bases de datos de gran escala
+- Armonización y gestión de datos
+- Análisis cuantitativo de indicadores de educación y movilidad
+- Documentación y flujos de trabajo reproducibles
 :::
 
 ::: {.research-item}
-### Research Assistant
+### Asistente de investigación
 
 **Millennium Nucleus LM2C2 (2024–2025)**
 
-Research assistant for database construction and quantitative analysis.
+Asistente de investigación para construcción de bases de datos y análisis cuantitativo.
 
-Responsibilities included:
+Las responsabilidades incluyeron:
 
-- Database construction
-- Data cleaning and integration
-- Statistical analysis
-- Research support for publications and reports
+- Construcción de bases de datos
+- Limpieza e integración de datos
+- Análisis estadístico
+- Apoyo a publicaciones e informes de investigación
 :::
 
 :::

@@ -1,5 +1,8 @@
 ---
 title: ""
+lang: es
+aliases:
+  - tools-es.html
 page-layout: full
 toc: false
 ---
@@ -8,64 +11,64 @@ toc: false
 :::
 
 ::: {.language-switch}
-[EN](tools.qmd) | [ES](tools-es.qmd)
+[ES](tools.qmd) | [EN](tools-en.qmd)
 :::
 
 ::: {.research-section}
 
-# Interactive Tools
+# Herramientas interactivas
 
-Research findings rarely reach the people who could use them. I build interactive web tools that turn evidence about social problems into something people can explore: change a condition, follow a mechanism, see what happens. They are meant for students, the general public, and people who make public decisions.
+Los resultados de investigación rara vez llegan a quienes podrían usarlos. Desarrollo herramientas web interactivas que convierten evidencia sobre problemas sociales en algo que se puede explorar: cambiar una condición, seguir un mecanismo, ver qué ocurre. Están pensadas para estudiantes, para el público general y para quienes toman decisiones públicas.
 
-Each tool is a single web page that opens in any browser, with its code and data available on GitHub.
+Cada herramienta es una página web que se abre en cualquier navegador, con su código y sus datos disponibles en GitHub.
 
 ::: {.tool-card #economic-security-lab}
 ```{=html}
-<a class="tool-preview" href="https://gonzalotr11.github.io/economic-security-lab/" aria-label="Open the Economic Security Lab"><img src="images/tools/esl-preview.jpg" alt="The lab's step-by-step view: a house at the center, connected to its job, the state, family, the bank, a retail store and household bills, in the month a layoff hits." loading="lazy" width="1400" height="787"></a>
+<a class="tool-preview" href="https://gonzalotr11.github.io/economic-security-lab/" aria-label="Abrir el Laboratorio de Seguridad Económica"><img src="images/tools/esl-preview.jpg" alt="Vista «Paso a paso» del laboratorio: una casa al centro, conectada con su trabajo, el Estado, la familia, el banco, una casa comercial y las cuentas del hogar, durante el mes en que llega un despido." loading="lazy" width="1400" height="787"></a>
 ```
 
 ::: {.tool-tag}
-Household economic insecurity · Interactive simulation · ES / EN
+Inseguridad económica de los hogares · Simulación interactiva · ES / EN
 :::
 
-### Economic Security Lab
+### Laboratorio de Seguridad Económica
 
-Why is a household's monthly income not enough to know whether it is secure? The lab shows how shocks, savings, family support, debt and social protection interact, and why two households with the same income can face very different risks.
+¿Por qué el ingreso del mes no basta para saber si un hogar está seguro? El laboratorio muestra cómo se encadenan los golpes, el ahorro, el apoyo familiar, la deuda y la protección social, y por qué dos hogares con el mismo ingreso pueden enfrentar riesgos muy distintos.
 
-- **Learn:** the core idea, three layers of the problem, eight documented mechanisms, evidence, ways to measure it, and readings linked to the original articles.
-- **Build a household:** add income, obligations and cushions; launch a shock and compare how much it hurts with and without protection.
-- **The household over time:** a 24-month budget in Chilean pesos. When money runs short, the household turns to savings, family, the bank or a cash advance, and each option leaves consequences.
-- **Step by step:** the same simulation animated month by month, with money flowing between the household and those who support it or charge it.
+- **Aprender:** la idea central, tres capas del fenómeno, ocho mecanismos documentados, evidencia, formas de medirlo y lecturas con enlace al artículo original.
+- **Arma un hogar:** suma ingresos, obligaciones y colchones; lanza un golpe y compara cuánto duele con y sin protección.
+- **El hogar en el tiempo:** un presupuesto de 24 meses en pesos chilenos. Cuando falta plata, el hogar recurre al ahorro, la familia, el banco o el avance en efectivo, y cada opción deja consecuencias.
+- **Paso a paso:** la misma simulación animada mes a mes, con el dinero circulando entre el hogar y quienes lo sostienen o le cobran.
 
-Amounts and probabilities are illustrative, calibrated with public references. The models explain mechanisms described in the literature; they are not estimates for real households.
+Los montos y probabilidades son ilustrativos, calibrados con referencias públicas. Los modelos explican mecanismos descritos en la literatura; no son estimaciones sobre hogares reales.
 
-[Open the lab](https://gonzalotr11.github.io/economic-security-lab/){.btn .btn-primary}
-[Code on GitHub](https://github.com/gonzalotr11/economic-security-lab){.btn .btn-outline-primary}
+[Abrir el laboratorio](https://gonzalotr11.github.io/economic-security-lab/){.btn .btn-primary}
+[Código en GitHub](https://github.com/gonzalotr11/economic-security-lab){.btn .btn-outline-primary}
 :::
 
-::: {.tool-card #mea-culpa-as-data}
+::: {.tool-card #mea-culpa-como-datos}
 
 ```{=html}
-<a class="tool-preview" href="https://gonzalotr11.github.io/mea-culpa-datos/" aria-label="Open the Mea Culpa, as data explorer"><img src="images/tools/mea-culpa-preview.jpg" alt="Relationship network of one episode: characters with fictitious names colored by role and socioeconomic status, with one character's profile alongside." loading="lazy" width="1400" height="787"></a>
+<a class="tool-preview" href="https://gonzalotr11.github.io/mea-culpa-datos/" aria-label="Abrir el explorador Mea Culpa, como datos"><img src="images/tools/mea-culpa-preview.jpg" alt="Red de relaciones de un episodio: personajes con nombres ficticios coloreados por rol y nivel socioeconómico, con la ficha de uno de ellos al lado." loading="lazy" width="1400" height="787"></a>
 ```
 
 ::: {.tool-tag}
-Text as data · Relational databases · Teaching
+Texto como datos · Bases relacionales · Docencia
 :::
 
-### Mea Culpa, as data
+### Mea Culpa, como datos
 
-A relational database built from the subtitles of 121 episodes of *Mea Culpa*, a Chilean television series about real crimes. Each episode is broken down into 15 linked tables: characters, relationships and their emotional tone, places and objects, the sequence of events, and the structural conditions behind each case.
+Una base de datos relacional construida a partir de los subtítulos de 121 episodios de *Mea Culpa*, el programa de televisión chileno sobre crímenes reales. Cada episodio se descompone en 15 tablas vinculadas: personajes, relaciones y su tono afectivo, lugares y objetos, la secuencia de los hechos y las condiciones estructurales detrás de cada caso.
 
-- Filter episodes by season, type of crime, causal mechanism, structural conditions, or themes.
-- Follow each episode's narrative thread across six phases, from background to consequences.
-- Explore the network of relationships around the protagonist, including power asymmetries and socioeconomic status.
-- See the table rows behind each episode to understand how a story becomes relational data.
+- Filtra episodios por temporada, tipo de delito, mecanismo causal, condiciones estructurales o temas.
+- Sigue el hilo narrativo de cada episodio a través de seis fases, desde los antecedentes hasta las consecuencias.
+- Explora la red de relaciones en torno al protagonista, con asimetrías de poder y nivel socioeconómico.
+- Revisa las filas de cada tabla detrás de un episodio para entender cómo un relato se convierte en datos relacionales.
 
-It was designed as teaching material for psychology and social science students learning to turn text into data. Character names are fictitious.
+Fue diseñada como material docente para estudiantes de psicología y ciencias sociales que aprenden a convertir texto en datos. Los nombres de los personajes son ficticios.
 
-[Open the explorer](https://gonzalotr11.github.io/mea-culpa-datos/){.btn .btn-primary}
-[Data and code on GitHub](https://github.com/gonzalotr11/mea-culpa-datos){.btn .btn-outline-primary}
+[Abrir el explorador](https://gonzalotr11.github.io/mea-culpa-datos/){.btn .btn-primary}
+[Datos y código en GitHub](https://github.com/gonzalotr11/mea-culpa-datos){.btn .btn-outline-primary}
 :::
 
 :::

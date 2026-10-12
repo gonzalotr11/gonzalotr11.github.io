@@ -5,19 +5,21 @@ project:
     - images/tools/*
 
 website:
-  title: "Gonzalo Torres"
+  title: "Gonzalo Torres Rosales"
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Inicio
       - href: research.qmd
-        text: Research
+        text: Investigación
       - href: tools.qmd
-        text: Tools
+        text: Herramientas
       - href: teaching-data.qmd
-        text: Teaching & Data Work
+        text: Docencia y datos
       - href: beyond-research.qmd
-        text: Beyond Research
+        text: Más allá de la investigación
+
+lang: es
 
 format:
   html:

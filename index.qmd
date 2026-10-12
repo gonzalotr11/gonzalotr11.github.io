@@ -1,5 +1,8 @@
 ---
 title: ""
+lang: es
+aliases:
+  - index-es.html
 page-layout: full
 toc: false
 ---
@@ -8,7 +11,7 @@ toc: false
 :::
 
 ::: {.language-switch}
-[EN](index.qmd) | [ES](index-es.qmd)
+[ES](index.qmd) | [EN](index-en.qmd)
 :::
 
 ::: {.profile-layout}
@@ -18,8 +21,8 @@ toc: false
 
 # Gonzalo Torres Rosales
 
-Social Psychologist  
-PhD Candidate in Sociology  
+Psicólogo social  
+Candidato a Doctor en Sociología  
 Pontificia Universidad Católica de Chile  
 
 [GitHub](https://github.com/gonzalotr11){.btn .btn-outline-primary}
@@ -29,26 +32,26 @@ Pontificia Universidad Católica de Chile
 :::
 
 ::: {.profile-right}
-## Inequality, Household Economies, and Well-being
+## Desigualdad, economía de los hogares y bienestar
 
-I am a social psychologist and PhD candidate in Sociology. I study socioeconomic inequality, the economic lives of households, and well-being: how income, wealth, debt, and economic insecurity shape what people experience, the decisions they make, and the opportunities open to them.
+Soy psicólogo social y candidato a doctor en Sociología. Investigo la desigualdad socioeconómica, la economía de los hogares y el bienestar: cómo el ingreso, la riqueza, la deuda y la inseguridad económica moldean lo que viven las personas, las decisiones que toman y las oportunidades que tienen.
 
-I work with quantitative methods and computational social science to find new ways of representing social reality. That means linking surveys with administrative records, turning texts into structured data, and building models that make social mechanisms visible instead of leaving them buried in averages.
+Trabajo con métodos cuantitativos y ciencias sociales computacionales para encontrar nuevas formas de representar la realidad social. Eso significa vincular encuestas con registros administrativos, convertir textos en datos estructurados y construir modelos que hagan visibles los mecanismos sociales, en lugar de dejarlos ocultos detrás de los promedios.
 
-My work also has an educational purpose. I build interactive web tools that let broad audiences and public decision-makers explore social problems and how they work, with quality, evidence-based information they can actually use.
+Mi trabajo tiene también un propósito educativo. Desarrollo herramientas web interactivas que permiten a audiencias amplias y a quienes toman decisiones públicas explorar problemas sociales y su funcionamiento, con información de calidad, basada en evidencia y fácil de usar.
 
-Before my doctoral work, I spent a decade in civil society, education, applied policy research, and public writing. That experience is why I care about research that is rigorous and also useful outside the university.
+Antes del doctorado trabajé durante una década en sociedad civil, educación, investigación aplicada para políticas públicas y escritura pública. Esa experiencia explica mi interés por una investigación rigurosa y, a la vez, útil fuera de la universidad.
 
-### Core areas
+### Áreas principales
 
-- Socioeconomic inequality and household economic security
-- Wealth, debt, and the economic lives of households
-- Social psychology of inequality and well-being
-- Quantitative methods and computational social science
-- Interactive tools for evidence-based public understanding
+- Desigualdad socioeconómica y seguridad económica de los hogares
+- Riqueza, deuda y economía de los hogares
+- Psicología social de la desigualdad y bienestar
+- Métodos cuantitativos y ciencias sociales computacionales
+- Herramientas interactivas para comprender problemas sociales con evidencia
 
 ::: {.home-tools}
-**Explore my tools:** [Economic Security Lab](tools.qmd#economic-security-lab) · [Mea Culpa, as data](tools.qmd#mea-culpa-as-data) · [All tools →](tools.qmd)
+**Explora mis herramientas:** [Laboratorio de Seguridad Económica](tools.qmd#economic-security-lab) · [Mea Culpa, como datos](tools.qmd#mea-culpa-como-datos) · [Ver todas →](tools.qmd)
 :::
 :::
 

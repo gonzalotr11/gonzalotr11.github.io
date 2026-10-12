@@ -1,5 +1,8 @@
 ---
 title: ""
+lang: es
+aliases:
+  - beyond-research-es.html
 page-layout: full
 toc: false
 ---
@@ -8,71 +11,71 @@ toc: false
 :::
 
 ::: {.language-switch}
-[EN](beyond-research.qmd) | [ES](beyond-research-es.qmd)
+[ES](beyond-research.qmd) | [EN](beyond-research-en.qmd)
 :::
 
-# Beyond Research
+# Más allá de la investigación
 
-My work extends beyond academic research. Over the last decade, I have worked across civil society, consulting, public policy, and public writing, building applied knowledge on education, poverty, work, and social inequality.
+Mi trabajo se extiende más allá de la investigación académica. Durante la última década, he trabajado en sociedad civil, consultorías, política pública y escritura pública, desarrollando conocimiento aplicado sobre educación, pobreza, trabajo y desigualdad social.
 
-These experiences shape the way I approach research: as rigorous inquiry, and also as practical support for institutions and decision-makers who need to understand social problems, evaluate interventions, and decide with good evidence.
+Estas experiencias moldean mi forma de entender la investigación: como indagación rigurosa y también como apoyo práctico para instituciones y tomadores de decisiones que necesitan comprender problemas sociales, evaluar intervenciones y decidir con buena evidencia.
 
 ::: {.research-section}
 
-## Civil Society and Social Intervention
+## Sociedad civil e intervención social
 
 ::: {.research-item}
-### Research and Development in Civil Society
+### Investigación y desarrollo en la sociedad civil
 
 **Fundación INFOCAP (2018–2024)**
 
-I worked in research and institutional development in a civil society organization focused on labor training, education, and social inclusion. My work included institutional analysis, research reports, development proposals, and evidence-based support for programs addressing vulnerability, work, and adult education.
+Trabajé en investigación y desarrollo institucional en una organización de la sociedad civil enfocada en capacitación laboral, educación e inclusión social. Mi trabajo incluyó análisis institucional, informes de investigación, propuestas de desarrollo y apoyo basado en evidencia para programas orientados a vulnerabilidad, trabajo y educación de personas adultas.
 :::
 
 :::
 
 ::: {.research-section}
 
-## Consulting and Policy Reports
+## Consultorías e informes de política pública
 
 ::: {.research-item}
-### Advanced Quantitative Analysis for Social Well-Being
+### Análisis cuantitativo avanzado sobre bienestar social
 
-**United Nations Development Programme, Chile**
+**Programa de las Naciones Unidas para el Desarrollo, Chile**
 
-Independent consultant for the analysis of the Social Well-Being Survey of the Ministry of Social Development and Family, using advanced quantitative methods to examine social well-being in Chile.
+Consultor independiente para el análisis de la Encuesta de Bienestar Social del Ministerio de Desarrollo Social y Familia, utilizando métodos cuantitativos avanzados para examinar el bienestar social en Chile.
 :::
 
 ::: {.research-item}
-### Evaluation of Education Research Proposals
+### Evaluación de propuestas de investigación educativa
 
-**Ministry of Education, Chile — FONIDE 2023**
+**Ministerio de Educación, Chile — FONIDE 2023**
 
-Technical evaluator for proposals submitted to the Education Research and Development Fund. The evaluation considered methodological quality, internal coherence, and alignment with public policy priorities in education.
+Evaluador técnico de propuestas presentadas al Fondo de Investigación y Desarrollo en Educación. La evaluación consideró calidad metodológica, coherencia interna y alineación con prioridades de política pública en educación.
 :::
 
 ::: {.research-item}
-### Higher Education, Science, and Innovation Policy
+### Educación superior, ciencia e innovación
 
-**National Council for Science, Technology, Knowledge and Innovation for Development (Consejo CTCI), 2025**
+**Consejo Nacional de Ciencia, Tecnología, Conocimiento e Innovación para el Desarrollo (Consejo CTCI), 2025**
 
-Author of the report *Recommendations of the CTCI Council in Higher Education: A Systematization of Contributions from Recent Decades*, focused on synthesizing policy recommendations in higher education, science, technology, knowledge, and innovation.
+Autor del informe *Recomendaciones del Consejo CTCI en educación superior: una sistematización de aportes de las últimas décadas*, orientado a sintetizar recomendaciones de política pública en educación superior, ciencia, tecnología, conocimiento e innovación.
 
-[Report available here](https://docs.consejoctci.cl/pdfs.php?i=215)
+[Informe disponible aquí](https://docs.consejoctci.cl/pdfs.php?i=215)
 :::
 
 :::
 
 ::: {.research-section}
 
-## Public Writing
+## Escritura pública
 
 ::: {.research-item}
-### Opinion Columns on Poverty, Education, and Social Policy
+### Columnas de opinión sobre pobreza, educación y política social
 
-I have written public-facing opinion columns on poverty, adult education, lifelong learning, inequality, and institutional development, mainly in *El Mostrador*. These pieces reflect my interest in connecting social research with public debate.
+He escrito columnas de opinión dirigidas al debate público sobre pobreza, educación de adultos, aprendizaje a lo largo de la vida, desigualdad y desarrollo institucional, principalmente en *El Mostrador*. Estos textos reflejan mi interés por conectar la investigación social con la discusión pública.
 
-Selected columns include:
+Algunas columnas seleccionadas incluyen:
 
 - *Avanzar hacia una institucionalidad chilena para el Aprendizaje a lo largo de toda la vida* (2023)
 - *Mejores definiciones de la pobreza para mejores soluciones a los problemas de Chile* (2022)
@@ -84,26 +87,26 @@ Selected columns include:
 
 ::: {.research-section}
 
-## Social Innovation Projects
+## Proyectos de innovación social
 
 ::: {.research-grid}
 
 ::: {.research-card}
-### Labor Training and Social Inclusion
+### Capacitación laboral e inclusión social
 
-Development and evaluation of projects aimed at expanding training opportunities for people facing socioeconomic vulnerability.
+Desarrollo y evaluación de proyectos orientados a expandir oportunidades de formación para personas en situación de vulnerabilidad socioeconómica.
 :::
 
 ::: {.research-card}
-### Adult Education and Lifelong Learning
+### Educación de personas adultas y aprendizaje permanente
 
-Applied work on adult education, employability, and institutional development for lifelong learning.
+Trabajo aplicado en educación de personas adultas, empleabilidad y desarrollo institucional para el aprendizaje a lo largo de la vida.
 :::
 
 ::: {.research-card}
-### Digital and Environmental Skills
+### Habilidades digitales y ambientales
 
-Participation in initiatives connecting labor training, digital inclusion, and renewable energy skills.
+Participación en iniciativas que conectan capacitación laboral, inclusión digital y formación en energías renovables.
 :::
 
 :::
