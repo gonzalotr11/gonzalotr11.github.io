@@ -20,25 +20,35 @@ Research findings rarely reach the people who could use them. I build interactiv
 Each tool is a single web page that opens in any browser, with its code and data available on GitHub.
 
 ::: {.tool-card #economic-security-lab}
+```{=html}
+<a class="tool-preview" href="https://gonzalotr11.github.io/economic-security-lab/" aria-label="Open the Economic Security Lab"><img src="images/tools/esl-preview.jpg" alt="The lab's step-by-step view: a house at the center, connected to its job, the state, family, the bank, a retail store and household bills, in the month a layoff hits." loading="lazy" width="1400" height="787"></a>
+```
+
 ::: {.tool-tag}
-Household economic insecurity · Interactive models
+Household economic insecurity · Interactive simulation · ES / EN
 :::
 
 ### Economic Security Lab
 
-Why is a household's monthly income not enough to know whether it is secure? These prototypes show how shocks, savings, family support, debt, and social networks interact over time, and why two households with the same income can face very different risks.
+Why is a household's monthly income not enough to know whether it is secure? The lab shows how shocks, savings, family support, debt and social protection interact, and why two households with the same income can face very different risks.
 
-- **When something fails:** build a household with risks and buffers, see which mechanisms come into play, and get suggested readings.
-- **Household lab:** choose a typical household, place shocks along a 24-month timeline, and watch its options close: savings, family, bank credit, expensive credit.
-- **Household networks:** the same household with its family, acquaintances, and neighbors, facing shocks that hit the home, the neighborhood, the sector, or the whole country.
+- **Learn:** the core idea, three layers of the problem, eight documented mechanisms, evidence, ways to measure it, and readings linked to the original articles.
+- **Build a household:** add income, obligations and cushions; launch a shock and compare how much it hurts with and without protection.
+- **The household over time:** a 24-month budget in Chilean pesos. When money runs short, the household turns to savings, family, the bank or a cash advance, and each option leaves consequences.
+- **Step by step:** the same simulation animated month by month, with money flowing between the household and those who support it or charge it.
 
-All amounts and probabilities are illustrative. The models explain mechanisms described in the literature on economic security and financial fragility; they are not estimates for real households.
+Amounts and probabilities are illustrative, calibrated with public references. The models explain mechanisms described in the literature; they are not estimates for real households.
 
 [Open the lab](https://gonzalotr11.github.io/economic-security-lab/){.btn .btn-primary}
 [Code on GitHub](https://github.com/gonzalotr11/economic-security-lab){.btn .btn-outline-primary}
 :::
 
 ::: {.tool-card #mea-culpa-as-data}
+
+```{=html}
+<a class="tool-preview" href="https://gonzalotr11.github.io/mea-culpa-datos/" aria-label="Open the Mea Culpa, as data explorer"><img src="images/tools/mea-culpa-preview.jpg" alt="Relationship network of one episode: characters with fictitious names colored by role and socioeconomic status, with one character's profile alongside." loading="lazy" width="1400" height="787"></a>
+```
+
 ::: {.tool-tag}
 Text as data · Relational databases · Teaching
 :::

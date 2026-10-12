@@ -20,25 +20,35 @@ Los resultados de investigación rara vez llegan a quienes podrían usarlos. Des
 Cada herramienta es una página web que se abre en cualquier navegador, con su código y sus datos disponibles en GitHub.
 
 ::: {.tool-card #economic-security-lab}
+```{=html}
+<a class="tool-preview" href="https://gonzalotr11.github.io/economic-security-lab/" aria-label="Abrir el Laboratorio de Seguridad Económica"><img src="images/tools/esl-preview.jpg" alt="Vista «Paso a paso» del laboratorio: una casa al centro, conectada con su trabajo, el Estado, la familia, el banco, una casa comercial y las cuentas del hogar, durante el mes en que llega un despido." loading="lazy" width="1400" height="787"></a>
+```
+
 ::: {.tool-tag}
-Inseguridad económica de los hogares · Modelos interactivos
+Inseguridad económica de los hogares · Simulación interactiva · ES / EN
 :::
 
-### Economic Security Lab
+### Laboratorio de Seguridad Económica
 
-¿Por qué el ingreso del mes no basta para saber si un hogar está seguro? Estos prototipos muestran cómo se encadenan en el tiempo los golpes, el ahorro, el apoyo familiar, la deuda y las redes, y por qué dos hogares con el mismo ingreso pueden enfrentar riesgos muy distintos.
+¿Por qué el ingreso del mes no basta para saber si un hogar está seguro? El laboratorio muestra cómo se encadenan los golpes, el ahorro, el apoyo familiar, la deuda y la protección social, y por qué dos hogares con el mismo ingreso pueden enfrentar riesgos muy distintos.
 
-- **Cuando algo falla:** arma un hogar con riesgos y colchones, observa qué mecanismos entran en juego y recibe lecturas sugeridas.
-- **Laboratorio de hogares:** elige un hogar prototípico, ubica golpes en una línea de 24 meses y mira cómo se le cierran las opciones: ahorro, familia, crédito bancario, crédito caro.
-- **Red de hogares:** el mismo hogar con su familia, conocidos y vecinos, frente a golpes que afectan al hogar, al barrio, al rubro o a todo el país.
+- **Aprender:** la idea central, tres capas del fenómeno, ocho mecanismos documentados, evidencia, formas de medirlo y lecturas con enlace al artículo original.
+- **Arma un hogar:** suma ingresos, obligaciones y colchones; lanza un golpe y compara cuánto duele con y sin protección.
+- **El hogar en el tiempo:** un presupuesto de 24 meses en pesos chilenos. Cuando falta plata, el hogar recurre al ahorro, la familia, el banco o el avance en efectivo, y cada opción deja consecuencias.
+- **Paso a paso:** la misma simulación animada mes a mes, con el dinero circulando entre el hogar y quienes lo sostienen o le cobran.
 
-Todos los montos y probabilidades son ilustrativos. Los modelos explican mecanismos descritos en la literatura sobre seguridad económica y fragilidad financiera; no son estimaciones sobre hogares reales.
+Los montos y probabilidades son ilustrativos, calibrados con referencias públicas. Los modelos explican mecanismos descritos en la literatura; no son estimaciones sobre hogares reales.
 
 [Abrir el laboratorio](https://gonzalotr11.github.io/economic-security-lab/){.btn .btn-primary}
 [Código en GitHub](https://github.com/gonzalotr11/economic-security-lab){.btn .btn-outline-primary}
 :::
 
 ::: {.tool-card #mea-culpa-como-datos}
+
+```{=html}
+<a class="tool-preview" href="https://gonzalotr11.github.io/mea-culpa-datos/" aria-label="Abrir el explorador Mea Culpa, como datos"><img src="images/tools/mea-culpa-preview.jpg" alt="Red de relaciones de un episodio: personajes con nombres ficticios coloreados por rol y nivel socioeconómico, con la ficha de uno de ellos al lado." loading="lazy" width="1400" height="787"></a>
+```
+
 ::: {.tool-tag}
 Texto como datos · Bases relacionales · Docencia
 :::

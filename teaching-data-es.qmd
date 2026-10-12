@@ -13,7 +13,7 @@ toc: false
 
 # Docencia y trabajo con datos
 
-Enseño estadística, métodos de investigación y psicología social, y he trabajado como analista de datos en proyectos de investigación sobre educación, movilidad y desigualdad. La docencia orienta la forma en que diseño herramientas: las [herramientas interactivas](tools-es.qmd) de este sitio nacieron como formas de explicar a estudiantes cómo funcionan los datos y los mecanismos sociales.
+Enseño estadística, métodos de investigación y psicología social, y he trabajado como analista de datos en proyectos de investigación sobre educación, movilidad y desigualdad.
 
 ::: {.research-section}
 

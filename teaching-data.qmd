@@ -13,7 +13,7 @@ toc: false
 
 # Teaching & Data Work
 
-I teach statistics, research methods, and social psychology, and I have worked as a data analyst in research projects on education, mobility, and inequality. Teaching shapes how I build tools: the [interactive tools](tools.qmd) on this site started as ways to explain to students how social data and mechanisms work.
+I teach statistics, research methods, and social psychology, and I have worked as a data analyst in research projects on education, mobility, and inequality.
 
 ::: {.research-section}
 

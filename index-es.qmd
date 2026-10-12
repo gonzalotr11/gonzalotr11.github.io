@@ -48,7 +48,7 @@ Antes del doctorado trabajé durante una década en sociedad civil, educación, 
 - Herramientas interactivas para comprender problemas sociales con evidencia
 
 ::: {.home-tools}
-**Explora mis herramientas:** [Economic Security Lab](tools-es.qmd#economic-security-lab) · [Mea Culpa, como datos](tools-es.qmd#mea-culpa-como-datos) · [Ver todas →](tools-es.qmd)
+**Explora mis herramientas:** [Laboratorio de Seguridad Económica](tools-es.qmd#economic-security-lab) · [Mea Culpa, como datos](tools-es.qmd#mea-culpa-como-datos) · [Ver todas →](tools-es.qmd)
 :::
 :::
 

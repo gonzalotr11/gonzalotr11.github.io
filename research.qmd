@@ -112,7 +112,7 @@ Quantitative and computational methods, data integration, and text as data to ma
 ::: {.research-card}
 ### Evidence for public understanding
 
-Interactive tools that help broad audiences and decision-makers explore social problems and how they work.
+Translating research so that broad audiences and decision-makers can understand social problems and how they work.
 :::
 
 :::

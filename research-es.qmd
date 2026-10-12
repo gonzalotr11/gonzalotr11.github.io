@@ -112,7 +112,7 @@ Métodos cuantitativos y computacionales, integración de datos y texto como dat
 ::: {.research-card}
 ### Evidencia para la comprensión pública
 
-Herramientas interactivas que ayudan a audiencias amplias y a quienes deciden a explorar problemas sociales y su funcionamiento.
+Traducir la investigación para que audiencias amplias y quienes deciden comprendan los problemas sociales y su funcionamiento.
 :::
 
 :::

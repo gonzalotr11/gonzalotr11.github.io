@@ -15,7 +15,7 @@ toc: false
 
 Mi trabajo se extiende más allá de la investigación académica. Durante la última década, he trabajado en sociedad civil, consultorías, política pública y escritura pública, desarrollando conocimiento aplicado sobre educación, pobreza, trabajo y desigualdad social.
 
-Estas experiencias moldean mi forma de entender la investigación: como indagación rigurosa y también como apoyo práctico para instituciones y tomadores de decisiones que necesitan comprender problemas sociales, evaluar intervenciones y decidir con buena evidencia. Ese mismo objetivo guía las [herramientas interactivas](tools-es.qmd) que desarrollo hoy.
+Estas experiencias moldean mi forma de entender la investigación: como indagación rigurosa y también como apoyo práctico para instituciones y tomadores de decisiones que necesitan comprender problemas sociales, evaluar intervenciones y decidir con buena evidencia.
 
 ::: {.research-section}
 

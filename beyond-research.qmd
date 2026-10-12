@@ -15,7 +15,7 @@ toc: false
 
 My work extends beyond academic research. Over the last decade, I have worked across civil society, consulting, public policy, and public writing, building applied knowledge on education, poverty, work, and social inequality.
 
-These experiences shape the way I approach research: as rigorous inquiry, and also as practical support for institutions and decision-makers who need to understand social problems, evaluate interventions, and decide with good evidence. The same goal drives the [interactive tools](tools.qmd) I build today.
+These experiences shape the way I approach research: as rigorous inquiry, and also as practical support for institutions and decision-makers who need to understand social problems, evaluate interventions, and decide with good evidence.
 
 ::: {.research-section}
 
