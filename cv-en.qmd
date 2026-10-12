@@ -1,0 +1,32 @@
+---
+title: ""
+lang: en
+page-layout: full
+toc: false
+---
+
+::: {.top-banner}
+:::
+
+::: {.language-switch}
+[ES](cv.qmd) | [EN](cv-en.qmd)
+:::
+
+::: {.research-section}
+
+# Curriculum Vitae
+
+Social psychologist and PhD candidate in Sociology. I study socioeconomic inequality, the economic lives of households, and well-being. The CV below is in Spanish.
+
+::: {.cv-actions}
+[Download CV (PDF)](files/CV_Gonzalo_Torres_Rosales.pdf){.btn .btn-primary download="CV_Gonzalo_Torres_Rosales.pdf"}
+[Open in a new tab](files/CV_Gonzalo_Torres_Rosales.pdf){.btn .btn-outline-primary target="_blank"}
+:::
+
+```{=html}
+<object class="cv-embed" data="files/CV_Gonzalo_Torres_Rosales.pdf#view=FitH" type="application/pdf" aria-label="Gonzalo Torres Rosales's CV in PDF">
+  <p class="cv-fallback">Your browser cannot display the PDF inside the page. <a href="files/CV_Gonzalo_Torres_Rosales.pdf" download>Download it here</a>.</p>
+</object>
+```
+
+:::

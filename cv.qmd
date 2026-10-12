@@ -1,0 +1,32 @@
+---
+title: ""
+lang: es
+page-layout: full
+toc: false
+---
+
+::: {.top-banner}
+:::
+
+::: {.language-switch}
+[ES](cv.qmd) | [EN](cv-en.qmd)
+:::
+
+::: {.research-section}
+
+# Currículum
+
+Psicólogo social y candidato a doctor en Sociología. Investigo desigualdad socioeconómica, economía de los hogares y bienestar.
+
+::: {.cv-actions}
+[Descargar CV (PDF)](files/CV_Gonzalo_Torres_Rosales.pdf){.btn .btn-primary download="CV_Gonzalo_Torres_Rosales.pdf"}
+[Abrir en una pestaña nueva](files/CV_Gonzalo_Torres_Rosales.pdf){.btn .btn-outline-primary target="_blank"}
+:::
+
+```{=html}
+<object class="cv-embed" data="files/CV_Gonzalo_Torres_Rosales.pdf#view=FitH" type="application/pdf" aria-label="CV de Gonzalo Torres Rosales en PDF">
+  <p class="cv-fallback">Tu navegador no puede mostrar el PDF dentro de la página. <a href="files/CV_Gonzalo_Torres_Rosales.pdf" download>Descárgalo aquí</a>.</p>
+</object>
+```
+
+:::

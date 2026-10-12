@@ -49,7 +49,7 @@ Before my doctoral work, I spent a decade in civil society, education, applied p
 - Interactive tools for evidence-based public understanding
 
 ::: {.home-tools}
-**Explore my tools:** [Economic Security Lab](tools-en.qmd#economic-security-lab) · [Mea Culpa, as data](tools-en.qmd#mea-culpa-as-data) · [All tools →](tools-en.qmd)
+**Explore my tools:** [Economic Security Lab](tools-en.qmd#economic-security-lab) · [Infancias en trayectoria](tools-en.qmd#infancias-en-trayectoria) · [Mea Culpa, as data](tools-en.qmd#mea-culpa-as-data) · [All tools →](tools-en.qmd)
 :::
 :::
 

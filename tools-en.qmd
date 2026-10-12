@@ -44,26 +44,50 @@ Amounts and probabilities are illustrative, calibrated with public references. T
 [Code on GitHub](https://github.com/gonzalotr11/economic-security-lab){.btn .btn-outline-primary}
 :::
 
-::: {.tool-card #mea-culpa-as-data}
+::: {.tool-card #infancias-en-trayectoria}
 
 ```{=html}
-<a class="tool-preview" href="https://gonzalotr11.github.io/mea-culpa-datos/" aria-label="Open the Mea Culpa, as data explorer"><img src="images/tools/mea-culpa-preview.jpg" alt="Relationship network of one episode: characters with fictitious names colored by role and socioeconomic status, with one character's profile alongside." loading="lazy" width="1400" height="787"></a>
+<a class="tool-preview" href="https://gonzalotr11.github.io/infancias-en-trayectoria/" aria-label="Open Infancias en trayectoria"><img src="images/tools/infancias-preview.jpg" alt="Home page of Infancias en trayectoria: the title “The same children, fourteen years later” and figures of children growing between 2010 and 2024." loading="lazy" width="1066" height="599"></a>
 ```
 
 ::: {.tool-tag}
-Text as data · Relational databases · Teaching
+Early childhood · Longitudinal data · Mobility · In Spanish
+:::
+
+### Infancias en trayectoria (Childhoods over time)
+
+How do children grow up depending on their households' economic conditions, and what happens when those conditions change? The tool follows participants in Chile's Early Childhood Longitudinal Survey (ELPI) across its 2010, 2012, 2017 and 2024 waves.
+
+- **Trajectory viewer:** groups households by their 2010 situation and shows how vocabulary, emotional and behavioral adjustment, and parental stress evolve.
+- **Two children:** build two profiles with different origins and different events (income drop, job loss, a partner leaving) and compare them side by side.
+- **Mobility and development:** how households move between income quintiles and how children fare in households that move up, stay or move down.
+
+It uses aggregated ELPI data. Its limitations, such as the lack of survey weights and non-random panel attrition, are explained in the tool itself.
+
+[Open the tool](https://gonzalotr11.github.io/infancias-en-trayectoria/){.btn .btn-primary}
+[Code on GitHub](https://github.com/gonzalotr11/infancias-en-trayectoria){.btn .btn-outline-primary}
+:::
+
+::: {.tool-card #mea-culpa-as-data}
+
+```{=html}
+<a class="tool-preview" href="https://gonzalotr11.github.io/mea-culpa-datos/" aria-label="Open the Mea Culpa, as data explorer"><img src="images/tools/mea-culpa-preview.jpg" alt="Home page of Mea Culpa, as data: the title “The stories behind 121 crimes” on a black background and a constellation of colored dots, one per episode." loading="lazy" width="1400" height="722"></a>
+```
+
+::: {.tool-tag}
+Text as data · Relationship networks · Teaching · In Spanish
 :::
 
 ### Mea Culpa, as data
 
-A relational database built from the subtitles of 121 episodes of *Mea Culpa*, a Chilean television series about real crimes. Each episode is broken down into 15 linked tables: characters, relationships and their emotional tone, places and objects, the sequence of events, and the structural conditions behind each case.
+*Mea Culpa*, a Chilean television series about real crimes, left 121 detailed stories: who the people were, how they lived, what tied them together and what conditions surrounded their lives before a serious crime. This explorer turns them into a 15-table relational database built from the subtitles.
 
-- Filter episodes by season, type of crime, causal mechanism, structural conditions, or themes.
-- Follow each episode's narrative thread across six phases, from background to consequences.
-- Explore the network of relationships around the protagonist, including power asymmetries and socioeconomic status.
-- See the table rows behind each episode to understand how a story becomes relational data.
+- **Thematic routes:** escalating violence at home, institutional neglect, economic dependence, children at risk, poverty, and what recurs in each.
+- **Ask the archive:** build a question in words and see which cases match and what other conditions come with them.
+- **Each episode's network:** people and entities with their role, socioeconomic status, emotional tone and power asymmetries, next to the narrative thread in six phases.
+- **Full archive:** search and filters, plus the table rows behind each profile.
 
-It was designed as teaching material for psychology and social science students learning to turn text into data. Character names are fictitious.
+Designed as teaching material for psychology and social science students learning to turn text into data. Names are fictitious.
 
 [Open the explorer](https://gonzalotr11.github.io/mea-culpa-datos/){.btn .btn-primary}
 [Data and code on GitHub](https://github.com/gonzalotr11/mea-culpa-datos){.btn .btn-outline-primary}

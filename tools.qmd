@@ -46,26 +46,50 @@ Los montos y probabilidades son ilustrativos, calibrados con referencias públic
 [Código en GitHub](https://github.com/gonzalotr11/economic-security-lab){.btn .btn-outline-primary}
 :::
 
-::: {.tool-card #mea-culpa-como-datos}
+::: {.tool-card #infancias-en-trayectoria}
 
 ```{=html}
-<a class="tool-preview" href="https://gonzalotr11.github.io/mea-culpa-datos/" aria-label="Abrir el explorador Mea Culpa, como datos"><img src="images/tools/mea-culpa-preview.jpg" alt="Red de relaciones de un episodio: personajes con nombres ficticios coloreados por rol y nivel socioeconómico, con la ficha de uno de ellos al lado." loading="lazy" width="1400" height="787"></a>
+<a class="tool-preview" href="https://gonzalotr11.github.io/infancias-en-trayectoria/" aria-label="Abrir Infancias en trayectoria"><img src="images/tools/infancias-preview.jpg" alt="Portada de Infancias en trayectoria: el título «Los mismos niños, catorce años después» y figuras de niños que crecen entre 2010 y 2024." loading="lazy" width="1066" height="599"></a>
 ```
 
 ::: {.tool-tag}
-Texto como datos · Bases relacionales · Docencia
+Primera infancia · Datos longitudinales · Movilidad
+:::
+
+### Infancias en trayectoria
+
+¿Cómo crecen niñas y niños según las condiciones económicas de sus hogares, y qué pasa cuando esas condiciones cambian? La herramienta sigue a los participantes de la Encuesta Longitudinal de Primera Infancia (ELPI) en sus olas de 2010, 2012, 2017 y 2024.
+
+- **Visor de trayectorias:** agrupa los hogares según su situación en 2010 y muestra cómo evolucionan el vocabulario, el ajuste emocional y conductual y el estrés parental.
+- **Dos niños:** arma dos perfiles con distinto origen y distintos eventos (caída de ingreso, pérdida de empleo, salida de la pareja) y compáralos lado a lado.
+- **Movilidad y desarrollo:** cómo se mueven los hogares entre quintiles de ingreso y cómo les va a los niños de hogares que suben, se mantienen o bajan.
+
+Usa datos agregados de la ELPI. Sus limitaciones, como la ausencia de ponderadores y la salida no aleatoria del panel, están explicadas en la misma herramienta.
+
+[Abrir la herramienta](https://gonzalotr11.github.io/infancias-en-trayectoria/){.btn .btn-primary}
+[Código en GitHub](https://github.com/gonzalotr11/infancias-en-trayectoria){.btn .btn-outline-primary}
+:::
+
+::: {.tool-card #mea-culpa-como-datos}
+
+```{=html}
+<a class="tool-preview" href="https://gonzalotr11.github.io/mea-culpa-datos/" aria-label="Abrir el explorador Mea Culpa, como datos"><img src="images/tools/mea-culpa-preview.jpg" alt="Portada de Mea Culpa, como datos: el título «Las historias detrás de 121 crímenes» sobre fondo negro y una constelación de puntos de colores, uno por episodio." loading="lazy" width="1400" height="722"></a>
+```
+
+::: {.tool-tag}
+Texto como datos · Redes de relaciones · Docencia
 :::
 
 ### Mea Culpa, como datos
 
-Una base de datos relacional construida a partir de los subtítulos de 121 episodios de *Mea Culpa*, el programa de televisión chileno sobre crímenes reales. Cada episodio se descompone en 15 tablas vinculadas: personajes, relaciones y su tono afectivo, lugares y objetos, la secuencia de los hechos y las condiciones estructurales detrás de cada caso.
+*Mea Culpa* dejó 121 historias contadas con detalle: quiénes eran, cómo vivían, qué los unía y qué condiciones rodeaban sus vidas antes de un crimen grave. Este explorador las convierte en una base relacional de 15 tablas construida a partir de los subtítulos.
 
-- Filtra episodios por temporada, tipo de delito, mecanismo causal, condiciones estructurales o temas.
-- Sigue el hilo narrativo de cada episodio a través de seis fases, desde los antecedentes hasta las consecuencias.
-- Explora la red de relaciones en torno al protagonista, con asimetrías de poder y nivel socioeconómico.
-- Revisa las filas de cada tabla detrás de un episodio para entender cómo un relato se convierte en datos relacionales.
+- **Recorridos:** hilos temáticos (violencia que escala en casa, abandono institucional, dependencia económica, infancias en riesgo, pobreza) con lo que se repite en cada uno.
+- **Pregúntale al archivo:** arma una pregunta con palabras y mira qué casos la cumplen y qué otras condiciones los acompañan.
+- **La red de cada episodio:** personas y entidades con su rol, nivel socioeconómico, tono afectivo y asimetrías de poder, junto al hilo narrativo en seis fases.
+- **Archivo completo:** buscador y filtros, y las filas de cada tabla detrás de cada ficha.
 
-Fue diseñada como material docente para estudiantes de psicología y ciencias sociales que aprenden a convertir texto en datos. Los nombres de los personajes son ficticios.
+Diseñada como material docente para estudiantes de psicología y ciencias sociales que aprenden a convertir texto en datos. Los nombres de las personas son ficticios.
 
 [Abrir el explorador](https://gonzalotr11.github.io/mea-culpa-datos/){.btn .btn-primary}
 [Datos y código en GitHub](https://github.com/gonzalotr11/mea-culpa-datos){.btn .btn-outline-primary}
